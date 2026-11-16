@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+  <title>The abolition of capitalist social relations</title>
+  <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="12" r="7"/>
+    <circle cx="53" cy="12" r="7"/>
+    <circle cx="32" cy="53" r="7"/>
+    <path d="M18 12h11m9 0h8M14 19l6 12m5 9 4 7M50 19l-5 10m-5 11-5 7"/>
+    <path d="m25 27 14 10m0-10L25 37"/>
+  </g>
+</svg>

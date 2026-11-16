@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#292a29">
+    <title>Ideology Sorter</title>
+    <meta name="description" content="Explore 201 political ideologies through one complete decision tree.">
+    <meta property="og:site_name" content="Ideology Sorter">
+    <meta property="og:title" content="Ideology Sorter">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="201 ideologies. 182 questions. One complete decision tree.">
+    <meta property="og:url" content="https://ideology-sorter.com">
+    <meta property="og:image" content="https://ideology-sorter.com/og.png?v=school-of-athens-20260909">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Ideology Sorter over Raphael’s The School of Athens">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ideology Sorter">
+    <meta name="twitter:description" content="201 ideologies. 182 questions. One complete decision tree.">
+    <meta name="twitter:image" content="https://ideology-sorter.com/og.png?v=school-of-athens-20260909">
+    <meta name="twitter:image:alt" content="Ideology Sorter over Raphael’s The School of Athens">
+    <link rel="icon" href="/assets/quark/logos/icon.png">
+    <link rel="preload" href="/assets/quark/fonts/heavitas.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/data/quiz-data.json?v=U1.99" as="fetch" type="application/json" crossorigin>
+    <link rel="stylesheet" href="/ideosorter.css?v=U1.99">
+    <script src="/ideosorter.js?v=U1.99" defer></script>
+  </head>
+  <body>
+    <div class="ambient-background" id="ambient-background" data-count="3" aria-hidden="true">
+      <span class="ambient-orb ambient-orb-a"></span>
+      <span class="ambient-orb ambient-orb-b"></span>
+      <span class="ambient-orb ambient-orb-c"></span>
+      <span class="ambient-orb ambient-orb-d"></span>
+      <span class="ambient-orb ambient-orb-e"></span>
+      <span class="ambient-orb ambient-orb-f"></span>
+    </div>
+    <main>
+      <nav class="floating-nav" aria-label="Primary navigation">
+        <button class="nav-button nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+          <img src="/assets/quark/buttons/navigation.svg" alt="">
+        </button>
+        <div class="nav-items" id="nav-items" hidden>
+          <button class="nav-button" type="button" data-view="home" aria-label="Home"><img src="/assets/quark/buttons/home.svg" alt=""></button>
+          <button class="nav-button" type="button" data-action="start" aria-label="Start quiz"><img src="/assets/quark/buttons/yes.svg" alt=""></button>
+          <button class="nav-button" type="button" data-view="results" aria-label="All results"><img src="/assets/quark/buttons/ideology.svg" alt=""></button>
+          <button class="nav-button" type="button" data-view="about" aria-label="About"><img src="/assets/quark/buttons/about.svg" alt=""></button>
+          <button class="nav-button" type="button" data-view="tree" aria-label="Tree explorer"><img src="/assets/quark/buttons/tree.svg" alt=""></button>
+        </div>
+      </nav>
+
+      <header class="site-title">
+        <span class="version-spacer" aria-hidden="true"></span>
+        <span class="wordmark">Ideology Sorter</span>
+        <span class="version-label" id="version-label" title="Site edition">U1.99</span>
+      </header>
+
+      <section class="home-view view-enter" id="home-view">
+        <h1 class="intro">Discover your political ideology</h1>
+        <div class="home-buttons">
+          <button class="button start-button" type="button" data-action="start">Start <img src="/assets/quark/buttons/start.svg" alt=""></button>
+          <button class="button small-button" type="button" data-view="results"><img src="/assets/quark/buttons/ideology.svg" alt=""> Results</button>
+          <button class="button small-button" type="button" data-view="about"><img src="/assets/quark/buttons/about.svg" alt=""> About</button>
+          <button class="button small-button" type="button" data-view="tree"><img src="/assets/quark/buttons/tree.svg" alt=""> Tree</button>
+        </div>
+        <p class="home-note" role="status" style="margin: 0 auto"></p>
+        <p class="home-credit">Interface based on <a href="https://quark88.github.io/ideosorter/" target="_blank" rel="noreferrer">Quark's original IdeoSorter</a>.</p>
+      </section>
+
+      <section class="quiz-view" id="quiz-view" aria-live="polite" hidden>
+        <div class="quiz-meta"><span id="question-number">Question 1</span><span id="remaining-outcomes">201 outcomes remaining</span></div>
+        <h1 class="question" id="question-text">Loading…</h1>
+        <p class="question-help" id="question-help" hidden></p>
+        <details class="question-explanation" id="question-explanation" hidden><summary>What does this mean?</summary><p id="question-explanation-text"></p></details>
+        <div class="answers" id="answers"></div>
+        <button class="button back-button" id="quiz-back" type="button"><img src="/assets/quark/buttons/back.svg" alt=""> Back</button>
+        <div class="path-dots" id="path-dots"></div>
+      </section>
+
+      <section class="result-view" id="result-view" hidden>
+        <article class="result-card">
+          <h1 class="match" id="result-name"></h1>
+          <div class="result-switchbar">
+            <button class="button switch-button" id="result-previous" type="button" aria-label="Previous ideology"><img src="/assets/quark/buttons/left.svg" alt=""></button>
+            <img class="flag" id="result-flag" src="/assets/quark/flags/Missing.svg" alt="" width="960" height="640" decoding="async">
+            <button class="button switch-button" id="result-next" type="button" aria-label="Next ideology"><img src="/assets/quark/buttons/right.svg" alt=""></button>
+          </div>
+          <p class="result-description" id="result-description" hidden></p>
+          <blockquote class="quote" id="result-quote"></blockquote>
+          <p class="author" id="result-author"></p>
+          <div class="quote-source" id="result-quote-source" hidden></div>
+          <div class="result-details"><span id="result-family"></span><span id="result-branch"></span></div>
+          <p class="aliases" id="result-aliases"></p>
+        </article>
+        <details class="route-details" id="route-details">
+          <summary id="route-summary">View answer route</summary>
+          <p id="route-context" hidden>Includes the earlier choices leading to your starting question.</p>
+          <ol class="route-timeline" id="route-timeline"></ol>
+        </details>
+        <div class="result-actions">
+          <button class="button back-button" id="result-back" type="button"><img src="/assets/quark/buttons/back.svg" alt=""> Back</button>
+          <button class="button back-button retake-button" type="button" data-action="start"><img src="/assets/quark/buttons/start.svg" alt=""> Retake</button>
+        </div>
+      </section>
+
+      <section class="catalog-view" id="results-view" hidden>
+        <p class="eyebrow">Complete ideology index</p>
+        <h1 class="notice">All <span data-count="ideologies">201</span> results</h1>
+        <div class="filters">
+          <label class="search-label"><span>Search ideologies, people or keywords</span><input id="search-filter" type="search" placeholder="Search…"></label>
+          <label><span>Property branch</span><select id="branch-filter"><option value="all">Both branches</option><option value="Pro-private property">Pro-private property</option><option value="Anti-private property">Anti-private property</option></select></label>
+          <label><span>Ideology family</span><select id="family-filter"><option value="all">All families</option></select></label>
+        </div>
+        <p class="catalog-count" id="catalog-count" role="status" aria-atomic="true">Loading results…</p>
+        <div class="result-grid" id="result-grid"></div>
+        <p class="empty-state" id="empty-state" hidden>No ideology matches those filters.</p>
+      </section>
+
+      <section class="tree-view" id="tree-view" hidden>
+        <div id="treeInfo">
+          <div class="treeInfoHalf">
+              <h2 class="tip" id="matchesTip">All 201 possible results, alphabetically</h2>
+            <select id="matches" aria-label="Select a result to view"><option value="">Select result to view...</option></select>
+          </div>
+          <div class="treeInfoHalf">
+            <h2 class="tip">Tree legend</h2>
+            <div id="legend" aria-label="Tree legend">
+              <div class="legendBox" id="startBox">Start</div>
+              <div class="legendBox" id="questionBox">Question</div>
+              <div class="legendBox" id="resultBox">Result</div>
+            </div>
+          </div>
+        </div>
+        <p class="tree-instructions">Select a question to start there, or a result to open its card. Scroll to explore each tree.</p>
+        <p id="tree-load-status" role="status" aria-atomic="true"></p>
+        <button class="button" id="tree-retry" type="button" hidden>Try again</button>
+        <h2 class="notice" data-tree-diagram hidden>Pro-private property tree</h2>
+        <div class="tree-scroll" data-tree-diagram hidden role="region" tabindex="0" aria-label="Scrollable pro-private property decision tree">
+          <div class="tree" id="tree1" aria-label="Pro-private property decision tree"></div>
+        </div>
+        <h2 class="notice" data-tree-diagram hidden>Anti-private property tree</h2>
+        <div class="tree-scroll" data-tree-diagram hidden role="region" tabindex="0" aria-label="Scrollable anti-private property decision tree">
+          <div class="tree" id="tree2" aria-label="Anti-private property decision tree"></div>
+        </div>
+        <button class="button back-button" type="button" data-view="home"><img src="/assets/quark/buttons/back.svg" alt=""> Back</button>
+      </section>
+
+      <section class="about-view" id="about-view" hidden>
+        <p class="eyebrow">About the sorter</p>
+        <h1 class="notice">One tree, many traditions</h1>
+        <div class="about-grid">
+          <article><h2>How does it work?</h2><p>Each answer narrows the remaining possibilities. Every completed quiz ends at one result, and each result has one complete route through the tree. You can inspect that route on the result card.</p></article>
+          <article><h2>How are distinctions handled?</h2><p>Spelling variants are grouped under one result. Political traditions can overlap, and some results represent a particular author, organization or period. A route shows this game’s distinctions; it does not establish that every adherent would answer the same way.</p></article>
+          <article><h2>What exactly is here?</h2><p><span data-count="ideologies">201</span> distinct outcomes, <span data-count="questions">182</span> reachable questions and <span data-count="routes">201</span> complete routes. Every result has artwork, a quotation or description, a family, a property branch and an inspectable answer path.</p></article>
+          <article><h2>Important limitation</h2><p>This is an exploratory classification game, not a validated psychological or political-science measure. Its labels and distinctions necessarily simplify contested traditions; inclusion does not imply endorsement.</p></article>
+        </div>
+        <article class="license-panel">
+          <h2>License and source</h2>
+          <p>This work is distributed under the GNU GPL v3. <a href="/source/ideology-sorter-source.zip">Download the corresponding source</a>.</p>
+          <p>Selected answer icons: <a href="https://fontawesome.com/">Font Awesome Free</a> by Fonticons, Inc. (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>), adapted for color and spacing.</p>
+        </article>
+      </section>
+
+      <footer>
+        <p>Ideology Sorter · GPL-3.0 · 2026</p>
+      </footer>
+    </main>
+    <noscript>This site requires JavaScript to run the sorter.</noscript>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+  <title>The present cycle of struggle</title>
+  <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 24a21 21 0 0 0-35-7l-5 5M12 11v11h11M12 40a21 21 0 0 0 35 7l5-5M41 42h11v11"/>
+  </g>
+  <circle fill="#fff" cx="32" cy="32" r="6"/>
+</svg>

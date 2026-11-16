@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+  <title>Different approaches developed from a common starting point</title>
+  <g fill="#fff">
+    <path d="M28 60V38L10 25v10H3V12h23v7H16l16 12 16-12H38v-7h23v23h-7V25L36 38v22Z"/>
+    <path d="M28 32V13l-8 8-5-5L32 0l17 16-5 5-8-8v19Z"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+  <title>A council gathered around shared everyday life</title>
+  <g fill="#fff">
+    <circle cx="32" cy="7" r="5"/>
+    <path d="M22 21v-3a10 5 0 0 1 20 0v3Z"/>
+    <circle cx="7" cy="38" r="5"/><circle cx="57" cy="38" r="5"/>
+    <path d="M0 61V50a7 6 0 0 1 14 0v11Zm50 0V50a7 6 0 0 1 14 0v11ZM16 38l16-14 16 14-5 5-11-10-11 10Z"/>
+    <path d="M22 43l10-9 10 9v18h-7V49h-6v12h-7Z"/>
+  </g>
+</svg>

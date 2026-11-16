@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+  <title>Municipal public power rooted in a community</title>
+  <g fill="#fff">
+    <path d="M10 18 32 3l22 15v7H10Zm5 13h7v13h-7Zm13 0h8v13h-8Zm14 0h7v13h-7Z"/>
+    <circle cx="10" cy="47" r="5"/><circle cx="32" cy="49" r="5"/><circle cx="54" cy="47" r="5"/>
+    <path d="M1 64v-6a9 5 0 0 1 18 0v6Zm22 0v-4a9 5 0 0 1 18 0v4Zm22 0v-6a9 5 0 0 1 18 0v6Z"/>
+  </g>
+</svg>

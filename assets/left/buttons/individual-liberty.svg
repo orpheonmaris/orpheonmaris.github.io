@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+  <title>Protection of individual liberty</title>
+  <path fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" d="m32 5 22 9v17c0 13-9 22-22 28-13-6-22-15-22-28V14Z"/>
+  <g fill="#fff">
+    <circle cx="32" cy="25" r="6"/>
+    <path d="M21 44v-5a11 7 0 0 1 22 0v5Z"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+  <title>A shared program and collective responsibility</title>
+  <path fill="#fff" fill-rule="evenodd" d="M15 2h34v32H15Zm7 7v5h20V9Zm0 11v5h20v-5Z"/>
+  <g fill="#fff">
+    <circle cx="10" cy="41" r="5"/><circle cx="32" cy="43" r="5"/><circle cx="54" cy="41" r="5"/>
+    <path d="M1 61v-9a9 7 0 0 1 18 0v9Zm22 0v-7a9 7 0 0 1 18 0v7Zm22 0v-9a9 7 0 0 1 18 0v9Z"/>
+  </g>
+</svg>

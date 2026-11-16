@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+  <title>Abolition of the state</title>
+  <defs>
+    <mask id="state-cutout" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <path fill="#fff" d="M0 0h64v64H0Z"/>
+      <path fill="none" stroke="#000" stroke-width="13" stroke-linecap="round" d="m7 7 50 50"/>
+    </mask>
+  </defs>
+  <g fill="#fff" mask="url(#state-cutout)">
+    <path d="M32 6A21 21 0 0 0 11 27h42A21 21 0 0 0 32 6ZM6 32h52v7H6ZM5 53h54v7H5Z"/>
+    <path d="M10 39h7v14h-7ZM28 39h8v14h-8ZM47 39h7v14h-7Z"/>
+  </g>
+  <path fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" d="m7 7 50 50"/>
+</svg>

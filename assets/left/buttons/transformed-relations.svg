@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+  <title>Transforming relationships between people</title>
+  <g fill="#fff">
+    <circle cx="21" cy="28" r="5"/><circle cx="43" cy="28" r="5"/>
+    <path d="M12 45v-6a9 6 0 0 1 18 0v6Zm22 0v-6a9 6 0 0 1 18 0v6Z"/>
+    <path d="M3 21V6h43V0l16 10-16 10v-6H11v7Z"/>
+    <path d="M3 21V6h43V0l16 10-16 10v-6H11v7Z" transform="rotate(180 32 32)"/>
+  </g>
+</svg>
