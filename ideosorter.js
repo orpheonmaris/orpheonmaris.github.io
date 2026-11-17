@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const assetVersion = "U1.102";
+  const assetVersion = "U1.103";
   const byId = (id) => document.getElementById(id);
   const viewNames = ["home", "quiz", "result", "results", "tree", "about"];
   const ambientProperties = ["--ambient-a", "--ambient-b", "--ambient-c", "--ambient-d", "--ambient-e", "--ambient-f"];
