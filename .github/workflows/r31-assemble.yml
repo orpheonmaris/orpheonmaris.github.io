@@ -1,0 +1,28 @@
+name: Assemble approved R31 source archive on isolated draft
+on:
+  push:
+    branches:
+      - draft/e1-r31-approved
+permissions:
+  contents: write
+jobs:
+  assemble-source:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify and finalize exact R31 source archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .r31-tmp/part-* > source/ideology-sorter-source.zip
+          echo '641657fc395e66cf48fa8b545f45649f77268486c13b9c97a35064846a80fb0b  source/ideology-sorter-source.zip' | sha256sum -c -
+          rm -rf .r31-tmp
+          rm .github/workflows/r31-assemble.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Finalize exact approved E1-R31-occult-fork-20261116 source archive'
+          git push origin HEAD:draft/e1-r31-approved
