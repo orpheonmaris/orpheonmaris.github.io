@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const assetVersion = "U1.106";
+  const assetVersion = "U1.107";
   const byId = (id) => document.getElementById(id);
   const viewNames = ["home", "quiz", "result", "results", "tree", "about"];
   const ambientProperties = ["--ambient-a", "--ambient-b", "--ambient-c", "--ambient-d", "--ambient-e", "--ambient-f"];
@@ -56,8 +56,8 @@
     "q_constitution:the state should not exist": "/assets/left/buttons/no-state.svg",
     "q_guilds:through market competition": "/assets/left/buttons/trade.svg",
     "q_guilds:through collective coordination": "/assets/quark/buttons/cooperation.svg",
-    "q_control:pleasure and conditioning": "/assets/editorial/buttons/pleasure-conditioning.svg",
-    "q_control:surveillance and terror": "/assets/quark/buttons/terror.svg",
+    "q_regimeGoal:power for its own sake": "/assets/quark/buttons/politics.svg",
+    "q_regimeGoal:compulsory rational happiness": "/assets/quark/buttons/wisdom.svg",
     "q_nsOrganizationalTask:shared communist program and collective responsibility": "/assets/icons/solid/clipboard-list.svg",
     "q_nsOrganizationalTask:organization and strategy rooted in popular movements": "/assets/icons/solid/diagram-project.svg",
     "q_nsTendencies:combine their strongest elements": "/assets/quark/buttons/variety.svg",
