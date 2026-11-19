@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const assetVersion = "U1.108";
+  const assetVersion = "U1.109";
   const byId = (id) => document.getElementById(id);
   const viewNames = ["home", "quiz", "result", "results", "tree", "about"];
   const ambientProperties = ["--ambient-a", "--ambient-b", "--ambient-c", "--ambient-d", "--ambient-e", "--ambient-f"];
@@ -51,9 +51,8 @@
   // See AGENTS.md before adding an icon. Do not restore keyword-based guesses.
   const answerIconOverrides = {
     "q_strongmanLegit:direct popular mandate": "/assets/quark/buttons/election.svg",
-    "q_constitution:to pursue public goals": "/assets/quark/buttons/parliament.svg",
-    "q_constitution:to protect market exchange": "/assets/left/buttons/trade.svg",
-    "q_constitution:the state should not exist": "/assets/left/buttons/no-state.svg",
+    "q_statePriority:individual liberty": "/assets/left/buttons/individual-liberty.svg",
+    "q_statePriority:wider public goals": "/assets/quark/buttons/politics.svg",
     "q_guilds:through market competition": "/assets/left/buttons/trade.svg",
     "q_guilds:through collective coordination": "/assets/quark/buttons/cooperation.svg",
     "q_regimeGoal:power for its own sake": "/assets/quark/buttons/politics.svg",
