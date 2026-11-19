@@ -1,0 +1,4653 @@
+{
+  "draft_id": "E1-R42-gateway-adversarial-profile-audit-20261118",
+  "status": "PRIVATE DRAFT — no production changes authorized by recurrence of master prompt",
+  "round": 42,
+  "generated_date": "2026-11-18",
+  "verified_baseline": {
+    "git_commit": "16073f96105f4b8c652576d721e18ee7d90fc5fa",
+    "quiz_blob": "59401a7cf6cb1b32a07df03428c1f2d663b1bc27",
+    "display_version": "U1.108"
+  },
+  "scope": {
+    "questions": 183,
+    "answer_commitments": 383,
+    "unique_results": 201,
+    "gate_descendants": 96,
+    "gate_options": {
+      "To pursue public goals": 78,
+      "To protect market exchange": 8,
+      "The state should not exist": 10
+    },
+    "state_functions_options": {
+      "Elected officials": 25,
+      "Strongman": 27,
+      "Sovereign": 26
+    },
+    "minarchy_options": {
+      "Yes": 2,
+      "No": 6
+    }
+  },
+  "classification_status": "OPEN — not independently certified",
+  "forks": {
+    "q_constitution": {
+      "status": "DISPUTED",
+      "question": "When should the state generally intervene in public life?",
+      "problem": "Government protection of market exchange is itself a public goal; other public goals are endorsed by several outcomes assigned to the market-protection choice. State abolition is a separate dimension.",
+      "descendants": 96,
+      "counterexamples": [
+        "Libertarian distributism",
+        "Social libertarianism",
+        "Neolibertarianism",
+        "Geolibertarianism"
+      ],
+      "source_ids": [
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S09"
+      ]
+    },
+    "q_minarchy": {
+      "status": "DISPUTED",
+      "question": "Should the state be strictly limited to courts, property protection and defense?",
+      "descendants": 8,
+      "supported_profiles": 5,
+      "contradicted_profiles": 1,
+      "undetermined_profiles": 2,
+      "counterexample": "Right-libertarianism: 2016 US Libertarian Party platform",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09"
+      ]
+    },
+    "q_stateFunctions": {
+      "status": "DISPUTED",
+      "question": "Who should exercise the state's governing authority?",
+      "descendants": 78,
+      "counterexamples": [
+        "Stakeholder capitalism",
+        "State capitalism"
+      ],
+      "source_ids": [
+        "S10",
+        "S11",
+        "S12",
+        "S13"
+      ],
+      "problem": "Strongman rule is not constitutive of these economic arrangements; categories Elected officials, Strongman, Sovereign do not all specify the same dimension of authority."
+    }
+  },
+  "minarchy_profiles": [
+    {
+      "name": "Objectivism",
+      "representative": "Ayn Rand (1963)",
+      "source_ids": [
+        "S01"
+      ],
+      "source_based_answer": "Yes",
+      "classification": "supported",
+      "rationale": "Police, armed forces and courts protect individual rights; the affirmative state-limit answer is independently corroborated.",
+      "site_answer": "Yes"
+    },
+    {
+      "name": "Minarchism",
+      "representative": "Robert Nozick (1974)",
+      "source_ids": [
+        "S02"
+      ],
+      "source_based_answer": "Yes",
+      "classification": "supported",
+      "rationale": "The minimal rights-protection state is Nozick’s defining account.",
+      "site_answer": "Yes"
+    },
+    {
+      "name": "Libertarian distributism",
+      "representative": "Wes Whitman (2021)",
+      "source_ids": [
+        "S03"
+      ],
+      "source_based_answer": "No",
+      "classification": "supported",
+      "rationale": "The programme explicitly permits state support to build cooperative institutions.",
+      "site_answer": "No"
+    },
+    {
+      "name": "Geolibertarianism",
+      "representative": "Fred Foldvary (2009)",
+      "source_ids": [
+        "S04"
+      ],
+      "source_based_answer": "Undetermined",
+      "classification": "uncertain",
+      "rationale": "Government land-rent collection and publicly financed functions coexist with rights-based dividends and private alternatives; a forced No is not fully established.",
+      "site_answer": "No"
+    },
+    {
+      "name": "Social libertarianism",
+      "representative": "Matt Zwolinski (2015)",
+      "source_ids": [
+        "S05"
+      ],
+      "source_based_answer": "No",
+      "classification": "supported",
+      "rationale": "A state-financed unconditional basic income goes beyond the stated minimal-state functions.",
+      "site_answer": "No"
+    },
+    {
+      "name": "Neolibertarianism",
+      "representative": "R. J. Rummel (2005)",
+      "source_ids": [
+        "S06"
+      ],
+      "source_based_answer": "No",
+      "classification": "supported",
+      "rationale": "The programme affirmatively supports overseas intervention for regime change/democidal prevention beyond strictly territorial defense.",
+      "site_answer": "No"
+    },
+    {
+      "name": "Paleolibertarianism",
+      "representative": "Lew Rockwell (1990)",
+      "source_ids": [
+        "S07"
+      ],
+      "source_based_answer": "Undetermined",
+      "classification": "uncertain",
+      "rationale": "Opposition to welfare and statism does not entail rejection of courts, property protection and defense as an upper bound for state functions.",
+      "site_answer": "No"
+    },
+    {
+      "name": "Right-libertarianism",
+      "representative": "US Libertarian Party platform (2016)",
+      "source_ids": [
+        "S08",
+        "S09"
+      ],
+      "source_based_answer": "Yes",
+      "classification": "contradiction",
+      "rationale": "The platform explicitly affirms individual-rights protection as government’s sole purpose, while the site requires No for this result.",
+      "site_answer": "No"
+    }
+  ],
+  "adjacent_counterexamples": [
+    {
+      "name": "Stakeholder capitalism",
+      "fork": "q_stateFunctions",
+      "site_answer": "Strongman",
+      "independent_sources": [
+        "S10",
+        "S13"
+      ],
+      "status": "source-backed classification counterexample",
+      "reason": "The WEF model is expressly compatible with dispersed stakeholder influence, checks and balances; no personal dictator is required to endorse it."
+    },
+    {
+      "name": "State capitalism",
+      "fork": "q_stateFunctions",
+      "site_answer": "Strongman",
+      "independent_sources": [
+        "S11",
+        "S12"
+      ],
+      "status": "source-backed classification counterexample",
+      "reason": "The scholarly category covers state-led capitalist economies under differing institutional and electoral systems, with Norway an explicit counterexample to strongman necessity."
+    }
+  ],
+  "sources": {
+    "S01": {
+      "author": "Ayn Rand",
+      "work": "The Nature of Government",
+      "year": 1963,
+      "kind": "primary text (republished by Ayn Rand Institute)",
+      "url": "https://ari.aynrand.org/issues/government-and-business/individual-rights/pov-mans-rights-the-nature-of-government/",
+      "location": "Government functions: police, armed forces, and law courts",
+      "evidence": "The legitimate state enforces individual rights through police, armed forces, and courts; rights extend beyond protecting market trade."
+    },
+    "S02": {
+      "author": "Robert Nozick",
+      "work": "Anarchy, State, and Utopia",
+      "year": 1974,
+      "kind": "scholarly interpretation of a primary philosophical book",
+      "url": "https://plato.stanford.edu/entries/nozick-political/",
+      "location": "Opening overview of the minimal state",
+      "evidence": "Nozick justifies a minimal government confined to rights protection."
+    },
+    "S03": {
+      "author": "Wes Whitman",
+      "work": "Libertarian Distributism?",
+      "year": 2021,
+      "kind": "primary political proposal",
+      "url": "https://isocracy.org/content/libertarian-distributism",
+      "location": "Paragraphs on cooperatives, subsidies, guilds, and minimum income",
+      "evidence": "The proposed libertarian-distributist programme explicitly allows subsidy or sanction of cooperatives and a welfare-state model."
+    },
+    "S04": {
+      "author": "Fred Foldvary",
+      "work": "What Should Be Public, and What Should Be Private?",
+      "year": 2009,
+      "kind": "primary policy essay",
+      "url": "https://www.progress.org/articles/what-should-be-public-and-what-should-be-private/",
+      "location": "Paragraphs on land rent, resident dividends, governmental property, and voluntary provision",
+      "evidence": "Individual entitlement to land-rent dividends and government collection of some rents coexist with strong preference for contractual provision; the scope of legitimate state activity is not settled by this text alone."
+    },
+    "S05": {
+      "author": "Matt Zwolinski",
+      "work": "Property Rights, Coercion, and the Welfare State: The Libertarian Case for a Basic Income for All",
+      "year": 2015,
+      "kind": "peer-reviewed philosophical argument by representative",
+      "url": "https://digital.sandiego.edu/law_philosophy_scholarship/184/",
+      "location": "Abstract and argument for libertarian justification of UBI",
+      "evidence": "A libertarian defense of property rights can support publicly financed universal basic income."
+    },
+    "S06": {
+      "author": "R. J. Rummel",
+      "work": "Libertarianism Is Out — Neolibertarian Is In",
+      "year": 2005,
+      "kind": "primary self-description (2008 reproduction)",
+      "url": "https://democraticpeace.wordpress.com/2008/12/15/libertarianism-is-out-neolibertarian-is-in/",
+      "location": "Opening paragraphs on domestic liberty and foreign intervention",
+      "evidence": "Supports military intervention to prevent mass killing and promote democracy beyond national territorial defense."
+    },
+    "S07": {
+      "author": "Llewellyn H. Rockwell Jr.",
+      "work": "The Case for Paleolibertarianism",
+      "year": 1990,
+      "kind": "primary manifesto (2021 reproduction)",
+      "url": "https://rothbardrockwellreport.substack.com/p/the-case-for-paleolibertarianism",
+      "location": "A Culturally Effective Libertarianism for America; Authority & Coercion",
+      "evidence": "Defends markets, opposes welfare/garrison state, and distinguishes voluntary social authority from state coercion. Does not establish that all paleolibertarians reject strict rights-limited government."
+    },
+    "S08": {
+      "author": "Libertarian Party (United States)",
+      "work": "National Platform, May 2016",
+      "year": 2016,
+      "kind": "primary political platform",
+      "url": "https://www.lpedia.org/wiki/Document:National_Platform_2016",
+      "location": "§§1.7, 2.0, 3.0–3.2",
+      "evidence": "Government, if it exists, should protect individual rights; courts and national defense are included, making a Yes response to q_minarchy supported by the platform."
+    },
+    "S09": {
+      "author": "Anonymous (SEP specialist entry)",
+      "work": "Libertarianism",
+      "year": 2023,
+      "kind": "peer-reviewed specialist reference",
+      "url": "https://plato.stanford.edu/entries/libertarianism/",
+      "location": "Introduction; Libertarianism, Left and Right",
+      "evidence": "Right-libertarianism is a broad family including variations in property, rights and legitimate state authority; minarchism is not its logical opposite."
+    },
+    "S10": {
+      "author": "Klaus Schwab and Peter Vanham",
+      "work": "Stakeholder capitalism, shareholder capitalism and state capitalism",
+      "year": 2021,
+      "kind": "primary programmatic account",
+      "url": "https://www.weforum.org/stories/forum-in-focus/what-is-the-difference-between-stakeholder-capitalism-shareholder-capitalism-and-state-capitalism-davos-agenda-2021",
+      "location": "Stakeholder capitalism: checks and balances and role of government",
+      "evidence": "Presents stakeholder capitalism through shared interests, checks and balances, and preventing domination by any stakeholder—not through a necessary strongman government."
+    },
+    "S11": {
+      "author": "David Lane",
+      "work": "The Challenge of State Capitalisms",
+      "year": 2023,
+      "kind": "specialist academic chapter",
+      "url": "https://academic.oup.com/policy-press-scholarship-online/book/55414/chapter/436037219",
+      "location": "Introduction; State capitalism definition and examples",
+      "evidence": "State capitalism is an economic system present in diverse political regimes, including Norway; autocratic personal leadership is not a definitional prerequisite."
+    },
+    "S12": {
+      "author": "Ilias Alami and Adam D. Dixon",
+      "work": "State capitalism(s) redux? Theories, tensions, controversies",
+      "year": 2019,
+      "kind": "peer-reviewed political-economy article",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/1024529419881949",
+      "location": "Abstract",
+      "evidence": "The concept of state capitalism covers diverse policy instruments and institutional forms rather than a single strongman polity."
+    },
+    "S13": {
+      "author": "Klaus Schwab",
+      "work": "Davos Manifesto 2020",
+      "year": 2019,
+      "kind": "primary programmatic statement",
+      "url": "https://www.weforum.org/stories/stakeholder-capitalism/davos-manifesto-2020-the-universal-purpose-of-a-company-in-the-fourth-industrial-revolution",
+      "location": "Section A: purpose of a company",
+      "evidence": "Stakeholder duties apply to companies in any compatible political system; they do not presuppose strongman rule."
+    }
+  },
+  "restructuring_options": [
+    {
+      "id": "A",
+      "description": "Make state existence a dedicated yes/no gate, then classify 86 state-accepting outcomes by source-backed limits and institutions.",
+      "status": "conceptually promising, not a deployable solution",
+      "required_proof": "A new partition for all 86 outcomes must survive counterexamples; nested broad vs narrow result labels require special handling."
+    },
+    {
+      "id": "B",
+      "description": "Only rename the three current q_constitution answers to broader public purposes, rights enforcement, no state.",
+      "status": "REJECTED",
+      "required_proof": "Fails for Libertarian distributism, Social libertarianism, Geolibertarianism, Neolibertarianism and the LP-2016 Right-libertarianism example."
+    },
+    {
+      "id": "C",
+      "description": "Move the eight-result libertarian subtree under q_stateFunctions without changing its internal fork.",
+      "status": "REJECTED as an isolated fix",
+      "required_proof": "The underlying q_minarchy contradiction persists, and political office/legitimacy dimensions overlap."
+    },
+    {
+      "id": "D",
+      "description": "Treat broad political families and narrower state-doctrines as different taxonomic levels instead of competing terminal leaves.",
+      "status": "REQUIRES FURTHER DESIGN",
+      "required_proof": "No mechanically unique but doctrinally dishonest forced split; maintain user-facing game clarity and frozen scope."
+    }
+  ],
+  "mechanical_checks": {
+    "graph_connectivity": "PASS",
+    "questions": 183,
+    "answers": 383,
+    "distinct_result_routes": 201,
+    "complete_routes_for_gate": 96
+  },
+  "research_checks": {
+    "independent_fork_profiles_tested": 8,
+    "profile_answer_agreements": 5,
+    "documented_contradictions": 1,
+    "profile_answer_undetermined": 2,
+    "additional_27_branch_counterexamples": 2,
+    "whole_routes_independently_certified_added": 0
+  },
+  "cumulative_record": {
+    "inherited_R36_source_reviewed_questions": 16,
+    "inherited_R36_answer_commitments": 32,
+    "inherited_R36_cards_audited": 55,
+    "inherited_R36_full_independent_profiles": 2,
+    "R42_forks_examined": [
+      "q_constitution",
+      "q_minarchy",
+      "q_stateFunctions"
+    ],
+    "unique_cumulative_review_counts_NOT_reconciled": true
+  },
+  "next_batch": {
+    "priority": "Rebuild q_constitution and q_stateFunctions as independent authority/role dimensions; test candidate against all 86 state-accepting outcomes, not only 8 libertarian leaves.",
+    "acceptance_criteria": [
+      "No known 2016 Libertarian Party contradiction",
+      "No forced strongman answer for pluralistic stakeholder capitalism",
+      "Explicit treatment of right-libertarianism as overlapping with minarchism",
+      "96/96 gateway routes remain connected",
+      "Source-supported neighbor separation across the 25 elected, 27 strongman, 26 sovereign subtrees"
+    ]
+  },
+  "full_96_descendant_inventory": [
+    {
+      "result": "Futarchy",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 4
+    },
+    {
+      "result": "Social distributism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_distNeeds",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Distributism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_distNeeds",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Social georgism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_geoWelf",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Georgism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_geoWelf",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Social Credit",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Dirigism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_safetyNet",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_deuxCentQuaranteSixFromages",
+          "answer": "State officials"
+        }
+      ],
+      "current_route_depth": 10
+    },
+    {
+      "result": "Paternalistic conservatism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_safetyNet",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_deuxCentQuaranteSixFromages",
+          "answer": "Social elites"
+        }
+      ],
+      "current_route_depth": 10
+    },
+    {
+      "result": "Mesoconservatism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_safetyNet",
+          "answer": "No"
+        },
+        {
+          "id": "q_conIntervention",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 10
+    },
+    {
+      "result": "Classical conservatism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_safetyNet",
+          "answer": "No"
+        },
+        {
+          "id": "q_conIntervention",
+          "answer": "No"
+        },
+        {
+          "id": "q_con",
+          "answer": "Institutions"
+        }
+      ],
+      "current_route_depth": 11
+    },
+    {
+      "result": "National conservatism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_safetyNet",
+          "answer": "No"
+        },
+        {
+          "id": "q_conIntervention",
+          "answer": "No"
+        },
+        {
+          "id": "q_con",
+          "answer": "Identity"
+        },
+        {
+          "id": "q_identityLevel",
+          "answer": "National"
+        }
+      ],
+      "current_route_depth": 12
+    },
+    {
+      "result": "Paleoconservatism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_safetyNet",
+          "answer": "No"
+        },
+        {
+          "id": "q_conIntervention",
+          "answer": "No"
+        },
+        {
+          "id": "q_con",
+          "answer": "Identity"
+        },
+        {
+          "id": "q_identityLevel",
+          "answer": "Regional"
+        }
+      ],
+      "current_route_depth": 12
+    },
+    {
+      "result": "Conservative Liberalism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_safetyNet",
+          "answer": "No"
+        },
+        {
+          "id": "q_conIntervention",
+          "answer": "No"
+        },
+        {
+          "id": "q_con",
+          "answer": "Values"
+        },
+        {
+          "id": "q_liberalPriority",
+          "answer": "Individual liberty"
+        }
+      ],
+      "current_route_depth": 12
+    },
+    {
+      "result": "Liberal conservatism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_safetyNet",
+          "answer": "No"
+        },
+        {
+          "id": "q_conIntervention",
+          "answer": "No"
+        },
+        {
+          "id": "q_con",
+          "answer": "Values"
+        },
+        {
+          "id": "q_liberalPriority",
+          "answer": "Traditional social norms"
+        }
+      ],
+      "current_route_depth": 12
+    },
+    {
+      "result": "Social corporatism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "No"
+        },
+        {
+          "id": "q_needs",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_organizedInterests",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_socCorp",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 11
+    },
+    {
+      "result": "Social democracy",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "No"
+        },
+        {
+          "id": "q_needs",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_organizedInterests",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_socCorp",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 11
+    },
+    {
+      "result": "Jacobinism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "No"
+        },
+        {
+          "id": "q_needs",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_organizedInterests",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 10
+    },
+    {
+      "result": "Ordoliberalism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "No"
+        },
+        {
+          "id": "q_needs",
+          "answer": "No"
+        },
+        {
+          "id": "q_regulation",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_fairness",
+          "answer": "Fair competition"
+        }
+      ],
+      "current_route_depth": 11
+    },
+    {
+      "result": "Tripartite corporatism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "No"
+        },
+        {
+          "id": "q_needs",
+          "answer": "No"
+        },
+        {
+          "id": "q_regulation",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_fairness",
+          "answer": "Fair outcomes"
+        },
+        {
+          "id": "q_tripartite",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 12
+    },
+    {
+      "result": "Social liberalism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "No"
+        },
+        {
+          "id": "q_needs",
+          "answer": "No"
+        },
+        {
+          "id": "q_regulation",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_fairness",
+          "answer": "Fair outcomes"
+        },
+        {
+          "id": "q_tripartite",
+          "answer": "No"
+        },
+        {
+          "id": "q_liberalJobs",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 13
+    },
+    {
+      "result": "Progressive liberalism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "No"
+        },
+        {
+          "id": "q_needs",
+          "answer": "No"
+        },
+        {
+          "id": "q_regulation",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_fairness",
+          "answer": "Fair outcomes"
+        },
+        {
+          "id": "q_tripartite",
+          "answer": "No"
+        },
+        {
+          "id": "q_liberalJobs",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 13
+    },
+    {
+      "result": "National liberalism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "No"
+        },
+        {
+          "id": "q_needs",
+          "answer": "No"
+        },
+        {
+          "id": "q_regulation",
+          "answer": "No"
+        },
+        {
+          "id": "q_nationalLiberalism",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 11
+    },
+    {
+      "result": "Third way",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "No"
+        },
+        {
+          "id": "q_needs",
+          "answer": "No"
+        },
+        {
+          "id": "q_regulation",
+          "answer": "No"
+        },
+        {
+          "id": "q_nationalLiberalism",
+          "answer": "No"
+        },
+        {
+          "id": "q_mobility",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 12
+    },
+    {
+      "result": "Neoliberalism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "No"
+        },
+        {
+          "id": "q_needs",
+          "answer": "No"
+        },
+        {
+          "id": "q_regulation",
+          "answer": "No"
+        },
+        {
+          "id": "q_nationalLiberalism",
+          "answer": "No"
+        },
+        {
+          "id": "q_mobility",
+          "answer": "No"
+        },
+        {
+          "id": "q_hegemony",
+          "answer": "Economic leverage"
+        }
+      ],
+      "current_route_depth": 13
+    },
+    {
+      "result": "Neoconservatism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Elected officials",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Elected officials"
+        },
+        {
+          "id": "q_futarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_dist",
+          "answer": "No"
+        },
+        {
+          "id": "q_lvt",
+          "answer": "No"
+        },
+        {
+          "id": "q_creditDividend",
+          "answer": "No"
+        },
+        {
+          "id": "q_trad",
+          "answer": "No"
+        },
+        {
+          "id": "q_needs",
+          "answer": "No"
+        },
+        {
+          "id": "q_regulation",
+          "answer": "No"
+        },
+        {
+          "id": "q_nationalLiberalism",
+          "answer": "No"
+        },
+        {
+          "id": "q_mobility",
+          "answer": "No"
+        },
+        {
+          "id": "q_hegemony",
+          "answer": "Military readiness"
+        }
+      ],
+      "current_route_depth": 13
+    },
+    {
+      "result": "Legionarism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_legionaryRenewal",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Nazi maoism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_legionaryRenewal",
+          "answer": "No"
+        },
+        {
+          "id": "q_naziLarp",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Siegism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_legionaryRenewal",
+          "answer": "No"
+        },
+        {
+          "id": "q_naziLarp",
+          "answer": "No"
+        },
+        {
+          "id": "q_siegeAcceleration",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 8
+    },
+    {
+      "result": "Esoteric Nazism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_legionaryRenewal",
+          "answer": "No"
+        },
+        {
+          "id": "q_naziLarp",
+          "answer": "No"
+        },
+        {
+          "id": "q_siegeAcceleration",
+          "answer": "No"
+        },
+        {
+          "id": "q_raceLarp",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 9
+    },
+    {
+      "result": "Agrarian nazism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_legionaryRenewal",
+          "answer": "No"
+        },
+        {
+          "id": "q_naziLarp",
+          "answer": "No"
+        },
+        {
+          "id": "q_siegeAcceleration",
+          "answer": "No"
+        },
+        {
+          "id": "q_raceLarp",
+          "answer": "No"
+        },
+        {
+          "id": "q_artaman",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 10
+    },
+    {
+      "result": "National socialism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_legionaryRenewal",
+          "answer": "No"
+        },
+        {
+          "id": "q_naziLarp",
+          "answer": "No"
+        },
+        {
+          "id": "q_siegeAcceleration",
+          "answer": "No"
+        },
+        {
+          "id": "q_raceLarp",
+          "answer": "No"
+        },
+        {
+          "id": "q_artaman",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 10
+    },
+    {
+      "result": "Strasserism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_palingenesis",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_feudalRebirth",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 8
+    },
+    {
+      "result": "Clerical Fascism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_palingenesis",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_feudalRebirth",
+          "answer": "No"
+        },
+        {
+          "id": "q_fashClergy",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 9
+    },
+    {
+      "result": "Fascism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_palingenesis",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_feudalRebirth",
+          "answer": "No"
+        },
+        {
+          "id": "q_fashClergy",
+          "answer": "No"
+        },
+        {
+          "id": "q_fascistInstitution",
+          "answer": "A restored mythical past"
+        }
+      ],
+      "current_route_depth": 10
+    },
+    {
+      "result": "Fascist Futurism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_palingenesis",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_feudalRebirth",
+          "answer": "No"
+        },
+        {
+          "id": "q_fashClergy",
+          "answer": "No"
+        },
+        {
+          "id": "q_fascistInstitution",
+          "answer": "A radical technological future"
+        }
+      ],
+      "current_route_depth": 10
+    },
+    {
+      "result": "World State (Brave New World)",
+      "family": "Fictional regimes",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_palingenesis",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Neosocialism",
+      "family": "Socialist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_nationalEconomicPlan",
+          "answer": "A national production plan"
+        },
+        {
+          "id": "q_planPurpose",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 9
+    },
+    {
+      "result": "Developmentalism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_nationalEconomicPlan",
+          "answer": "A national production plan"
+        },
+        {
+          "id": "q_planPurpose",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 9
+    },
+    {
+      "result": "State corporatism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_nationalEconomicPlan",
+          "answer": "Organized occupational interests"
+        },
+        {
+          "id": "q_corpoFocus",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 9
+    },
+    {
+      "result": "Yellow socialism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_nationalEconomicPlan",
+          "answer": "Organized occupational interests"
+        },
+        {
+          "id": "q_corpoFocus",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 9
+    },
+    {
+      "result": "National distributism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "No"
+        },
+        {
+          "id": "q_natDist",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 8
+    },
+    {
+      "result": "National georgism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "No"
+        },
+        {
+          "id": "q_natDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_nationalLandPolicy",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 9
+    },
+    {
+      "result": "Social Autocracy / Social Authoritarianism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "No"
+        },
+        {
+          "id": "q_natDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_nationalLandPolicy",
+          "answer": "No"
+        },
+        {
+          "id": "q_authWelf",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 10
+    },
+    {
+      "result": "Stakeholder capitalism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "No"
+        },
+        {
+          "id": "q_natDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_nationalLandPolicy",
+          "answer": "No"
+        },
+        {
+          "id": "q_authWelf",
+          "answer": "No"
+        },
+        {
+          "id": "q_soe",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_zeBugz",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 12
+    },
+    {
+      "result": "State capitalism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "No"
+        },
+        {
+          "id": "q_natDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_nationalLandPolicy",
+          "answer": "No"
+        },
+        {
+          "id": "q_authWelf",
+          "answer": "No"
+        },
+        {
+          "id": "q_soe",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_zeBugz",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 12
+    },
+    {
+      "result": "Megacorporatocracy",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "No"
+        },
+        {
+          "id": "q_natDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_nationalLandPolicy",
+          "answer": "No"
+        },
+        {
+          "id": "q_authWelf",
+          "answer": "No"
+        },
+        {
+          "id": "q_soe",
+          "answer": "No"
+        },
+        {
+          "id": "q_klepto",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_conglomerate",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 13
+    },
+    {
+      "result": "Corporatocracy",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "No"
+        },
+        {
+          "id": "q_natDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_nationalLandPolicy",
+          "answer": "No"
+        },
+        {
+          "id": "q_authWelf",
+          "answer": "No"
+        },
+        {
+          "id": "q_soe",
+          "answer": "No"
+        },
+        {
+          "id": "q_klepto",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_conglomerate",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 13
+    },
+    {
+      "result": "Autocratic capitalism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_racism",
+          "answer": "No"
+        },
+        {
+          "id": "q_total",
+          "answer": "No"
+        },
+        {
+          "id": "q_corpo",
+          "answer": "No"
+        },
+        {
+          "id": "q_natDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_nationalLandPolicy",
+          "answer": "No"
+        },
+        {
+          "id": "q_authWelf",
+          "answer": "No"
+        },
+        {
+          "id": "q_soe",
+          "answer": "No"
+        },
+        {
+          "id": "q_klepto",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 12
+    },
+    {
+      "result": "Bonapartism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "No"
+        },
+        {
+          "id": "q_strongmanLegit",
+          "answer": "Direct popular mandate"
+        }
+      ],
+      "current_route_depth": 5
+    },
+    {
+      "result": "Personal autocracy",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "No"
+        },
+        {
+          "id": "q_strongmanLegit",
+          "answer": "Charisma"
+        }
+      ],
+      "current_route_depth": 5
+    },
+    {
+      "result": "Stratocracy",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "No"
+        },
+        {
+          "id": "q_strongmanLegit",
+          "answer": "Armed forces"
+        }
+      ],
+      "current_route_depth": 5
+    },
+    {
+      "result": "Patronalism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Strongman",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Strongman"
+        },
+        {
+          "id": "q_pragmaticStrongman",
+          "answer": "No"
+        },
+        {
+          "id": "q_strongmanLegit",
+          "answer": "Connections"
+        }
+      ],
+      "current_route_depth": 5
+    },
+    {
+      "result": "Archeofuturism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_proHeartland",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_proCivilization",
+          "answer": "Technology"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Fourth Political Theory",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_proHeartland",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_proCivilization",
+          "answer": "Mythology"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Integralism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_proHeartland",
+          "answer": "No"
+        },
+        {
+          "id": "q_proSpiritualFunctions",
+          "answer": "Clerics"
+        },
+        {
+          "id": "q_religiousInstitutions",
+          "answer": "The crown and church"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Religious Corporatism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_proHeartland",
+          "answer": "No"
+        },
+        {
+          "id": "q_proSpiritualFunctions",
+          "answer": "Clerics"
+        },
+        {
+          "id": "q_religiousInstitutions",
+          "answer": "Religious occupational bodies"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Superfascism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_proHeartland",
+          "answer": "No"
+        },
+        {
+          "id": "q_proSpiritualFunctions",
+          "answer": "Warriors"
+        },
+        {
+          "id": "q_traditionalElite",
+          "answer": "Rebuilding political authority"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Reactionary Esotericism",
+      "family": "National-authoritarian",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_proHeartland",
+          "answer": "No"
+        },
+        {
+          "id": "q_proSpiritualFunctions",
+          "answer": "Warriors"
+        },
+        {
+          "id": "q_traditionalElite",
+          "answer": "Preserving spiritual independence"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Scholar-bureaucracy",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_proHeartland",
+          "answer": "No"
+        },
+        {
+          "id": "q_proSpiritualFunctions",
+          "answer": "Bureaucrats"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Distributist Reactionaryism",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Inheritance"
+        },
+        {
+          "id": "q_restoration",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_restorationProperty",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Reactionaryism",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Inheritance"
+        },
+        {
+          "id": "q_restoration",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_restorationProperty",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Feudal monarchy",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Inheritance"
+        },
+        {
+          "id": "q_restoration",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignRole",
+          "answer": "Judgment"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Absolute monarchy",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Inheritance"
+        },
+        {
+          "id": "q_restoration",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignRole",
+          "answer": "Commandment"
+        },
+        {
+          "id": "q_absolute",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 8
+    },
+    {
+      "result": "Hereditary Monarchy",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Inheritance"
+        },
+        {
+          "id": "q_restoration",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignRole",
+          "answer": "Commandment"
+        },
+        {
+          "id": "q_absolute",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 8
+    },
+    {
+      "result": "Bismarckism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Inheritance"
+        },
+        {
+          "id": "q_restoration",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignRole",
+          "answer": "Management"
+        },
+        {
+          "id": "q_conservativeInsurance",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 8
+    },
+    {
+      "result": "Cameralism",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Inheritance"
+        },
+        {
+          "id": "q_restoration",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignRole",
+          "answer": "Management"
+        },
+        {
+          "id": "q_conservativeInsurance",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 8
+    },
+    {
+      "result": "Noocracy",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Wisdom"
+        }
+      ],
+      "current_route_depth": 5
+    },
+    {
+      "result": "Theocracy",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "God"
+        },
+        {
+          "id": "q_guelph",
+          "answer": "Spiritual"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Caesaropapism",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "God"
+        },
+        {
+          "id": "q_guelph",
+          "answer": "Temporal"
+        },
+        {
+          "id": "q_temporalReligion",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Divine monarchy",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "God"
+        },
+        {
+          "id": "q_guelph",
+          "answer": "Temporal"
+        },
+        {
+          "id": "q_temporalReligion",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Aristocracy",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Selection"
+        },
+        {
+          "id": "q_electMon",
+          "answer": "Birthright"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Neocameralism",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Selection"
+        },
+        {
+          "id": "q_electMon",
+          "answer": "Share Holding"
+        },
+        {
+          "id": "q_corporatePriority",
+          "answer": "Stable and profitable rule"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Landian Accelerationism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Selection"
+        },
+        {
+          "id": "q_electMon",
+          "answer": "Share Holding"
+        },
+        {
+          "id": "q_corporatePriority",
+          "answer": "Accelerating technological transformation"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Aristotelian timocracy",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Selection"
+        },
+        {
+          "id": "q_electMon",
+          "answer": "Land Ownership"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Platonic timocracy",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Selection"
+        },
+        {
+          "id": "q_electMon",
+          "answer": "Military Honors"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Kraterocracy",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Strength"
+        },
+        {
+          "id": "q_weak",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Combatocracy",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Strength"
+        },
+        {
+          "id": "q_weak",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Schmittianism",
+      "family": "Sovereigntist",
+      "q_constitution_answer": "To pursue public goals",
+      "q_stateFunctions_answer": "Sovereign",
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To pursue public goals"
+        },
+        {
+          "id": "q_stateFunctions",
+          "answer": "Sovereign"
+        },
+        {
+          "id": "q_proOrganic",
+          "answer": "No"
+        },
+        {
+          "id": "q_sovereignType",
+          "answer": "Deciding exceptions to law"
+        }
+      ],
+      "current_route_depth": 5
+    },
+    {
+      "result": "Objectivism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To protect market exchange",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": "Yes",
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To protect market exchange"
+        },
+        {
+          "id": "q_minarchy",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_rationalEgoism",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 4
+    },
+    {
+      "result": "Minarchism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To protect market exchange",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": "Yes",
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To protect market exchange"
+        },
+        {
+          "id": "q_minarchy",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_rationalEgoism",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 4
+    },
+    {
+      "result": "Libertarian distributism",
+      "family": "Liberal, conservative & corporatist",
+      "q_constitution_answer": "To protect market exchange",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": "No",
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To protect market exchange"
+        },
+        {
+          "id": "q_minarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_distBert",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 4
+    },
+    {
+      "result": "Geolibertarianism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To protect market exchange",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": "No",
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To protect market exchange"
+        },
+        {
+          "id": "q_minarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_distBert",
+          "answer": "No"
+        },
+        {
+          "id": "q_singleTax",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 5
+    },
+    {
+      "result": "Social libertarianism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To protect market exchange",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": "No",
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To protect market exchange"
+        },
+        {
+          "id": "q_minarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_distBert",
+          "answer": "No"
+        },
+        {
+          "id": "q_singleTax",
+          "answer": "No"
+        },
+        {
+          "id": "q_ubi",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Neolibertarianism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To protect market exchange",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": "No",
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To protect market exchange"
+        },
+        {
+          "id": "q_minarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_distBert",
+          "answer": "No"
+        },
+        {
+          "id": "q_singleTax",
+          "answer": "No"
+        },
+        {
+          "id": "q_ubi",
+          "answer": "No"
+        },
+        {
+          "id": "q_bertWar",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Paleolibertarianism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To protect market exchange",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": "No",
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To protect market exchange"
+        },
+        {
+          "id": "q_minarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_distBert",
+          "answer": "No"
+        },
+        {
+          "id": "q_singleTax",
+          "answer": "No"
+        },
+        {
+          "id": "q_ubi",
+          "answer": "No"
+        },
+        {
+          "id": "q_bertWar",
+          "answer": "No"
+        },
+        {
+          "id": "q_bertTrad",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 8
+    },
+    {
+      "result": "Right-libertarianism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "To protect market exchange",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": "No",
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "To protect market exchange"
+        },
+        {
+          "id": "q_minarchy",
+          "answer": "No"
+        },
+        {
+          "id": "q_distBert",
+          "answer": "No"
+        },
+        {
+          "id": "q_singleTax",
+          "answer": "No"
+        },
+        {
+          "id": "q_ubi",
+          "answer": "No"
+        },
+        {
+          "id": "q_bertWar",
+          "answer": "No"
+        },
+        {
+          "id": "q_bertTrad",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 8
+    },
+    {
+      "result": "Anarcho-Monarchism",
+      "family": "Anarchist",
+      "q_constitution_answer": "The state should not exist",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "The state should not exist"
+        },
+        {
+          "id": "q_voluntaryMonarch",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 3
+    },
+    {
+      "result": "Avaritionism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "The state should not exist",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "The state should not exist"
+        },
+        {
+          "id": "q_voluntaryMonarch",
+          "answer": "No"
+        },
+        {
+          "id": "q_counterEcon",
+          "answer": "Withdrawal of cooperation"
+        },
+        {
+          "id": "q_withdrawalStrategy",
+          "answer": "Counter-economic trade"
+        },
+        {
+          "id": "q_redMarket",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Agorism",
+      "family": "Anarchist",
+      "q_constitution_answer": "The state should not exist",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "The state should not exist"
+        },
+        {
+          "id": "q_voluntaryMonarch",
+          "answer": "No"
+        },
+        {
+          "id": "q_counterEcon",
+          "answer": "Withdrawal of cooperation"
+        },
+        {
+          "id": "q_withdrawalStrategy",
+          "answer": "Counter-economic trade"
+        },
+        {
+          "id": "q_redMarket",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 6
+    },
+    {
+      "result": "Voluntaryism",
+      "family": "Anarchist",
+      "q_constitution_answer": "The state should not exist",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": null,
+      "source_in_result_card": true,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "The state should not exist"
+        },
+        {
+          "id": "q_voluntaryMonarch",
+          "answer": "No"
+        },
+        {
+          "id": "q_counterEcon",
+          "answer": "Withdrawal of cooperation"
+        },
+        {
+          "id": "q_withdrawalStrategy",
+          "answer": "Nonviolent noncooperation"
+        }
+      ],
+      "current_route_depth": 5
+    },
+    {
+      "result": "Anarcho-distributism",
+      "family": "Anarchist",
+      "q_constitution_answer": "The state should not exist",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "The state should not exist"
+        },
+        {
+          "id": "q_voluntaryMonarch",
+          "answer": "No"
+        },
+        {
+          "id": "q_counterEcon",
+          "answer": "Insurrection"
+        },
+        {
+          "id": "q_anDist",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 5
+    },
+    {
+      "result": "Left-rothbardianism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "The state should not exist",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "The state should not exist"
+        },
+        {
+          "id": "q_voluntaryMonarch",
+          "answer": "No"
+        },
+        {
+          "id": "q_counterEcon",
+          "answer": "Insurrection"
+        },
+        {
+          "id": "q_anDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_landRent",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_coop",
+          "answer": "Yes"
+        }
+      ],
+      "current_route_depth": 7
+    },
+    {
+      "result": "Hoppeanism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "The state should not exist",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "The state should not exist"
+        },
+        {
+          "id": "q_voluntaryMonarch",
+          "answer": "No"
+        },
+        {
+          "id": "q_counterEcon",
+          "answer": "Insurrection"
+        },
+        {
+          "id": "q_anDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_landRent",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_coop",
+          "answer": "No"
+        },
+        {
+          "id": "q_covenant",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_separation",
+          "answer": "Peacefully"
+        }
+      ],
+      "current_route_depth": 9
+    },
+    {
+      "result": "Nilssonianism",
+      "family": "Other pro-property",
+      "q_constitution_answer": "The state should not exist",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "The state should not exist"
+        },
+        {
+          "id": "q_voluntaryMonarch",
+          "answer": "No"
+        },
+        {
+          "id": "q_counterEcon",
+          "answer": "Insurrection"
+        },
+        {
+          "id": "q_anDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_landRent",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_coop",
+          "answer": "No"
+        },
+        {
+          "id": "q_covenant",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_separation",
+          "answer": "Aggressively"
+        }
+      ],
+      "current_route_depth": 9
+    },
+    {
+      "result": "Anarcho-capitalism",
+      "family": "Anarchist",
+      "q_constitution_answer": "The state should not exist",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "The state should not exist"
+        },
+        {
+          "id": "q_voluntaryMonarch",
+          "answer": "No"
+        },
+        {
+          "id": "q_counterEcon",
+          "answer": "Insurrection"
+        },
+        {
+          "id": "q_anDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_landRent",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_coop",
+          "answer": "No"
+        },
+        {
+          "id": "q_covenant",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 8
+    },
+    {
+      "result": "Geoanarchism",
+      "family": "Anarchist",
+      "q_constitution_answer": "The state should not exist",
+      "q_stateFunctions_answer": null,
+      "q_minarchy_answer": null,
+      "source_in_result_card": false,
+      "independent_route_certified_this_round": false,
+      "route": [
+        {
+          "id": "q_privateProperty",
+          "answer": "Yes"
+        },
+        {
+          "id": "q_constitution",
+          "answer": "The state should not exist"
+        },
+        {
+          "id": "q_voluntaryMonarch",
+          "answer": "No"
+        },
+        {
+          "id": "q_counterEcon",
+          "answer": "Insurrection"
+        },
+        {
+          "id": "q_anDist",
+          "answer": "No"
+        },
+        {
+          "id": "q_landRent",
+          "answer": "No"
+        }
+      ],
+      "current_route_depth": 6
+    }
+  ],
+  "prior_ledger_reference": "E1-R41-private/source-evidence-and-gateway-ledger.json; avoid assuming unique R36/R41 review counts are disjoint."
+}
