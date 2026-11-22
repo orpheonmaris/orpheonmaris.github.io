@@ -698,6 +698,7 @@
     element.style.gridTemplateRows = `repeat(${layout.height - 1}, var(--tree-node-height) var(--tree-arrow-size)) var(--tree-node-height)`;
     element.style.position = "relative";
     const locations = new Map(layout.cells.map((cell) => [cell.key, cell]));
+    const nodeButtons = new Map();
     const fragment = document.createDocumentFragment();
 
     for (const item of layout.cells) {
@@ -732,6 +733,7 @@
         cell.append(label);
         makeClickable(cell, () => openResult(item.ideology, "tree"), ideology.family);
       }
+      nodeButtons.set(item.key, cell);
       fragment.append(cell);
     }
 
@@ -748,6 +750,7 @@
     });
     const arrowGroups = new Map();
     const arrows = [];
+    const extendedArrows = [];
     for (const item of layout.cells) {
       if (item.type !== "question") continue;
       const node = data.graph[item.id];
@@ -758,7 +761,10 @@
         const dx = target.column - item.column;
         const dy = target.row - item.row;
         const directionIndex = getDirection(dx, dy);
-        if (directionIndex < 0) throw new Error(`Non-adjacent tree edge from ${item.key} to ${targetKey}`);
+        if (directionIndex < 0) {
+          extendedArrows.push({ from: item.key, to: targetKey, label: choice.label, color: arrowColors[index % arrowColors.length], source: item, target });
+          return;
+        }
         const arrowRow = item.row * 2 + 1 + dy;
         const arrowColumn = item.column * 2 + 1 + dx;
         const stackKey = `${arrowRow}:${arrowColumn}`;
@@ -803,6 +809,82 @@
       arrowLayer.append(arrowCell);
     }
     element.replaceChildren(fragment, arrowLayer);
+    if (extendedArrows.length) {
+      const ns = 'http://www.w3.org/2000/svg';
+      const svgNode = (tag) => document.createElementNS(ns, tag);
+      const drawExtendedArrows = () => {
+        if (!element.getClientRects().length || !element.scrollWidth || !element.scrollHeight) return;
+        arrowLayer.querySelector('.tree-extended-arrows')?.remove();
+        const base = element.getBoundingClientRect();
+        const svg = svgNode('svg');
+        svg.classList.add('tree-extended-arrows');
+        svg.setAttribute('viewBox', '0 0 ' + element.scrollWidth + ' ' + element.scrollHeight);
+        Object.assign(svg.style, { position: 'absolute', inset: '0', width: '100%', height: '100%', pointerEvents: 'none', overflow: 'visible' });
+        for (const edge of extendedArrows) {
+          const from = nodeButtons.get(edge.from)?.getBoundingClientRect();
+          const to = nodeButtons.get(edge.to)?.getBoundingClientRect();
+          if (!from || !to || !from.width || !to.width) continue;
+          const sx = from.left - base.left + from.width / 2;
+          const sy = from.top - base.top + from.height / 2;
+          const tx = to.left - base.left + to.width / 2;
+          const ty = to.top - base.top + to.height / 2;
+          const dy = edge.target.row - edge.source.row;
+          const dx = edge.target.column - edge.source.column;
+          let pathData, tipX, tipY, arrowDirection, labelX, labelY;
+          if (Math.abs(dy) > 1) {
+            const dir = Math.sign(ty - sy);
+            const step = Math.abs((ty - sy) / dy);
+            const channel = ty - dir * step / 2;
+            const start = sy + dir * (from.height / 2 + 2);
+            const end = ty - dir * (to.height / 2 + 2);
+            pathData = 'M ' + sx + ' ' + start + ' L ' + sx + ' ' + channel + ' L ' + tx + ' ' + channel + ' L ' + tx + ' ' + end;
+            tipX = tx; tipY = end; arrowDirection = dir > 0 ? 90 : -90;
+            labelX = (sx + tx) / 2; labelY = channel - 8;
+          } else {
+            const dir = Math.sign(tx - sx) || 1;
+            const step = Math.abs((tx - sx) / (dx || 1));
+            const channel = tx - dir * step / 2;
+            const start = sx + dir * (from.width / 2 + 2);
+            const end = tx - dir * (to.width / 2 + 2);
+            pathData = 'M ' + start + ' ' + sy + ' L ' + channel + ' ' + sy + ' L ' + channel + ' ' + ty + ' L ' + end + ' ' + ty;
+            tipX = end; tipY = ty; arrowDirection = dir > 0 ? 0 : 180;
+            labelX = channel + 7; labelY = (sy + ty) / 2;
+          }
+          const line = svgNode('path');
+          line.setAttribute('d', pathData);
+          line.setAttribute('stroke', edge.color);
+          line.setAttribute('stroke-width', '3');
+          line.setAttribute('stroke-linecap', 'round');
+          line.setAttribute('stroke-linejoin', 'round');
+          line.setAttribute('fill', 'none');
+          svg.append(line);
+          const head = svgNode('polygon');
+          head.setAttribute('points', '0,0 -8,-13 8,-13');
+          head.setAttribute('fill', edge.color);
+          head.setAttribute('transform', 'translate(' + tipX + ' ' + tipY + ') rotate(' + (arrowDirection - 90) + ')');
+          svg.append(head);
+          const text = svgNode('text');
+          text.setAttribute('x', labelX);
+          text.setAttribute('y', labelY);
+          text.setAttribute('text-anchor', 'middle');
+          text.setAttribute('font-size', '13');
+          text.setAttribute('font-weight', '700');
+          text.setAttribute('fill', '#fff');
+          text.setAttribute('stroke', '#111');
+          text.setAttribute('stroke-width', '3');
+          text.setAttribute('paint-order', 'stroke');
+          text.textContent = edge.label;
+          svg.append(text);
+        }
+        arrowLayer.append(svg);
+      };
+      requestAnimationFrame(drawExtendedArrows);
+      if (typeof ResizeObserver !== 'undefined') {
+        const observer = new ResizeObserver(() => requestAnimationFrame(drawExtendedArrows));
+        observer.observe(element);
+        element._extendedArrowObserver = observer;
+      }
+    }
   }
 
   function buildTrees() {

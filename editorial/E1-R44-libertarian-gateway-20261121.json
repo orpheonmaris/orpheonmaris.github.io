@@ -1,0 +1,45 @@
+{
+  "id": "E1-R44-libertarian-gateway-20261121",
+  "status": "published",
+  "edition": "U1.111",
+  "previousEdition": "U1.110",
+  "summary": "Remove the individual-liberty versus public-goals mandatory gate and integrate rights-based social libertarianism, geolibertarianism and libertarian distributism into relevant elected-government economic branches.",
+  "questionsRemoved": [
+    "q_statePriority",
+    "q_distBert",
+    "q_singleTax",
+    "q_ubi"
+  ],
+  "questionsAdded": [
+    "q_domesticScope",
+    "q_distributistMeans",
+    "q_geolibertarianBasis",
+    "q_socialLibertarianBasis"
+  ],
+  "changedRoutes": 89,
+  "unchangedRoutes": 112,
+  "results": 201,
+  "reachableQuestions": 184,
+  "diagram": {
+    "proCells": 185,
+    "antiCells": 199,
+    "collisionCount": 0,
+    "unroutedEdges": 0,
+    "extendedConnectors": [
+      {
+        "side": "pro",
+        "from": "question:q_racism",
+        "to": "question:q_total",
+        "distance": 2
+      }
+    ],
+    "connectorMode": "SVG elbow path with visible answer label"
+  },
+  "scope": "Approved user publication of exact E1-R44 draft. No modifications to live anti-private-property routes.",
+  "sourceLinks": [
+    "https://plato.stanford.edu/entries/libertarianism/",
+    "https://www.progress.org/articles/what-should-be-public-and-what-should-be-private/",
+    "https://isocracy.org/content/libertarian-distributism"
+  ],
+  "notes": "The site remains a forced-choice exploratory sorter, not a psychometrically validated measure. Some libertarian and liberal traditions overlap."
+}

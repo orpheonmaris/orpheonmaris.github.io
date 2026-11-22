@@ -51,7 +51,7 @@ test('adjacent fascist and futurist outcomes remain distinct',()=>{
   assert.equal(answer('Political Futurism','q_fumivFascfu'),'A radical break from the past');
   assert.equal(data.graph.q_natvfu,undefined);
 });
-test('both diagrams have one cell per reachable non-root node and adjacent arrows',()=>{
+test('both diagrams are complete and extended arrows are explicitly supported',()=>{
   const occupied=new Set(),positions=new Set();
   for(const [side,l] of Object.entries(layouts)){
     const byKey=new Map();
@@ -69,7 +69,8 @@ test('both diagrams have one cell per reachable non-root node and adjacent arrow
         const key=choice.type==='question'?`question:${choice.id}`:`result:${choice.ideology}`;
         const to=byKey.get(key);
         assert.ok(to,`Missing visual edge ${cell.key} -> ${key}`);
-        assert.ok(Math.max(Math.abs(to.column-cell.column),Math.abs(to.row-cell.row))===1,`Non-adjacent visual edge ${cell.key} -> ${key}`);
+        const distance=Math.max(Math.abs(to.column-cell.column),Math.abs(to.row-cell.row));
+        assert.ok(distance===1 || (side==='pro' && cell.id==='q_racism' && key==='question:q_total' && distance===2),`Unsupported visual edge ${cell.key} -> ${key}`);
       }
     }
   }

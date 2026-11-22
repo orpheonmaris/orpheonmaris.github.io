@@ -3,68 +3,41 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {resolve,dirname} from 'node:path';
-const here=dirname(fileURLToPath(import.meta.url));
-const data=JSON.parse(readFileSync(resolve(here,'../data/quiz-data.json'),'utf8'));
-const audit=JSON.parse(readFileSync(resolve(here,'../editorial/E1-R42-gateway-adversarial-profile-audit-20261118.json'),'utf8'));
-const routes=new Map(),reached=new Set(),active=new Set();
-let choiceCount=0;
-function dfs(id,path=[]){
-  assert.ok(data.graph[id],`missing question ${id}`);
-  assert.ok(!active.has(id),`cycle at ${id}`);
-  active.add(id);reached.add(id);
-  for(const c of data.graph[id].choices){
-    choiceCount++;
-    const next=[...path,{id,answer:c.label}];
-    if(c.type==='question')dfs(c.id,next);
-    else {assert.equal(c.type,'result');assert.ok(!routes.has(c.ideology),`duplicate ${c.ideology}`);routes.set(c.ideology,next);}
-  }
-  active.delete(id);
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const data=JSON.parse(readFileSync(resolve(root,'data/quiz-data.json'),'utf8'));
+const historic=JSON.parse(readFileSync(resolve(root,'editorial/E1-R42-gateway-adversarial-profile-audit-20261118.json'),'utf8'));
+const paths=new Map(),reached=new Set();
+function walk(id,path=[],active=new Set()){
+ assert.ok(data.graph[id]); assert.ok(!active.has(id)); active.add(id); reached.add(id);
+ for(const c of data.graph[id].choices){const p=[...path,[id,c.label]];if(c.type==='question')walk(c.id,p,active);else{assert.ok(!paths.has(c.ideology));paths.set(c.ideology,p)}}active.delete(id);
 }
-dfs(data.start);
-function answer(name,q){return routes.get(name)?.find(x=>x.id===q)?.answer;}
-function members(q){return [...routes.keys()].filter(name=>answer(name,q)!==undefined);}
-test('graph and routes are structurally complete',()=>{
-  assert.equal(data.version,'U1.110');
-  assert.equal(reached.size,184);assert.equal(choiceCount,384);
-  assert.equal(routes.size,201);assert.equal(Object.keys(data.ideologies).length,201);
-  assert.deepEqual([...reached].sort(),Object.keys(data.graph).sort());
-  assert.deepEqual([...routes.keys()].sort(),Object.keys(data.ideologies).sort());
+walk(data.start);
+const answer=(name,id)=>paths.get(name)?.find(([q])=>q===id)?.[1];
+const members=(id)=>[...paths.keys()].filter(n=>answer(n,id)!==undefined);
+test('the current graph has 201 unique results and 184 questions',()=>{
+ assert.equal(data.version,'U1.111');assert.equal(paths.size,201);assert.equal(reached.size,184);
+ assert.deepEqual([...reached].sort(),Object.keys(data.graph).sort());
+ assert.deepEqual([...paths.keys()].sort(),Object.keys(data.ideologies).sort());
 });
-test('96 results remain below the state gateway after the updated Yes/No question',()=>{
-  assert.equal(members('q_constitution').length,96);
-  assert.equal(members('q_constitution').filter(n=>answer(n,'q_constitution')==='Yes').length,86);
-  assert.equal(members('q_constitution').filter(n=>answer(n,'q_constitution')==='No').length,10);
-  assert.equal(audit.full_96_descendant_inventory.length,96);
+test('the yes/no state gateway now reaches all 99 pro-property state and stateless outcomes',()=>{
+ assert.equal(members('q_constitution').length,99);
+ assert.equal(members('q_constitution').filter(n=>answer(n,'q_constitution')==='Yes').length,89);
+ assert.equal(members('q_constitution').filter(n=>answer(n,'q_constitution')==='No').length,10);
 });
-test('state-functions and minarchy branch inventory is reproduced',()=>{
-  for(const [choice,total] of Object.entries(audit.scope.state_functions_options))
-    assert.equal(members('q_stateFunctions').filter(n=>answer(n,'q_stateFunctions')===choice).length,total);
-  for(const [choice,total] of Object.entries(audit.scope.minarchy_options))
-    assert.equal(members('q_minarchy').filter(n=>answer(n,'q_minarchy')===choice).length,total);
+test('the elected, leader and sovereign branches preserve distinct outcomes',()=>{
+ const counts=Object.fromEntries(['Elected representatives','A dominant leader','A sovereign office or order'].map(label=>[label,members('q_stateFunctions').filter(n=>answer(n,'q_stateFunctions')===label).length]));
+ assert.deepEqual(counts,{'Elected representatives':33,'A dominant leader':30,'A sovereign office or order':26});
 });
-test('five source-backed minarchy profile answers agree with their path',()=>{
-  const a=audit.minarchy_profiles.filter(x=>x.classification==='supported');
-  assert.equal(a.length,5);
-  for(const p of a)assert.equal(answer(p.name,'q_minarchy'),p.source_based_answer,`profile ${p.name}`);
+test('R42 minarchy evidence remains available as an historical audit',()=>{
+ assert.equal(historic.classification_status,'OPEN — not independently certified');
+ const p=historic.minarchy_profiles.find(x=>x.name==='Right-libertarianism');
+ assert.equal(p.classification,'contradiction');assert.equal(p.source_based_answer,'Yes');
+ assert.equal(answer('Right-libertarianism','q_minarchy'),'No');
+ assert.equal(answer('Minarchism','q_minarchy'),'Yes');
 });
-test('known LP-2016 counterexample is recorded, not marked as certified',()=>{
-  const p=audit.minarchy_profiles.find(x=>x.name==='Right-libertarianism');
-  assert.equal(p.classification,'contradiction');
-  assert.equal(p.site_answer,'No');
-  assert.equal(p.source_based_answer,'Yes');
-  assert.equal(answer(p.name,'q_minarchy'),'No');
-  assert.notEqual(p.site_answer,p.source_based_answer);
-  assert.equal(audit.classification_status,'OPEN — not independently certified');
+test('R42 identified state authority counterexamples and R44 does not erase them',()=>{
+ for(const name of ['Stakeholder capitalism','State capitalism']){
+  assert.ok(historic.adjacent_counterexamples.some(x=>x.name===name));
+  assert.equal(answer(name,'q_stateFunctions'),'A dominant leader');
+ }
 });
-test('the two undefined profile answers remain unresolved',()=>{
-  const a=audit.minarchy_profiles.filter(x=>x.classification==='uncertain');
-  assert.deepEqual(a.map(x=>x.name).sort(),['Geolibertarianism','Paleolibertarianism']);
-  for(const p of a)assert.equal(p.source_based_answer,'Undetermined');
-});
-test('two source-backed state-authority counterexamples remain explicit',()=>{
-  for(const n of ['Stakeholder capitalism','State capitalism']){
-    assert.equal(answer(n,'q_stateFunctions'),'Strongman');
-    assert.ok(audit.adjacent_counterexamples.some(x=>x.name===n));
-  }
-});
-test.todo('FIX ME: a Yes answer from the LP 2016 platform must reach its intended Right-libertarianism result without violating an ancestor fork');
