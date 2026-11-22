@@ -1,0 +1,42 @@
+{
+  "id": "E1-R54-governing-authority-wording-20261121",
+  "baseEdition": "U1.115",
+  "targetEdition": "U1.116",
+  "baseCommit": "eafc4e66df5e3d650886a6ff5c0bd001af2885c5",
+  "status": "User explicitly approved publication of the exact question and labels",
+  "change": {
+    "questionId": "q_stateFunctions",
+    "questionFrom": "Where should the state's governing authority ultimately rest?",
+    "questionTo": "Who should ultimately govern the state?",
+    "answers": [
+      {
+        "before": "Elected representatives",
+        "after": "Elected representatives",
+        "destination": "q_domesticScope"
+      },
+      {
+        "before": "A dominant leader",
+        "after": "One powerful leader",
+        "destination": "q_pragmaticStrongman"
+      },
+      {
+        "before": "A sovereign office or order",
+        "after": "Monarchs or ruling elites",
+        "destination": "q_proOrganic"
+      }
+    ],
+    "explanation": "Unchanged",
+    "resultDestinations": "Unchanged",
+    "answerIcons": "Existing pictograms preserved with updated text keys"
+  },
+  "data": {
+    "results": 201,
+    "questions": 184,
+    "onePredeterminedRoutePerResult": true,
+    "routeDestinationsChanged": 0,
+    "routesThroughEditedQuestion": 89,
+    "routesWithChangedAnswers": 56
+  },
+  "scope": "Question wording/labels, corresponding icon lookup keys, edition/cache versions, regression tests, editorial record",
+  "caveat": "Semantic classification concerns for this gateway remain; this publication makes no structural change."
+}

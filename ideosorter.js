@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const assetVersion = "U1.115";
+  const assetVersion = "U1.116";
   const byId = (id) => document.getElementById(id);
   const viewNames = ["home", "quiz", "result", "results", "tree", "about"];
   const ambientProperties = ["--ambient-a", "--ambient-b", "--ambient-c", "--ambient-d", "--ambient-e", "--ambient-f"];
@@ -51,8 +51,8 @@
   // See AGENTS.md before adding an icon. Do not restore keyword-based guesses.
   const answerIconOverrides = {
     "q_stateFunctions:elected representatives": "/assets/quark/buttons/elected officials.svg",
-    "q_stateFunctions:a dominant leader": "/assets/quark/buttons/strongman.svg",
-    "q_stateFunctions:a sovereign office or order": "/assets/quark/buttons/sovereign.svg",
+    "q_stateFunctions:one powerful leader": "/assets/quark/buttons/strongman.svg",
+    "q_stateFunctions:monarchs or ruling elites": "/assets/quark/buttons/sovereign.svg",
     "q_strongmanLegit:direct popular mandate": "/assets/quark/buttons/election.svg",
     "q_statePriority:individual liberty": "/assets/left/buttons/individual-liberty.svg",
     "q_statePriority:wider public goals": "/assets/quark/buttons/politics.svg",

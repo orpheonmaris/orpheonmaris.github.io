@@ -15,7 +15,7 @@ walk(data.start);
 const answer=(name,id)=>paths.get(name)?.find(([q])=>q===id)?.[1];
 const members=(id)=>[...paths.keys()].filter(n=>answer(n,id)!==undefined);
 test('the current graph has 201 unique results and 184 questions',()=>{
- assert.equal(data.version,'U1.115');assert.equal(paths.size,201);assert.equal(reached.size,184);
+ assert.equal(data.version,'U1.116');assert.equal(paths.size,201);assert.equal(reached.size,184);
  assert.deepEqual([...reached].sort(),Object.keys(data.graph).sort());
  assert.deepEqual([...paths.keys()].sort(),Object.keys(data.ideologies).sort());
 });
@@ -25,8 +25,8 @@ test('the yes/no state gateway now reaches all 99 pro-property state and statele
  assert.equal(members('q_constitution').filter(n=>answer(n,'q_constitution')==='No').length,10);
 });
 test('the elected, leader and sovereign branches preserve distinct outcomes',()=>{
- const counts=Object.fromEntries(['Elected representatives','A dominant leader','A sovereign office or order'].map(label=>[label,members('q_stateFunctions').filter(n=>answer(n,'q_stateFunctions')===label).length]));
- assert.deepEqual(counts,{'Elected representatives':33,'A dominant leader':30,'A sovereign office or order':26});
+ const counts=Object.fromEntries(['Elected representatives','One powerful leader','Monarchs or ruling elites'].map(label=>[label,members('q_stateFunctions').filter(n=>answer(n,'q_stateFunctions')===label).length]));
+ assert.deepEqual(counts,{'Elected representatives':33,'One powerful leader':30,'Monarchs or ruling elites':26});
 });
 test('R42 minarchy evidence remains available as an historical audit',()=>{
  assert.equal(historic.classification_status,'OPEN — not independently certified');
@@ -38,6 +38,6 @@ test('R42 minarchy evidence remains available as an historical audit',()=>{
 test('R42 identified state authority counterexamples and R44 does not erase them',()=>{
  for(const name of ['Stakeholder capitalism','State capitalism']){
   assert.ok(historic.adjacent_counterexamples.some(x=>x.name===name));
-  assert.equal(answer(name,'q_stateFunctions'),'A dominant leader');
+  assert.equal(answer(name,'q_stateFunctions'),'One powerful leader');
  }
 });

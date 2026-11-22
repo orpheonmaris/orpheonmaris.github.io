@@ -8,11 +8,11 @@ const data=JSON.parse(readFileSync(resolve(root,'data/quiz-data.json'),'utf8'));
 const source=readFileSync(resolve(root,'ideosorter.js'),'utf8');
 const expected=[
   ['Elected representatives','/assets/quark/buttons/elected officials.svg'],
-  ['A dominant leader','/assets/quark/buttons/strongman.svg'],
-  ['A sovereign office or order','/assets/quark/buttons/sovereign.svg'],
+  ['One powerful leader','/assets/quark/buttons/strongman.svg'],
+  ['Monarchs or ruling elites','/assets/quark/buttons/sovereign.svg'],
 ];
 test('version and three answer labels are stable',()=>{
-  assert.equal(data.version,'U1.115');
+  assert.equal(data.version,'U1.116');
   assert.deepEqual(data.graph.q_stateFunctions.choices.map(choice=>choice.label),expected.map(([label])=>label));
 });
 test('all state-authority answers have unique, existing, original-style pictograms',()=>{
