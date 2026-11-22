@@ -12,7 +12,7 @@ const expected=[
   ['A sovereign office or order','/assets/quark/buttons/sovereign.svg'],
 ];
 test('version and three answer labels are stable',()=>{
-  assert.equal(data.version,'U1.114');
+  assert.equal(data.version,'U1.115');
   assert.deepEqual(data.graph.q_stateFunctions.choices.map(choice=>choice.label),expected.map(([label])=>label));
 });
 test('all state-authority answers have unique, existing, original-style pictograms',()=>{

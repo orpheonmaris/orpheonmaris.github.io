@@ -1,0 +1,83 @@
+{
+  "id": "E1-R53-corporate-power-source-provenance-20261121",
+  "date": "2026-11-21",
+  "publicationStatus": "PRIVATE DRAFT — NOT APPROVED, NOT PUBLISHED",
+  "baseEdition": "U1.114",
+  "baseCommit": "e42f3b45387a39a19820be1147eef0580ea856b9",
+  "baseQuizGitBlob": "f352f0d7cb7b402a4a2aba075edd0f5fbab33a5f",
+  "candidateEdition": "U1.115",
+  "candidateGitBlob": "efd660435d7f704d146dc63e3268af8a88a83459",
+  "scope": "Correct source provenance and description of corporate-power result cards, with optional explanations at the two adjacent forks; retain every complete predetermined route.",
+  "changedQuestions": [
+    "q_klepto",
+    "q_conglomerate"
+  ],
+  "questionWordingChanged": [],
+  "changedResultCards": [
+    "Corporatocracy",
+    "Autocratic capitalism",
+    "Megacorporatocracy"
+  ],
+  "familiesChanged": [
+    "Corporatocracy",
+    "Autocratic capitalism"
+  ],
+  "graphMechanics": {
+    "questions": 184,
+    "outcomes": 201,
+    "routes": 201,
+    "routesChanged": 0,
+    "routesUnchanged": 201,
+    "duplicateTerminals": 0,
+    "cycles": 0
+  },
+  "reviewStates": {
+    "Corporatocracy": "source-reviewed (card); route disputed due upstream governing-authority gate",
+    "Autocratic capitalism": "source-reviewed (card); route disputed due upstream governing-authority gate",
+    "Megacorporatocracy": "disputed: hypothetical editorial construct, historical intellectual constituency not verified",
+    "q_klepto": "mechanically verified; conceptually disputed as exclusive category",
+    "q_conglomerate": "mechanically verified; illustrative constructed distinction"
+  },
+  "sources": [
+    {
+      "authors": "David C. Korten",
+      "work": "Do Corporations Rule the World? And Does it Matter?",
+      "year": 1998,
+      "journal": "Organization & Environment 11(4)",
+      "url": "https://journals.sagepub.com/doi/10.1177/0921810698114001",
+      "detail": "Abstract; critical analysis of corporate/financial power"
+    },
+    {
+      "authors": "G. William Domhoff",
+      "work": "C. Wright Mills, Floyd Hunter, and 50 Years of Power Structure Research",
+      "year": 2007,
+      "journal": "Michigan Sociological Review 21:1–54",
+      "url": "https://whorulesamerica.ucsc.edu/theory/mills_address.html",
+      "detail": "Charles Lindblom and the privileged position of business"
+    },
+    {
+      "authors": "Dorottya Sallai and Gerhard Schnyder",
+      "work": "What Is “Authoritarian” About Authoritarian Capitalism?",
+      "year": 2021,
+      "journal": "Business & Society 60(6):1312–1348",
+      "url": "https://journals.sagepub.com/doi/10.1177/0007650319898475",
+      "detail": "Abstract; distinctions among regulation, state capitalism and authoritarian capitalism"
+    },
+    {
+      "authors": "Branko Milanović",
+      "work": "Capitalism, Alone (author interview)",
+      "year": 2020,
+      "url": "https://braveneweurope.com/economics/branko-milanovic-interview-capitalism-alone/",
+      "detail": "Description of political capitalism and state autonomy; cross-check"
+    }
+  ],
+  "knownCounterexamplesAndBlockers": [
+    "q_stateFunctions forces many economic doctrines through a governing-authority claim they need not endorse (89 descendants).",
+    "State capitalism and stakeholder capitalism can coexist, despite their fixed exclusive leaves.",
+    "Corporatocracy is commonly a critical descriptive label, not an affirmative ideology, so a Should question does not classify all honest visitors.",
+    "Autocratic capitalism and corporatocracy can overlap, even after clarifying q_klepto.",
+    "Megacorporatocracy lacks an independently established intellectual movement; preserve as qualified constructed result pending coverage decision."
+  ],
+  "nextPriority": "Adversarial source-backed audit of q_stateFunctions and its 89 descendant results before proposing another structural replacement; preserve fixed one-path-per-ideology format and avoid forced ideological-family questions.",
+  "publicationRule": "Any source change, index/version change, editorial note and technical fix requires fresh approval of exact reviewed candidate."
+}
