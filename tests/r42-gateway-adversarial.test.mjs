@@ -24,16 +24,16 @@ dfs(data.start);
 function answer(name,q){return routes.get(name)?.find(x=>x.id===q)?.answer;}
 function members(q){return [...routes.keys()].filter(name=>answer(name,q)!==undefined);}
 test('graph and routes are structurally complete',()=>{
-  assert.equal(data.version,'U1.108');
-  assert.equal(reached.size,183);assert.equal(choiceCount,383);
+  assert.equal(data.version,'U1.110');
+  assert.equal(reached.size,184);assert.equal(choiceCount,384);
   assert.equal(routes.size,201);assert.equal(Object.keys(data.ideologies).length,201);
   assert.deepEqual([...reached].sort(),Object.keys(data.graph).sort());
   assert.deepEqual([...routes.keys()].sort(),Object.keys(data.ideologies).sort());
 });
-test('96 gate results: 78 / 8 / 10, no unintended route change',()=>{
+test('96 results remain below the state gateway after the updated Yes/No question',()=>{
   assert.equal(members('q_constitution').length,96);
-  for(const [choice,total] of Object.entries(audit.scope.gate_options))
-    assert.equal(members('q_constitution').filter(n=>answer(n,'q_constitution')===choice).length,total);
+  assert.equal(members('q_constitution').filter(n=>answer(n,'q_constitution')==='Yes').length,86);
+  assert.equal(members('q_constitution').filter(n=>answer(n,'q_constitution')==='No').length,10);
   assert.equal(audit.full_96_descendant_inventory.length,96);
 });
 test('state-functions and minarchy branch inventory is reproduced',()=>{

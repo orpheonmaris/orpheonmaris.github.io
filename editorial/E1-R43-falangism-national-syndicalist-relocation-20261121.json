@@ -1,0 +1,82 @@
+{
+  "id": "E1-R43-falangism-national-syndicalist-relocation-20261121",
+  "date": "2026-11-21",
+  "sourceVersion": "U1.109",
+  "targetVersion": "U1.110",
+  "status": "approved for live publication",
+  "summary": "Move Falangism, Falangism (De Jons) and National syndicalism to the pro-private-property authoritarian nationalist branch; replace restrictive cultural and clerical gates with substantive institutional distinctions.",
+  "questionsAdded": [
+    "q_verticalSyndicates"
+  ],
+  "questionsRemoved": [
+    "q_natvfu"
+  ],
+  "questionsReworded": [
+    "q_total",
+    "q_fashClergy",
+    "q_feudalRebirth",
+    "q_traditionalValues",
+    "q_syndicateAuthority"
+  ],
+  "rewiring": [
+    [
+      "q_palingenesis",
+      "Yes",
+      "q_fashClergy"
+    ],
+    [
+      "q_fashClergy",
+      "No",
+      "q_verticalSyndicates"
+    ],
+    [
+      "q_verticalSyndicates",
+      "Yes",
+      "q_traditionalValues"
+    ],
+    [
+      "q_verticalSyndicates",
+      "No",
+      "q_feudalRebirth"
+    ],
+    [
+      "q_feudalRebirth",
+      "No",
+      "q_fascistInstitution"
+    ],
+    [
+      "q_natSynd",
+      "Yes",
+      "q_fumivFascfu"
+    ]
+  ],
+  "relocatedOutcomes": [
+    "Falangism",
+    "Falangism (De Jons)",
+    "National syndicalism"
+  ],
+  "changedRoutes": [
+    "Clerical Fascism",
+    "Falangism",
+    "Falangism (De Jons)",
+    "Fascism",
+    "Fascist Futurism",
+    "Fiumanism",
+    "National syndicalism",
+    "Political Futurism",
+    "Strasserism"
+  ],
+  "checks": {
+    "totalOutcomes": 201,
+    "questions": 184,
+    "missingOutcomes": 0,
+    "cycles": 0,
+    "duplicateOutcomes": 0,
+    "nonAdjacentArrows": 0,
+    "diagramCollisions": 0,
+    "proCrossings": 9,
+    "antiCrossings": 16,
+    "unintendedRouteChanges": 0
+  },
+  "notes": "Approved by explicit user instruction to implement on the live site. The previous R42 audit's historical three-choice gateway counts are not applicable to the current Yes/No gateway; preserved as historical evidence, while the gateway test was updated."
+}
