@@ -1,0 +1,132 @@
+{
+  "id": "E1-R57-classical-authority-20261122",
+  "date": "2026-11-22",
+  "state": "PRIVATE UNPUBLISHED — awaiting exact approval",
+  "approvedProduction": {
+    "edition": "U1.116",
+    "sourceCommit": "e63e98dad25f708fde24284c6b0445a68e98c6df",
+    "quizBlob": "be8c7501825bc4e09117f0f472ee5a27bca6f92e",
+    "layoutBlob": "d93e38881005bf44816881ad47e964ab49c9e983",
+    "sourceTree": "e0142e9cfd1500b8fc6a3e3928405676acc15153"
+  },
+  "candidate": {
+    "edition": "U1.117",
+    "quizBlob": "f681e4e5f99ddd574509daf997f6fa9d7ddf6e65",
+    "changedNode": "q_electMon",
+    "changedCards": [
+      "Aristocracy",
+      "Aristotelian timocracy",
+      "Platonic timocracy",
+      "Neocameralism"
+    ],
+    "changedCompleteRouteText": [
+      "Aristocracy",
+      "Neocameralism",
+      "Landian Accelerationism",
+      "Aristotelian timocracy",
+      "Platonic timocracy"
+    ],
+    "changedRouteDestinations": 0,
+    "questions": 184,
+    "answerChoices": 384,
+    "ideologies": 201,
+    "independentCertifiedRoutesAdded": 0
+  },
+  "rejections": {
+    "R55": "Do not remove or merge either Immortalism result",
+    "R56": "Do not alter the conflict question or replace it with planning vs political struggle"
+  },
+  "cumulativePriorEditorial": [
+    {
+      "id": "E1-R42-gateway-adversarial-profile-audit-20261118",
+      "state": "published historical audit",
+      "open": "q_stateFunctions; minarchy contradictions"
+    },
+    {
+      "id": "E1-R43-falangism-national-syndicalist-relocation-20261121",
+      "state": "published U1.110",
+      "open": "retain Falangism placements"
+    },
+    {
+      "id": "E1-R44-libertarian-gateway-20261121",
+      "state": "published U1.111",
+      "open": "retain eight libertarian outcomes"
+    },
+    {
+      "id": "E1-R45-state-functions-icon-mapping-20261121",
+      "state": "published U1.113",
+      "open": "preserve distinct icons"
+    },
+    {
+      "id": "E1-R52-source-backed-corporate-distinction-20261121",
+      "state": "published U1.114",
+      "open": "source-based corporate distinctions"
+    },
+    {
+      "id": "E1-R53-corporate-power-source-provenance-20261121",
+      "state": "published U1.115",
+      "open": "corporate-power result scope"
+    },
+    {
+      "id": "E1-R54-governing-authority-wording-20261121",
+      "state": "published U1.116",
+      "open": "89-outcome gateway unresolved"
+    },
+    {
+      "id": "E1-R55-excluded-personal-tendency-20261121",
+      "state": "explicitly rejected by user",
+      "open": "DO NOT REMOVE Immortalism (Palingenetic)"
+    },
+    {
+      "id": "E1-R56-planning-vs-conflict-20261122",
+      "state": "explicitly rejected by user",
+      "open": "DO NOT CHANGE q_weed"
+    }
+  ],
+  "reviewedQuestion": {
+    "id": "q_electMon",
+    "status": "source-reviewed, downstream routes not independently validated",
+    "proposition": "What should be the principal criterion for allocating political authority?",
+    "sourceIssues": [
+      "Hereditary birth not constitutive of philosophical aristocracy",
+      "Aristotle timocracy is property-qualified and not land-only",
+      "Plato timocracy is honor-centred, not medals",
+      "Neocameralism assigns sovereignty to shareholders who appoint managers"
+    ]
+  },
+  "reviewedCards": {
+    "Aristocracy": {
+      "status": "source-reviewed card; complete route not independently certified"
+    },
+    "Aristotelian timocracy": {
+      "status": "source-reviewed card; complete route not independently certified"
+    },
+    "Platonic timocracy": {
+      "status": "source-reviewed card; complete route not independently certified"
+    },
+    "Neocameralism": {
+      "status": "source-reviewed card; complete route not independently certified"
+    }
+  },
+  "disputed": {
+    "Landian Accelerationism": "Share-ownership ancestor is supported by a particular Dark Enlightenment phase, not essential to all versions of accelerationism",
+    "q_stateFunctions": "89 descendant outcomes, economic doctrines forced through one governing-authority answer; source-backed full redesign still blocked"
+  },
+  "tests": {
+    "graphUniqueTerminals": 201,
+    "reachableQuestions": 184,
+    "rootPathDestinationChanges": 0,
+    "nodeTests": "6 passed",
+    "browserEmulatedTests": "33 passed; no page errors",
+    "nativeProductionIntegration": "NOT run; guard patch source anchors checked read-only",
+    "physicalDevices": "NOT tested",
+    "screenReader": "NOT tested"
+  },
+  "newAdmittedCoverageGaps": [],
+  "nextPriorities": [
+    "Escalate the q_stateFunctions 89-result gateway with contrasting source-backed architectural alternatives",
+    "Independently assess full routes for all five outcomes, especially Landian Accelerationism",
+    "Audit other historical/classical entries for borrowed quotations that misrepresent their subject"
+  ],
+  "publicationRule": "Never publish without separate approval. On source baseline changes, this candidate approval is void."
+}
