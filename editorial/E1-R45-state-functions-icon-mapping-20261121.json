@@ -1,0 +1,22 @@
+{
+  "id": "E1-R45-state-functions-icon-mapping-20261121",
+  "date": "2026-11-21",
+  "sourceVersion": "U1.112",
+  "targetVersion": "U1.113",
+  "approvedForPublication": true,
+  "scope": "Assign distinct existing monochrome Quark pictograms to the three q_stateFunctions choices. No wording, question order, routes, result metadata, or layout changes.",
+  "mappings": {
+    "q_stateFunctions:elected representatives": "/assets/quark/buttons/elected officials.svg",
+    "q_stateFunctions:a dominant leader": "/assets/quark/buttons/strongman.svg",
+    "q_stateFunctions:a sovereign office or order": "/assets/quark/buttons/sovereign.svg"
+  },
+  "preserved": {
+    "questionCount": 184,
+    "outcomeCount": 201,
+    "labels": [
+      "Elected representatives",
+      "A dominant leader",
+      "A sovereign office or order"
+    ]
+  }
+}
