@@ -1,0 +1,244 @@
+{
+  "id": "E1-R58-jacobinism-labor-representation-20261122",
+  "edition": "U1.118",
+  "status": "private draft, user approval required before any publication",
+  "date": "2026-11-22",
+  "baseline": {
+    "publishedEdition": "U1.117",
+    "headCommit": "19318c9104d13967b1e39b172bb9f34983ec61c5",
+    "treeSha": "f26493f0fb82143ba965213675028ad0a72d6434",
+    "quizBlob": "f681e4e5f99ddd574509daf997f6fa9d7ddf6e65",
+    "layoutBlob": "d93e38881005bf44816881ad47e964ab49c9e983"
+  },
+  "draft": {
+    "quizBlob": "6756da9c0fa8875bf5402608af0107cc47ca6192",
+    "questionCount": 184,
+    "resultCount": 201,
+    "totalGraphEdges": 384,
+    "uniqueRoutes": 201,
+    "routeDestinationsChanged": 0,
+    "answerLabelsChanged": 0,
+    "fixedTree": true,
+    "generatedMatches": false
+  },
+  "purpose": "Repair unreliable attribution and supply historically scoped, positively explanatory accounts of Jacobinism, social democracy and social corporatism, without imposing a forced ideological new fork.",
+  "changedGraphNodes": {
+    "q_organizedInterests": [
+      "explanation"
+    ],
+    "q_socCorp": [
+      "explanation"
+    ]
+  },
+  "unchangedGraphWording": [
+    "q_organizedInterests",
+    "q_socCorp"
+  ],
+  "changedCards": [
+    "Jacobinism",
+    "Social democracy",
+    "Social corporatism"
+  ],
+  "sourceRecord": {
+    "Jacobinism": {
+      "state": "source-reviewed card; full route not independently certified",
+      "primary": "Robespierre speech (5 Feb 1794); 1793 Declaration arts 1,21,25; 1791 Le Chapelier law arts 1-4; Saint-Just 26 Feb 1794 report documented original",
+      "historiography": [
+        "Hugh Gough (1980)",
+        "Yannick Bosc (2025)"
+      ],
+      "questionsOpen": [
+        "Conflation of Year II with 1791 Le Chapelier restrictions",
+        "Extent and meaning of centralization",
+        "q_stateFunctions inherited representation",
+        "q_organizedInterests negative answer"
+      ]
+    },
+    "Social democracy": {
+      "state": "source-reviewed card; full route not independently certified",
+      "primary": "SPD Godesberg Programme, November 1959, sections State, Economic and Social Order, Ownership and Power",
+      "historiography": [
+        "Oxford Bibliographies: European Social Democracy (2012)"
+      ],
+      "questionsOpen": [
+        "Social democracy often uses formal corporatist institutions",
+        "q_socCorp No not universally constitutive"
+      ]
+    },
+    "Social corporatism": {
+      "state": "source-reviewed card; full route not independently certified",
+      "primary": "ILO definition of social dialogue and tripartism; Austrian federal information about social partnership",
+      "historiography": [
+        "Schmitter (1974)"
+      ],
+      "questionsOpen": [
+        "Tripartism and state-supported bipartism differ",
+        "Overlap with governing social democratic parties"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "type": "primary / critical archive",
+      "author": "Louis Antoine de Saint-Just",
+      "work": "Report to National Convention of 8 Ventôse Year II (26 February 1794)",
+      "locator": "Archives parlementaires 85 (1964), pp. 516-520, especially p. 517",
+      "url": "https://www.persee.fr/doc/arcpa_0000-0000_1964_num_85_1_32659_t1_0516_0000_3"
+    },
+    {
+      "type": "primary",
+      "author": "Maximilien Robespierre",
+      "work": "On Political Morality",
+      "locator": "Speech to Convention, 5 Feb 1794, translation in Richard Bienvenu (ed.), The Ninth of Thermidor 1970, pp. 32–49",
+      "url": "https://www.revolution.chnm.org/d/413/"
+    },
+    {
+      "type": "primary",
+      "author": "National Convention",
+      "work": "Declaration of the Rights of Man and Citizen, 1793",
+      "locator": "Arts 1, 16–21, 25–27",
+      "url": "https://www.columbia.edu/~iw6/docs/dec1793.html"
+    },
+    {
+      "type": "primary",
+      "author": "French Constituent Assembly",
+      "work": "Le Chapelier Law",
+      "locator": "14 June 1791, arts 1–4",
+      "url": "https://www.revolution.chnm.org/d/370/"
+    },
+    {
+      "type": "scholarship",
+      "author": "Hugh Gough",
+      "work": "Politics and Power: The Triumph of Jacobinism in Strasbourg, 1791–1793",
+      "locator": "Historical Journal 23(2), 1980, 327–352, abstract",
+      "url": "https://www.cambridge.org/core/journals/historical-journal/article/abs/politics-and-power-the-triumph-of-jacobinism-in-strasbourg-17911793/8A6F038936925D4ED4B7E39FF3694D2F"
+    },
+    {
+      "type": "scholarship / dissenting analysis",
+      "author": "Yannick Bosc",
+      "work": "The French Revolution: Popular Sovereignty versus the Centralized State",
+      "locator": "Annuaire d'études françaises 58 (2025), pp. 111–130, abstract",
+      "url": "https://www.annuaire-fr.igh.ru/issues/2025/articles/1816?locale=en"
+    },
+    {
+      "type": "primary",
+      "author": "Social Democratic Party of Germany",
+      "work": "Godesberg Programme",
+      "locator": "Nov 1959, State, Economic and Social Order, Ownership and Power",
+      "url": "https://germanhistorydocs.org/en/occupation-and-the-emergence-of-two-states-1945-1961/godesberg-program-of-the-spd-november-1959"
+    },
+    {
+      "type": "scholarship",
+      "author": "Philippe C. Schmitter",
+      "work": "Still the Century of Corporatism?",
+      "locator": "Review of Politics 36(1) (1974):85–131, especially definitional sections",
+      "url": "https://www.cambridge.org/core/journals/review-of-politics/article/abs/still-the-century-of-corporatism/DD5C2B4745211F043A83B2C301E10BDC"
+    },
+    {
+      "type": "authoritative institutional definition",
+      "author": "International Labour Organization",
+      "work": "Social Dialogue and Tripartism",
+      "locator": "Definition of social dialogue and tripartism",
+      "url": "https://www.ilo.org/topics-and-sectors/social-dialogue-and-tripartism"
+    },
+    {
+      "type": "official country practice",
+      "author": "Austria federal portal",
+      "work": "Representation of interests",
+      "locator": "The Austrian Social Partnership",
+      "url": "https://www.usp.gv.at/en/themen/mitarbeiter-und-gesundheit/interessenvertretung.html"
+    }
+  ],
+  "rejectedAlternatives": [
+    {
+      "id": "force-jacobin-centralization",
+      "reason": "2025 Bosc and earlier historiography dispute a uniform centralized Jacobin state as an essential doctrine"
+    },
+    {
+      "id": "make-social-democracy-anti-corporatist",
+      "reason": "SPD 1959 and Oxford historical research show that social democrats can use corporatist institutions"
+    },
+    {
+      "id": "change-q_organizedInterests-wording",
+      "reason": "Existing question is already intelligible; no proposed replacement was demonstrably superior without imposing new commitments"
+    },
+    {
+      "id": "remove-immortalism-R55",
+      "reason": "User explicitly rejected R55; both outcomes preserved"
+    },
+    {
+      "id": "reword-conflict-R56",
+      "reason": "User explicitly rejected R56; q_weed untouched"
+    }
+  ],
+  "tests": {
+    "mechanical": {
+      "result": "pass",
+      "cases": 6,
+      "paths": 201,
+      "edges": 384,
+      "unchangedCompleteRoutes": 201
+    },
+    "offlineChromium": {
+      "result": "pass",
+      "checks": 51,
+      "desktopViewport": "1365x800",
+      "mobileEmulation": "390x844",
+      "pageErrors": 0
+    },
+    "fullNativeProduction": "not run",
+    "screenReader": "not run",
+    "physicalDevices": "not run",
+    "profileIndependentCertification": 0
+  },
+  "cumulativeEditorial": {
+    "lastPublishedRound": "R57 / U1.117",
+    "knownPublishedRelated": [
+      "R43",
+      "R44",
+      "R45",
+      "R52",
+      "R53",
+      "R54",
+      "R57"
+    ],
+    "userRejected": [
+      "R55",
+      "R56"
+    ],
+    "thisRoundQuestionsReviewed": 2,
+    "thisRoundCardsReviewed": 3,
+    "fullyIndependentlyCertifiedRoutesAdded": 0,
+    "otherQuestionsStillUnreviewedOrUnevaluated": "Not independently established",
+    "ideologicalFamiliesAuditedThisRound": [
+      "Liberal, conservative & corporatist",
+      "Other pro-property"
+    ],
+    "highImpactBlockers": [
+      "q_stateFunctions 89-result gateway",
+      "q_communism/q_weed 26-result mixed socialist fork (R56 wording rejected)",
+      "q_socCorp overlap of social democratic/corporatist forms",
+      "Jacobinism union-ancestor historical anachronism"
+    ]
+  },
+  "escalated89Gateway": {
+    "status": "blocked/disputed after prior failed R45-R49 attempts",
+    "descendants": 89,
+    "optionsConsidered": [
+      {
+        "option": "reparent economic-program-defined leaves before governing-authority split",
+        "risk": "requires new coherent substantive upstream forks and full 89-route independent profile validation; earlier forced-family alternatives rejected"
+      },
+      {
+        "option": "scope individual economic results to historically specific regime variants",
+        "risk": "changes intended broad labels, may mislead visitors; does not fix overlap"
+      },
+      {
+        "option": "retain gateway and mark unresolved pending source-supported redesign",
+        "risk": "known misclassification persists but avoids publishing unsupported branching"
+      }
+    ]
+  },
+  "nextPriority": "Review q_stateFunctions with independent counterexamples for 89 descendant routes; a general correction is not established by the R58 card-source work.",
+  "approval": "Do not publish, push branches, or alter live site without user approval of exact reviewed candidate and unchanged baseline."
+}

@@ -15,7 +15,7 @@ walk(data.start);
 const answer=(name,id)=>paths.get(name)?.find(([q])=>q===id)?.[1];
 const members=(id)=>[...paths.keys()].filter(n=>answer(n,id)!==undefined);
 test('the current graph has 201 unique results and 184 questions',()=>{
- assert.equal(data.version,'U1.117');assert.equal(paths.size,201);assert.equal(reached.size,184);
+ assert.equal(data.version,'U1.118');assert.equal(paths.size,201);assert.equal(reached.size,184);
  assert.deepEqual([...reached].sort(),Object.keys(data.graph).sort());
  assert.deepEqual([...paths.keys()].sort(),Object.keys(data.ideologies).sort());
 });

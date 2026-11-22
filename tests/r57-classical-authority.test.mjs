@@ -18,7 +18,7 @@ function visit(id,path=[],anc=new Set()){
 visit(data.start);
 const ans=(n,q)=>routes.get(n)?.find(([node])=>node===q)?.[1];
 test('stable fixed-tree format and advertised totals',()=>{
- assert.equal(data.version,'U1.117');assert.equal(qs.size,184);assert.equal(routes.size,201);
+ assert.equal(data.version,'U1.118');assert.equal(qs.size,184);assert.equal(routes.size,201);
  assert.deepEqual([...routes.keys()].sort(),Object.keys(data.ideologies).sort());
  assert.deepEqual([...qs].sort(),Object.keys(data.graph).sort());
  assert.ok(data.ideologies['Immortalism (Palingenetic)']);
