@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const assetVersion = "U1.109";
+  const assetVersion = "U1.114";
   const byId = (id) => document.getElementById(id);
   const viewNames = ["home", "quiz", "result", "results", "tree", "about"];
   const ambientProperties = ["--ambient-a", "--ambient-b", "--ambient-c", "--ambient-d", "--ambient-e", "--ambient-f"];
@@ -50,6 +50,9 @@
   // Reuse by represented meaning only; custom answers need an explicit mapping.
   // See AGENTS.md before adding an icon. Do not restore keyword-based guesses.
   const answerIconOverrides = {
+    "q_stateFunctions:elected representatives": "/assets/quark/buttons/elected officials.svg",
+    "q_stateFunctions:a dominant leader": "/assets/quark/buttons/strongman.svg",
+    "q_stateFunctions:a sovereign office or order": "/assets/quark/buttons/sovereign.svg",
     "q_strongmanLegit:direct popular mandate": "/assets/quark/buttons/election.svg",
     "q_statePriority:individual liberty": "/assets/left/buttons/individual-liberty.svg",
     "q_statePriority:wider public goals": "/assets/quark/buttons/politics.svg",

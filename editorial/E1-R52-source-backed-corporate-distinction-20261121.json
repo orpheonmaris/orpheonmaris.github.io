@@ -1,0 +1,62 @@
+{
+  "id": "E1-R52-source-backed-corporate-distinction-20261121",
+  "baseEdition": "U1.113",
+  "baseCommit": "d08e95377112e1ad67741fd59bbcd49b4f4dbe7f",
+  "edition": "U1.114",
+  "publicationApproval": "User explicitly requested restoring U1.113 plus the exact R52 economic-branch change on 2026-11-21",
+  "changedQuestions": [
+    "q_soe",
+    "q_zeBugz"
+  ],
+  "changedResults": [
+    "Autocratic capitalism",
+    "Corporatocracy",
+    "Megacorporatocracy",
+    "Stakeholder capitalism",
+    "State capitalism"
+  ],
+  "unchangedRoutes": 196,
+  "totals": {
+    "questions": 184,
+    "results": 201,
+    "uniquePaths": 201,
+    "generatedQuestions": 0
+  },
+  "preserved": [
+    "U1.113 governing-authority pictograms",
+    "U1.111 rights-based libertarian gateway restructuring"
+  ],
+  "cacheRepair": "Synchronize ideosorter.js assetVersion with version U1.114 to avoid stale quiz/tree requests",
+  "sources": [
+    {
+      "title": "Davos Manifesto 2020",
+      "url": "https://www.weforum.org/stories/stakeholder-capitalism/davos-manifesto-2020-the-universal-purpose-of-a-company-in-the-fourth-industrial-revolution",
+      "finding": "Stakeholder capitalism defines a corporate-purpose commitment, not state ownership"
+    },
+    {
+      "title": "Temasek Corporate Governance",
+      "url": "https://www.temasek.com.sg/en/about-us/corporate-governance",
+      "finding": "Government-owned enterprise with independently directed individual investments"
+    },
+    {
+      "title": "Singapore MOF: Who manages the reserves?",
+      "url": "https://www.mof.gov.sg/policies/reserves/who-manages-the-reserves/",
+      "finding": "Temasek government shareholding does not imply ministerial direction of individual investments"
+    }
+  ],
+  "knownUnresolved": [
+    "Five paths still descend from a governing-authority branch that assigns primarily economic ideologies to a dominant leader",
+    "State ownership and stakeholder duties can logically coexist"
+  ],
+  "verification": {
+    "rootedSingleTree": true,
+    "cycles": 0,
+    "duplicateResults": 0,
+    "missingResults": 0,
+    "changedRoutes": 5,
+    "unchangedRoutes": 196,
+    "layoutEdgesAdjacent": true,
+    "manualScholarlyCertification": "Not established"
+  },
+  "sourceReviewPackage": "E1-R52-private-source-and-audit.zip (prior private review artifact)"
+}
