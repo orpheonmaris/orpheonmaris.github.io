@@ -22,7 +22,7 @@ function visit(id,path=[],ancestry=new Set()){
 visit(d.start);
 const answer=(name,id)=>routes.get(name)?.find(([q])=>q===id)?.[1];
 test('201 original outcomes, 184 fixed questions, 384 single-parent edges',()=>{
- assert.equal(d.version,'U1.118');assert.equal(d.counts.ideologies,201);assert.equal(d.counts.routes,201);assert.equal(d.counts.questions,184);
+ assert.equal(d.version,'U1.119');assert.equal(d.counts.ideologies,201);assert.equal(d.counts.routes,201);assert.equal(d.counts.questions,184);
  assert.equal(routes.size,201);assert.equal(questions.size,184);assert.equal(incoming.size,384);assert.ok([...incoming.values()].every(n=>n===1));
  assert.deepEqual([...routes.keys()].sort(),Object.keys(d.ideologies).sort());
  assert.deepEqual([...questions].sort(),Object.keys(d.graph).sort());
@@ -47,8 +47,8 @@ test('two optional explanations added without new prompts, answer choices or rou
  assert.match(d.graph.q_organizedInterests.explanation,/1791 Le Chapelier/);
  assert.match(d.graph.q_socCorp.explanation,/overlap/);
 });
-test('both Immortalism outcomes, q_weed, and R57 improvements remain',()=>{
- assert.ok(routes.has('Immortalism (Palingenetic)'));
+test('renamed author outcome, Immortalist Communism, q_weed, and R57 improvements remain',()=>{
+ assert.ok(routes.has('Dialectical Prometheanism'));
  assert.ok(routes.has('Immortalist Communism'));
  assert.equal(d.graph.q_weed.question,'Should all conflict be avoided when attempting change?');
  assert.equal(d.graph.q_electMon.question,'What should qualify someone for political authority?');
