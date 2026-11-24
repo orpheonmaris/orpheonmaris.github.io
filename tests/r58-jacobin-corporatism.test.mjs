@@ -22,7 +22,7 @@ function visit(id,path=[],ancestry=new Set()){
 visit(d.start);
 const answer=(name,id)=>routes.get(name)?.find(([q])=>q===id)?.[1];
 test('201 original outcomes, 184 fixed questions, 384 single-parent edges',()=>{
- assert.equal(d.version,'U1.121');assert.equal(d.counts.ideologies,201);assert.equal(d.counts.routes,201);assert.equal(d.counts.questions,184);
+ assert.equal(d.version,'U1.122');assert.equal(d.counts.ideologies,201);assert.equal(d.counts.routes,201);assert.equal(d.counts.questions,184);
  assert.equal(routes.size,201);assert.equal(questions.size,184);assert.equal(incoming.size,384);assert.ok([...incoming.values()].every(n=>n===1));
  assert.deepEqual([...routes.keys()].sort(),Object.keys(d.ideologies).sort());
  assert.deepEqual([...questions].sort(),Object.keys(d.graph).sort());

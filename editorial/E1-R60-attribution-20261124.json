@@ -1,0 +1,81 @@
+{
+ "id": "E1-R60-attribution-20261124",
+ "edition": "U1.122",
+ "status": "approved by the user on 2026-11-24 ('Publish this draft'); published as U1.122",
+ "date": "2026-11-24",
+ "baseline": {
+  "publishedEdition": "U1.121",
+  "sourceArchive": "Ideology_Sorter_U1.121_Source.zip",
+  "sourceArchiveSha256": "656cc11f355ad3051aee78046d6d377f881974ff75e034d720916d0de6a6c3da",
+  "note": "GitHub main at d600a3d checked on 2026-11-24: data/quiz-data.json, ideosorter.js and index.html byte-identical to the U1.121 source archive used for the draft.",
+  "headCommit": "d600a3d"
+ },
+ "recordGap": "This in-tree record ends at E1-R58 (U1.118). Editions U1.119-U1.121, including the November 23 byline work and a private R59 review, have no record file. Numbered R60 to avoid reusing R59.",
+ "draft": {
+  "questionCount": 184,
+  "resultCount": 201,
+  "totalGraphEdges": 384,
+  "uniqueRoutes": 201,
+  "routeDestinationsChanged": 0,
+  "layoutChanged": false
+ },
+ "changes": [
+  {
+   "defect": "R60-D01",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Absolute monarchy",
+   "change": "Quote author Sir Robert Filmer -> Jean Bodin; quoteSource added",
+   "rationale": "The quoted sentence is Bodin's (Six livres de la République, I.8), not Filmer's.",
+   "sources": [
+    "Jean Bodin, Les six livres de la République (1576), I.8; Tooley abridged translation, ch. VIII (constitution.org)"
+   ],
+   "unverified": [
+    "Exact wording of Knolles 1606 translation not inspected in facsimile"
+   ]
+  },
+  {
+   "defect": "R60-D02",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Noocracy",
+   "change": "Spurious Plato paraphrase replaced with Republic 347c (Shorey)",
+   "rationale": "'Doomed to live under the rule of fools' does not occur in Plato; it is a modern paraphrase of 347c.",
+   "sources": [
+    "Plato, Republic 1.347c, trans. P. Shorey (Loeb, 1930), via Perseus"
+   ]
+  },
+  {
+   "defect": "R60-D03",
+   "severity": "S1",
+   "criterion": "C1",
+   "node": "Mesoconservatism",
+   "change": "Author 'Pennis Mark Drager' -> 'Dennis Prager'",
+   "rationale": "Mocking misspelling of a real person's name is an unfair portrayal.",
+   "unverified": [
+    "The quotation itself is not traced to a Prager text"
+   ]
+  },
+  {
+   "defect": "maintenance",
+   "change": "Version U1.121 -> U1.122 in index.html, ideosorter.js, quiz-data.json and five pinned tests; tests/r60-attribution-gateway.test.mjs added"
+  }
+ ],
+ "verification": {
+  "sourceTests": "7/7 test files pass",
+  "routeTrace": "184/184 questions reached, 201/201 results, one route each, no cycles",
+  "browser": "not run this round (D2-D4 unchecked)"
+ },
+ "rejected": [
+  {
+   "defect": "R60-D04",
+   "node": "q_counterEcon",
+   "decision": "User rejected the rewording on 2026-11-24; question unchanged"
+  },
+  {
+   "defect": "R60-D05",
+   "node": "q_transition",
+   "decision": "User rejected relabelling 'Terror' on 2026-11-24; answer unchanged"
+  }
+ ]
+}

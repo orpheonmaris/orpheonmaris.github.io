@@ -14,7 +14,7 @@ function dfs(id,path=[],active=new Set()){
 dfs(data.start);
 const answer=(name,id)=>paths.get(name)?.find(([q])=>q===id)?.[1];
 test('R44 graph has 201 endpoints and 184 reachable questions',()=>{
- assert.equal(data.version,'U1.121');assert.equal(paths.size,201);assert.equal(reached.size,184);
+ assert.equal(data.version,'U1.122');assert.equal(paths.size,201);assert.equal(reached.size,184);
  assert.deepEqual([...paths.keys()].sort(),Object.keys(data.ideologies).sort());
  assert.deepEqual([...reached].sort(),Object.keys(data.graph).sort());
  assert.equal(data.graph.q_statePriority,undefined);
