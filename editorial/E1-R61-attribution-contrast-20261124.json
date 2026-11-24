@@ -1,0 +1,82 @@
+{
+ "id": "E1-R61-attribution-contrast-20261124",
+ "edition": "U1.123",
+ "status": "approved by the user on 2026-11-24 ('Publish to the live site'); published as U1.123",
+ "date": "2026-11-24",
+ "baseline": {
+  "publishedEdition": "U1.122",
+  "headCommit": "83b9e95"
+ },
+ "audit": {
+  "routeTrace": "184/184 questions reached, 201/201 results, one route each, no cycles",
+  "browser": "Live U1.122 in the desktop built-in browser: 665 referenced assets returned 200, no console messages; quiz, result, results, tree and about views rendered; no horizontal overflow at 360px and 768px; keyboard focus visible (3px outline); two answer colours failed WCAG AA contrast."
+ },
+ "changes": [
+  {
+   "defect": "R61-D01",
+   "severity": "S1",
+   "criterion": "C1",
+   "node": "Theocracy",
+   "change": "Quote by Pope Francis (Jorge Mario Bergoglio) replaced with Josephus, Against Apion 2.165",
+   "rationale": "Pairing a sitting pope who does not advocate theocracy with the result was an unfair portrayal; Josephus's passage is where the term is first attested.",
+   "sources": [
+    "Josephus, Against Apion 2.164-165, trans. Whiston (lexundria.com; Project Gutenberg #2849)"
+   ]
+  },
+  {
+   "defect": "R61-D02",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Ego-Communism",
+   "change": "Untraceable Stirner quotation replaced with a sentence from The Ego and His Own (Byington)",
+   "rationale": "'I love communism because it is the most egoistic way of living' could not be found in Stirner.",
+   "sources": [
+    "Stirner, The Ego and His Own, trans. Byington (theanarchistlibrary.org)"
+   ],
+   "unverified": [
+    "Page locator in the 1907 edition"
+   ]
+  },
+  {
+   "defect": "R61-D03",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Liberal conservatism",
+   "change": "Untraceable Thatcher quotation replaced with a sentence from her 1978 St Lawrence Jewry speech; author shown as Margaret Thatcher rather than her maiden name",
+   "sources": [
+    "Margaret Thatcher Foundation, document 103522"
+   ],
+   "unverified": [
+    "Exact speech date (archive cites a 31 March 1978 newspaper source)"
+   ]
+  },
+  {
+   "defect": "R61-D04",
+   "severity": "S2",
+   "criterion": "D4",
+   "node": "ideosorter.css .answer-1, .answer-4",
+   "change": "Answer colours hsl(120 63% 38%) -> hsl(120 63% 32%) and hsl(40 78% 38%) -> hsl(40 78% 33%); shadows and ambient palette adjusted to match",
+   "rationale": "White 16.8px answer text measured 3.51:1 and 3.78:1, below the 4.5:1 AA minimum; new values give 4.74:1 and 4.81:1. Hue and saturation unchanged."
+  },
+  {
+   "defect": "R61-D05",
+   "severity": "S2",
+   "criterion": "E1",
+   "change": "Retrospective record added for U1.119-U1.121 (editorial/E1-record-gap-U1.119-U1.121.json)",
+   "rationale": "Three published editions had no editorial record."
+  },
+  {
+   "defect": "maintenance",
+   "change": "Version U1.122 -> U1.123; five pinned tests updated; tests/r61-attribution-contrast.test.mjs added"
+  }
+ ],
+ "openDecisions": [
+  "Fictional and self-described hypothetical results (B5)",
+  "Spartacism relocation requires anti-tree relayout",
+  "Ba'athism, Tridemism, Fiumanism, Political Futurism and Stakeholder capitalism routes",
+  "Correct name for 'Falangism (De Jons)'"
+ ],
+ "decidedByUser": [
+  "R60-D04 q_counterEcon and R60-D05 q_transition: user rejected changes on 2026-11-24"
+ ]
+}

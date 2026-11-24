@@ -1,15 +1,15 @@
 (() => {
   "use strict";
 
-  const assetVersion = "U1.122";
+  const assetVersion = "U1.123";
   const byId = (id) => document.getElementById(id);
   const viewNames = ["home", "quiz", "result", "results", "tree", "about"];
   const ambientProperties = ["--ambient-a", "--ambient-b", "--ambient-c", "--ambient-d", "--ambient-e", "--ambient-f"];
   const answerAmbientColors = [
-    "hsl(120 63% 38%)",
+    "hsl(120 63% 32%)",
     "hsl(0 62% 42%)",
     "hsl(280 54% 34%)",
-    "hsl(40 78% 38%)",
+    "hsl(40 78% 33%)",
     "hsl(205 65% 36%)",
     "hsl(175 62% 29%)",
   ];

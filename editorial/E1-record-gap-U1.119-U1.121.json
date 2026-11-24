@@ -1,0 +1,47 @@
+{
+ "id": "E1-record-gap-U1.119-U1.121",
+ "date": "2026-11-24",
+ "recordedIn": "R61",
+ "note": "Retrospective record compiled from git history. These editions were published without an in-tree editorial record. Rationale and sources below are limited to what the commit messages state; nothing has been added from memory. A private R59 review is reported to have taken place but left no record.",
+ "editions": [
+  {
+   "edition": "U1.119",
+   "commit": "bdb4aab",
+   "date": "2026-11-22",
+   "commitMessage": "Rename author ideology to Dialectical Prometheanism (U1.119)",
+   "files": [
+    "data/quiz-data.json",
+    "data/tree-layout.json",
+    "ideosorter.js",
+    "index.html",
+    "five version-pinned tests"
+   ]
+  },
+  {
+   "edition": "U1.120",
+   "commit": "f7dd20d",
+   "date": "2026-11-23",
+   "commitMessage": "Publish approved Dialectical Prometheanism flame and North Star banner (U1.120)",
+   "files": [
+    "data/quiz-data.json",
+    "ideosorter.js",
+    "index.html",
+    "banner and thumbnail assets",
+    "five version-pinned tests"
+   ]
+  },
+  {
+   "edition": "U1.121",
+   "commit": "d600a3d",
+   "date": "2026-11-23",
+   "commitMessage": "Update Dialectical Prometheanism attribution to Orphéon Maris (U1.121)",
+   "files": [
+    "data/quiz-data.json",
+    "ideosorter.js",
+    "index.html",
+    "five version-pinned tests"
+   ]
+  }
+ ],
+ "sources": "None recorded at the time."
+}

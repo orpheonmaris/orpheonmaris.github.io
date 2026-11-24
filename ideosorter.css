@@ -497,8 +497,8 @@ section {
 }
 
 .answer-1 {
-  --answer-color: hsl(120 63% 38%);
-  --answer-shadow: hsl(120 63% 23%);
+  --answer-color: hsl(120 63% 32%);
+  --answer-shadow: hsl(120 63% 19%);
 }
 
 .answer-2 {
@@ -512,8 +512,8 @@ section {
 }
 
 .answer-4 {
-  --answer-color: hsl(40 78% 38%);
-  --answer-shadow: hsl(40 78% 23%);
+  --answer-color: hsl(40 78% 33%);
+  --answer-shadow: hsl(40 78% 20%);
 }
 
 .answer-5 {
