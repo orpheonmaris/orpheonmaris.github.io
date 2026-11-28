@@ -21,7 +21,7 @@
    "severity": "S1",
    "criterion": "C1/C3",
    "node": "Schmittianism",
-   "change": "Banner replaced. The imported banner showed a swastika. New hand-drawn SVG: a sword through a broken bar (the decision that suspends the norm). New thumbnail and display images, cache key U1.125.",
+   "change": "Banner replaced. The imported banner showed a swastika. New hand-drawn SVG: a field divided light and dark (the friend–enemy distinction) with a crowned, counterchanged sword on the dividing line (the sovereign decision that draws it). New thumbnail and display images, cache key U1.125.",
    "rationale": "Schmitt joined the Nazi party in 1933, but the result represents his theory of sovereignty and the exception, which Schmitt set out in 1922 and which is held by readers who reject Nazism. A swastika equates the doctrine with Nazism and is an unfair portrayal.",
    "sources": [
     "Carl Schmitt, Political Theology (1922), ch. 1, opening sentence, as quoted on the existing card"
@@ -32,7 +32,7 @@
    "severity": "S1",
    "criterion": "C1/C2",
    "node": "Integralism",
-   "change": "Card rescoped to Catholic integralism, which matches its route (clerics take spiritual functions; crown and church organize the religious order). Quote replaced with the third sentence of The Josias, 'Integralism in Three Sentences' (2016), with source. Description added. Alias 'Catholic integralism'. Banner replaced (cross above crown).",
+   "change": "Card rescoped to Catholic integralism, which matches its route (clerics take spiritual functions; crown and church organize the religious order). Quote replaced with the third sentence of The Josias, 'Integralism in Three Sentences' (2016), with source. Description added. Alias 'Catholic integralism'. Banner replaced: white crossed keys of the Church above a dark crown on the gold field the result already used (spiritual power over temporal).",
    "rationale": "The card mixed three traditions: a Charles Maurras quotation (Maurras's 'integral nationalism'), the sigma of Brazilian Integralism (Ação Integralista Brasileira) and a route for Catholic throne-and-altar integralism.",
    "sources": [
     "The Josias, 'Integralism in Three Sentences', 17 October 2016 (thejosias.com, read 2026-11-27)",
@@ -147,5 +147,12 @@
    "Stale answerIconOverrides keys"
   ]
  },
- "decisionClosed": "Left Marxism-Leninism, pending since R62, is resolved by removal under B5 in this draft (subject to the user's approval)."
+ "decisionClosed": "Left Marxism-Leninism, pending since R62, is resolved by removal under B5 in this draft (subject to the user's approval).",
+ "draftRevisions": [
+  {
+   "date": "2026-11-27",
+   "after": "206d07a",
+   "change": "Both replacement banners redrawn after the user's review asked for clearer symbolism and a cleaner Integralism design. Integralism keeps its gold field so it no longer resembles the dark-red banners of Superfascism (crossed swords) and Scholar-bureaucracy."
+  }
+ ]
 }
