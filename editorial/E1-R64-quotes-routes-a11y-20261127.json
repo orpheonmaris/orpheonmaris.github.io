@@ -9,7 +9,7 @@
  },
  "rubricNote": "The round prompt was re-pasted with the original B5 wording. B5 is applied as amended in R62 (approved 2026-11-24), as in R63.",
  "audit": {
-  "routeTrace": "Live U1.125: 182/182 questions and 198/198 results reached, one route each. Draft: 181/181 questions, 197/197 results, one route each, no single-answer questions.",
+  "routeTrace": "Live U1.125: 182/182 questions and 198/198 results reached, one route each. Draft: 182/182 questions, 198/198 results, one route each, no single-answer questions.",
   "questions": "All 182 live questions re-read for A2–A5. New defects found: q_counterEcon (fixed here), q_transition 'Terror' as the only route to Narodnism, and Mesoconservatism's existence (both logged for R65).",
   "quotes": "The five suspected quotations from R63 were checked, plus a scan of the 115 cards without a source for known misattributions.",
   "accessibility": "axe-core 4 (WCAG 2.0/2.1 A and AA rules) run on home, quiz, result, results, tree and about views at 1366 and 360 px. Live U1.125: two violations (fixed here). Draft: none. Keyboard check: logical tab order, 3 px focus outline, quiz operable by keyboard.",
@@ -19,13 +19,18 @@
  "changes": [
   {
    "defect": "R64-D01",
-   "severity": "S1",
-   "criterion": "B5/C2",
+   "status": "withdrawn before publication",
    "node": "Nilssonianism",
-   "change": "Result removed with its question q_separation ('How should rival covenant communities separate?'); 'Yes' at q_covenant now leads straight to Hoppeanism.",
-   "rationale": "No ideology of this name was found outside internet compass games, and the quotation attributed to Jonas Nilsson ('Every man should, as far as possible, be his own Jarl.') could not be found anywhere. A living Swedish writer of that name exists; attaching an invented doctrine of 'aggressive' separation to his name is also unfair.",
+   "change": "None. The first draft removed the result and q_separation under B5; that removal is withdrawn and the result, its question and its cells are restored exactly as live.",
+   "rationale": "The user pointed out that Nilssonianism is based on Jonas Nilsson’s book Anarcho-Fascism: Nature Reborn. The book exists; the audit had searched only for the name ‘Nilssonianism’ and the quotation, not for Nilsson’s writings, and wrongly concluded that no such position existed.",
    "sources": [
-    "Searches of 2026-11-27 for the name, the quotation and the person: no independent source"
+    "User correction, 2026-11-27",
+    "Bookmate listing of Anarcho-Fascism: Nature Reborn; retail listing of the hardcover, ISBN 9789188667205"
+   ],
+   "unverified": [
+    "The card’s quotation ‘Every man should, as far as possible, be his own Jarl.’ has not been located in the book",
+    "Whether ‘Aggressively’ at q_separation describes the book’s position fairly",
+    "Publisher and year of the book"
    ]
   },
   {
@@ -153,21 +158,22 @@
   },
   {
    "defect": "layout",
-   "change": "Two cells removed (377 total). Pro side: Hoppeanism takes q_separation's cell; q_soe placed between q_creditDividend and q_trad with State capitalism beside it; Social georgism, q_klepto, q_conglomerate, Megacorporatocracy and Corporatocracy shifted by one or two cells. 8 cells moved; every edge adjacent; computed crossings 13 -> 12 (stored 13). Anti side unchanged."
+   "change": "Pro side: q_soe placed between q_creditDividend and q_trad with State capitalism beside it; Social georgism, q_klepto, q_conglomerate, Megacorporatocracy and Corporatocracy shifted by one or two cells. 7 cells moved; every edge adjacent; computed crossings unchanged at 13 (stored 14). Anti side unchanged. 379 cells."
   },
   {
    "defect": "maintenance",
-   "change": "Version U1.125 -> U1.126; 197 results and routes, 181 questions in data counts, metadata and About; shared count 110; 8 tests updated; tests/r64-quotes-routes.test.mjs added."
+   "change": "Version U1.125 -> U1.126; counts unchanged (198 results and routes, 182 questions); 8 tests updated for the version and the State capitalism route; tests/r64-quotes-routes.test.mjs added."
   }
  ],
  "openAfterDraft": {
   "S1_suspects": [
+   "Nilssonianism: quotation not located in Nilsson’s Anarcho-Fascism: Nature Reborn; the ‘Aggressively’ route answer not yet checked against the book",
    "Narodnism: reached only through 'Terror' at q_transition, which misdescribes most of the Narodnik tradition (C1/A4)",
    "Mesoconservatism: not found as an established term (B5); Dennis Prager quotation unsourced",
    "Further cards whose quotations look misattributed: Hereditary Monarchy (Voltaire), Cameralism (Frederick the Great), Dirigism (de Gaulle), National distributism (paraphrase of 'Chesterton's fence'), Individualist Anarchism (Oscar Wilde)"
   ],
   "S2": [
-   "107 cards still have no source citation (C2)",
+   "108 cards still have no source citation (C2)",
    "Social Autocracy / Social Authoritarianism: name not established (to examine)"
   ],
   "S3": [
@@ -181,7 +187,7 @@
   ],
   "S4": [
    "Joke internal ids (q_deuxCentQuaranteSixFromages, q_zeBugz, q_raceLarp, q_naziLarp, q_stalinCope)",
-   "Stale answerIconOverrides keys; 'aggressively' and 'peacefully' icon labels now unused"
+   "Stale answerIconOverrides keys"
   ]
  }
 }

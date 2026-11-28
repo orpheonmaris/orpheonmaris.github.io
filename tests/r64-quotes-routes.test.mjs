@@ -13,14 +13,14 @@ const paths=new Map();
 
 test('R64 edition and counts',()=>{
  assert.equal(data.version,'U1.126');
- assert.deepEqual([data.counts.ideologies,data.counts.routes,data.counts.questions,data.counts.shared],[197,197,181,110]);
- assert.equal(paths.size,197);
+ assert.deepEqual([data.counts.ideologies,data.counts.routes,data.counts.questions,data.counts.shared],[198,198,182,111]);
+ assert.equal(paths.size,198);
 });
 
-test('B5: Nilssonianism and its single-answer question are gone',()=>{
- assert.equal(I.Nilssonianism,undefined);assert.equal(g.q_separation,undefined);
- assert.match(paths.get('Hoppeanism'),/q_covenant=Yes$/);
- assert.match(paths.get('Anarcho-capitalism'),/q_covenant=No$/);
+test('Nilssonianism stays (removal withdrawn after the user identified its source book)',()=>{
+ assert.ok(I.Nilssonianism);assert.ok(g.q_separation);
+ assert.match(paths.get('Nilssonianism'),/q_covenant=Yes > q_separation=Aggressively$/);
+ assert.match(paths.get('Hoppeanism'),/q_covenant=Yes > q_separation=Peacefully$/);
 });
 
 test('A4: State capitalism no longer requires choosing one powerful leader',()=>{
@@ -60,7 +60,7 @@ test('replaced quotations are sourced and the old attributions are gone',()=>{
 
 test('layout: one cell per node, adjacent edges, crossings recorded',()=>{
  const cells=['pro','anti'].flatMap(s=>layout[s].cells.map(c=>c.key));
- assert.equal(new Set(cells).size,377);
- assert.ok(!cells.includes('result:Nilssonianism')&&!cells.includes('question:q_separation'));
- assert.equal(layout.pro.crossings,13);
+ assert.equal(new Set(cells).size,379);
+ assert.ok(cells.includes('result:Nilssonianism')&&cells.includes('question:q_separation'));
+ assert.equal(layout.pro.crossings,14);
 });
