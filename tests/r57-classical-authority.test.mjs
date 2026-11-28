@@ -18,7 +18,7 @@ function visit(id,path=[],anc=new Set()){
 visit(data.start);
 const ans=(n,q)=>routes.get(n)?.find(([node])=>node===q)?.[1];
 test('stable fixed-tree format and advertised totals',()=>{
- assert.equal(data.version,'U1.124');assert.equal(qs.size,185);assert.equal(routes.size,201);
+ assert.equal(data.version,'U1.125');assert.equal(qs.size,182);assert.equal(routes.size,198);
  assert.deepEqual([...routes.keys()].sort(),Object.keys(data.ideologies).sort());
  assert.deepEqual([...qs].sort(),Object.keys(data.graph).sort());
  assert.ok(data.ideologies['Dialectical Prometheanism']);
@@ -53,7 +53,7 @@ test('four semantically unique white pictograms using existing site assets',()=>
 });
 test('all five outcomes have cells in unchanged original layout',()=>{
  const keys=new Set(Object.values(layout).flatMap(l=>l.cells.map(c=>c.key)));
- assert.equal(keys.size,385);
+ assert.equal(keys.size,379);
  assert.ok(keys.has('question:q_electMon'));
  for(const name of names)assert.ok(keys.has('result:'+name));
 });

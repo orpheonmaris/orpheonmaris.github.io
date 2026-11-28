@@ -25,8 +25,8 @@ function walk(id,path=[],active=new Set()){
 walk(data.start);
 const answer=(name,id)=>paths.get(name)?.find(([node])=>node===id)?.[1];
 test('the entire sorter remains complete',()=>{
-  assert.equal(questions.size,185); // R62: +1 (q_natMarket)
-  assert.equal(paths.size,201);
+  assert.equal(questions.size,182); // R62: +1 (q_natMarket); R63: -3
+  assert.equal(paths.size,198);
   assert.deepEqual([...questions].sort(),Object.keys(data.graph).sort());
   assert.deepEqual([...paths.keys()].sort(),Object.keys(data.ideologies).sort());
 });
@@ -74,6 +74,6 @@ test('both diagrams are complete and extended arrows are explicitly supported',(
       }
     }
   }
-  assert.equal(occupied.size,385);
+  assert.equal(occupied.size,379);
   assert.deepEqual([...occupied].sort(),[...questions].filter(x=>x!==data.start).map(x=>'question:'+x).concat([...paths.keys()].map(x=>'result:'+x)).sort());
 });

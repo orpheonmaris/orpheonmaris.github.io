@@ -15,10 +15,10 @@ walk(data.start);
 const route=(name)=>paths.get(name).map(([q,a])=>`${q}=${a}`).join(' > ');
 
 test('R62 edition and counts',()=>{
- assert.equal(data.version,'U1.124');
- assert.equal(data.counts.questions,185);
- assert.equal(Object.keys(g).length,185);
- assert.equal(paths.size,201);
+ assert.equal(data.version,'U1.125');
+ assert.equal(data.counts.questions,182);
+ assert.equal(Object.keys(g).length,182);
+ assert.equal(paths.size,198);
 });
 
 test('JONS result carries its correct name and no wrong alias',()=>{
@@ -71,7 +71,7 @@ test('both diagrams hold one cell per node with adjacent edges',()=>{
  const key=c=>c.type==='question'?`question:${c.id}`:`result:${c.ideology}`;
  const cells=new Map();
  for(const side of ['pro','anti'])for(const c of layout[side].cells)cells.set(c.key,[side,c.column,c.row]);
- assert.equal(cells.size,385);
+ assert.equal(cells.size,379);
  assert.ok(!cells.has('question:q_classStruggleTool'));
  for(const [q,n] of Object.entries(g))for(const c of n.choices){
   const a=cells.get(`question:${q}`),b=cells.get(key(c));

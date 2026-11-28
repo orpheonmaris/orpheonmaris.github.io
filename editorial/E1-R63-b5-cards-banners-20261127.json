@@ -1,0 +1,151 @@
+{
+ "id": "E1-R63-b5-cards-banners-20261127",
+ "edition": "U1.125",
+ "status": "private draft, user approval required before any publication",
+ "date": "2026-11-27",
+ "baseline": {
+  "publishedEdition": "U1.124",
+  "headCommit": "49a199c"
+ },
+ "rubricNote": "The round prompt was re-pasted with the original B5 wording. B5 is applied as amended in R62 (approved 2026-11-24), which is stricter for joke ideologies and only adds a labelled exception for fiction.",
+ "audit": {
+  "routeTrace": "Before: 185/185 questions, 201/201 results, one route each. Draft: 182/182 questions, 198/198 results, one route each, no cycles.",
+  "tests": "10 test files pass (7 updated for counts and version, 1 new).",
+  "liveChecks": "Live U1.124 checked after R62 publication: 385 tree cells, no failed requests, no console errors.",
+  "contentReview": "All 185 questions and 201 cards re-read in full while building the R62 test site; every thumbnail and icon viewed.",
+  "notCheckedThisRound": "External link reachability (83 source URLs) was not re-checked."
+ },
+ "changes": [
+  {
+   "defect": "R63-D01",
+   "severity": "S1",
+   "criterion": "C1/C3",
+   "node": "Schmittianism",
+   "change": "Banner replaced. The imported banner showed a swastika. New hand-drawn SVG: a sword through a broken bar (the decision that suspends the norm). New thumbnail and display images, cache key U1.125.",
+   "rationale": "Schmitt joined the Nazi party in 1933, but the result represents his theory of sovereignty and the exception, which Schmitt set out in 1922 and which is held by readers who reject Nazism. A swastika equates the doctrine with Nazism and is an unfair portrayal.",
+   "sources": [
+    "Carl Schmitt, Political Theology (1922), ch. 1, opening sentence, as quoted on the existing card"
+   ]
+  },
+  {
+   "defect": "R63-D02",
+   "severity": "S1",
+   "criterion": "C1/C2",
+   "node": "Integralism",
+   "change": "Card rescoped to Catholic integralism, which matches its route (clerics take spiritual functions; crown and church organize the religious order). Quote replaced with the third sentence of The Josias, 'Integralism in Three Sentences' (2016), with source. Description added. Alias 'Catholic integralism'. Banner replaced (cross above crown).",
+   "rationale": "The card mixed three traditions: a Charles Maurras quotation (Maurras's 'integral nationalism'), the sigma of Brazilian Integralism (Ação Integralista Brasileira) and a route for Catholic throne-and-altar integralism.",
+   "sources": [
+    "The Josias, 'Integralism in Three Sentences', 17 October 2016 (thejosias.com, read 2026-11-27)",
+    "America Magazine (17 October 2022) and Church Life Journal, summarizing The Josias's definition: secondary"
+   ],
+   "unverified": [
+    "Personal authorship: the page carries the site's 'admin' byline; it is often credited to Edmund Waldstein, which this card does not claim"
+   ]
+  },
+  {
+   "defect": "R63-D03",
+   "severity": "S1",
+   "criterion": "B5",
+   "node": "Left Marxism-Leninism",
+   "change": "Result removed. Its question q_leninism ('Did Stalinist development preserve proletarian political power?') had no other result and is removed; q_unionAdministration No now leads straight to q_natLib.",
+   "rationale": "The card's only source was a parody 'manifesto' about 'left twitter'. No movement, organization or literature under this name was found outside meme wikis.",
+   "sources": [
+    "Searches of 2026-11-27 for the name and the quoted manifesto: no independent source found"
+   ]
+  },
+  {
+   "defect": "R63-D04",
+   "severity": "S1",
+   "criterion": "B5",
+   "node": "Avaritionism",
+   "change": "Result removed with its question q_redMarket ('May counter-economics include coercive or exploitative markets?'); counter-economic trade now leads straight to Agorism.",
+   "rationale": "No ideology of this name exists outside internet compass games; its card quoted Nassim Nicholas Taleb, who has no connection to it.",
+   "sources": [
+    "Searches of 2026-11-27: no independent source found"
+   ]
+  },
+  {
+   "defect": "R63-D05",
+   "severity": "S1",
+   "criterion": "B5",
+   "node": "Combatocracy",
+   "change": "Result removed with its question q_weak ('Does superior strength entitle rulers to dominate the weak?'); 'Strength' at q_sovereignType now leads straight to Kraterocracy.",
+   "rationale": "The term appears only on Polcompball fan wikis; its card quoted the self-help author Leo Buscaglia.",
+   "sources": [
+    "Polcompball Anarchy wiki, 'Apolitical Combatocracy' page, which treats Combatocracy as a wiki character"
+   ]
+  },
+  {
+   "defect": "R63-D06",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Kraterocracy",
+   "change": "Quote replaced with Callicles' statement of natural justice (Plato, Gorgias 483d, Lamb 1925), with source; description and alias 'Kratocracy' added.",
+   "rationale": "'Might makes right' was attributed to Ragnar Redbeard, whose 1896 book is titled Might Is Right. Kratocracy (kraterocracy) is a recognized term for rule by those strong enough to seize power; Callicles gives the classic argument that the stronger have a natural right to rule.",
+   "sources": [
+    "Plato, Gorgias 483c–d, trans. W. R. M. Lamb (1925), Perseus text via Perseids (read 2026-11-27)",
+    "Wikipedia, 'Might makes right', citing H. Hausheer, 'Kratocracy', in D. D. Runes (ed.), Dictionary of Philosophy (1942): tertiary"
+   ],
+   "unverified": [
+    "Runes's Dictionary of Philosophy entry, read directly"
+   ]
+  },
+  {
+   "defect": "R63-D07",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Clerical Fascism",
+   "change": "The quote 'You must train harder than the enemy…', attributed to Léon Degrelle, is replaced by a sourced editorial description centred on the Slovak State under Jozef Tiso, which matches the route (clergy hold governing authority).",
+   "rationale": "The quote could not be found in any source. Degrelle's Rex never governed, and its route question concerns clergy holding governing power, which fits Tiso's priest-led state.",
+   "sources": [
+    "James Mace Ward, Priest, Politician, Collaborator: Jozef Tiso and the Making of Fascist Slovakia (Cornell University Press, 2013); publisher and review summaries (Project MUSE; Láníček review) read 2026-11-27",
+    "Miloslav Szabó, 'Hitler's Priests in Slovakia', Soudobé dějiny 29, no. 3 (2022): 691–723, abstract (CEEOL)"
+   ],
+   "unverified": [
+    "Ward's book and Szabó's article read in full; the card relies on their published summaries"
+   ]
+  },
+  {
+   "defect": "R63-D08",
+   "severity": "S2",
+   "criterion": "D5",
+   "node": "index.html",
+   "change": "Footer now reads 'Ideology Sorter · by Orphéon Maris · GPL-3.0 · 2026'; <meta name=\"author\" content=\"Orphéon Maris\"> added.",
+   "rationale": "The byline was missing from the site."
+  },
+  {
+   "defect": "layout",
+   "change": "Six cells removed. Pro: Kraterocracy and Agorism moved into the freed cells of their removed parent questions. Anti: re-laid out from live with every edge adjacent, 18 cells moved, crossings 12 -> 11. Pro crossings 16 -> 14."
+  },
+  {
+   "defect": "maintenance",
+   "change": "Version U1.124 -> U1.125; 198 results and routes, 182 questions in data counts, meta descriptions and About; source counts recomputed (shared 111, left-only 41); 7 tests updated; tests/r63-b5-cards-banners.test.mjs added; assets/editorial/flags/README.md added."
+  }
+ ],
+ "openAfterDraft": {
+  "S1_suspects": [
+   "Nilssonianism: name comes from Polcompball; Jonas Nilsson exists as a Swedish political writer, but the doctrine and quote are unverified",
+   "Divine monarchy: 'Hell is a democracy. Heaven is a kingdom.' — Wikiquote gives a different wording, unsourced",
+   "Social Autocracy: Perón quote unverified (a similar saying is attributed to Óscar Benavides)",
+   "Patronalism: Putin quote unverified",
+   "Council Communism (Organizational Dualism and Unitarism): Gorter and Pannekoek quotes read as garbled; unverified"
+  ],
+  "S2": [
+   "115 cards still have no source citation (C2); to be worked through in batches",
+   "State capitalism still sits in the 'One powerful leader' branch (A4)"
+  ],
+  "S3": [
+   "Political Futurism author shown as 'Emilio Angelo Carlo Marinetti' (a recorded birth name) while Fascist Futurism shows 'Filippo Tommaso Marinetti'",
+   "'Guy-Ernest Debord 🚬' author name",
+   "'determinate' typo in q_utopianSchool",
+   "Ledesmaism alias unverified",
+   "Ba'athism 1947 vs 1963 tension",
+   "No Back button on Results and About views"
+  ],
+  "S4": [
+   "Joke internal ids (q_deuxCentQuaranteSixFromages, q_zeBugz, q_raceLarp, q_naziLarp)",
+   "Stale answerIconOverrides keys"
+  ]
+ },
+ "decisionClosed": "Left Marxism-Leninism, pending since R62, is resolved by removal under B5 in this draft (subject to the user's approval)."
+}
