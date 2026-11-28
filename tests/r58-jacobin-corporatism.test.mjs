@@ -21,9 +21,9 @@ function visit(id,path=[],ancestry=new Set()){
 }
 visit(d.start);
 const answer=(name,id)=>routes.get(name)?.find(([q])=>q===id)?.[1];
-test('201 original outcomes, 184 fixed questions, 384 single-parent edges',()=>{
- assert.equal(d.version,'U1.123');assert.equal(d.counts.ideologies,201);assert.equal(d.counts.routes,201);assert.equal(d.counts.questions,184);
- assert.equal(routes.size,201);assert.equal(questions.size,184);assert.equal(incoming.size,384);assert.ok([...incoming.values()].every(n=>n===1));
+test('201 original outcomes, 185 fixed questions, 385 single-parent edges',()=>{
+ assert.equal(d.version,'U1.124');assert.equal(d.counts.ideologies,201);assert.equal(d.counts.routes,201);assert.equal(d.counts.questions,185);
+ assert.equal(routes.size,201);assert.equal(questions.size,185);assert.equal(incoming.size,385);assert.ok([...incoming.values()].every(n=>n===1));
  assert.deepEqual([...routes.keys()].sort(),Object.keys(d.ideologies).sort());
  assert.deepEqual([...questions].sort(),Object.keys(d.graph).sort());
 });
@@ -55,7 +55,7 @@ test('renamed author outcome, Immortalist Communism, q_weed, and R57 improvement
  assert.equal(d.graph.q_stateFunctions.question,'Who should ultimately govern the state?');
 });
 test('tree visual still contains one cell per non-root node',()=>{
- const keys=Object.values(layout).flatMap(v=>v.cells.map(c=>c.key));assert.equal(new Set(keys).size,384);
+ const keys=Object.values(layout).flatMap(v=>v.cells.map(c=>c.key));assert.equal(new Set(keys).size,385);
  for(const id of questions)if(id!==d.start)assert.ok(keys.includes('question:'+id));
  for(const name of routes.keys())assert.ok(keys.includes('result:'+name));
 });

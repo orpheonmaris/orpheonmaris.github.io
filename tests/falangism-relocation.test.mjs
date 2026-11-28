@@ -25,21 +25,21 @@ function walk(id,path=[],active=new Set()){
 walk(data.start);
 const answer=(name,id)=>paths.get(name)?.find(([node])=>node===id)?.[1];
 test('the entire sorter remains complete',()=>{
-  assert.equal(questions.size,184);
+  assert.equal(questions.size,185); // R62: +1 (q_natMarket)
   assert.equal(paths.size,201);
   assert.deepEqual([...questions].sort(),Object.keys(data.graph).sort());
   assert.deepEqual([...paths.keys()].sort(),Object.keys(data.ideologies).sort());
 });
 test('Catholic Falangism follows the nationalist-syndicalist pro-property path',()=>{
-  for(const name of ['Falangism','Falangism (De Jons)','National syndicalism']){
+  for(const name of ['Falangism','National syndicalism (JONS)','National syndicalism']){
     assert.equal(data.ideologies[name].branch,'Pro-private property');
     assert.equal(answer(name,'q_privateProperty'),'Yes');
     assert.equal(answer(name,'q_verticalSyndicates'),'Yes');
     assert.equal(answer(name,'q_fashClergy'),'No');
   }
   assert.equal(answer('Falangism','q_traditionalValues'),'Yes');
-  assert.equal(answer('Falangism (De Jons)','q_traditionalValues'),'No');
-  assert.equal(answer('Falangism (De Jons)','q_syndicateAuthority'),'Yes');
+  assert.equal(answer('National syndicalism (JONS)','q_traditionalValues'),'No');
+  assert.equal(answer('National syndicalism (JONS)','q_syndicateAuthority'),'Yes');
   assert.equal(answer('National syndicalism','q_syndicateAuthority'),'No');
 });
 test('adjacent fascist and futurist outcomes remain distinct',()=>{
@@ -74,6 +74,6 @@ test('both diagrams are complete and extended arrows are explicitly supported',(
       }
     }
   }
-  assert.equal(occupied.size,384);
+  assert.equal(occupied.size,385);
   assert.deepEqual([...occupied].sort(),[...questions].filter(x=>x!==data.start).map(x=>'question:'+x).concat([...paths.keys()].map(x=>'result:'+x)).sort());
 });

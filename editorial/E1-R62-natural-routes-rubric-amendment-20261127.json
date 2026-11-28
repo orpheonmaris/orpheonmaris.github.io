@@ -1,0 +1,114 @@
+{
+ "id": "E1-R62-natural-routes-rubric-amendment-20261127",
+ "edition": "U1.124",
+ "status": "private draft, user approval required before any publication",
+ "date": "2026-11-27",
+ "baseline": {
+  "publishedEdition": "U1.123",
+  "headCommit": "28352d5"
+ },
+ "revisionNote": "Third R62 draft, rebuilt from live U1.123. It supersedes db805b9 and 6aab98c, neither of which was published. The user found their pathing forced and unnatural, and out of the site's style. Causes found: new questions of 13 to 16 words (site median 9), yes/no gates inserted into other families' chains, and the site's multi-answer questions taken apart. This draft adds no new question wording. Two new nodes repeat the site's own question 'Should national interests come before all other commitments?'. One question is reworded and shortened from 13 to 10 words, and one question is removed because after the moves it would separate nothing. Existing branches are moved whole.",
+ "rubricAmendment": {
+  "id": "R-amendment-1",
+  "approvedByUser": "2026-11-24",
+  "B5_before": "No joke, invented or non-existent ideologies remain (cf. the removed 'Smiley Fascism').",
+  "B5_after": "No joke ideologies remain. A fictional regime or hypothetical construct may remain only if its result card states plainly that it is fictional or hypothetical and names its source work.",
+  "effect": "Clean-audit count reset to 0. Ingsoc, World State (Brave New World), Benefactorism and Megacorporatocracy meet the amended rule. Left Marxism-Leninism does not (its card is an online parody manifesto) and stays open for the user's decision."
+ },
+ "audit": {
+  "routeTrace": "185/185 questions reached, 201/201 results, one route each, no cycles",
+  "tests": "9 test files pass (6 updated for version and count pins, 1 new)",
+  "browser": "Draft rendered in headless Chrome at 1280, 768 and 360 px: no console errors, page errors or failed requests; no horizontal overflow; changed questions show the expected answers; JONS card shows 'Also known as: JONS · Ledesmaism · Falangism (Ledesma Ramos)'; both tree diagrams inspected around every changed node."
+ },
+ "changes": [
+  {
+   "defect": "R62-D01",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Falangism (De Jons)",
+   "change": "Renamed National syndicalism (JONS). The old name is not kept as an alias, because aliases are displayed as 'Also known as'.",
+   "rationale": "'De Jons' is not a correct name. The JONS (Juntas de Ofensiva Nacional-Sindicalista) was Ramiro Ledesma Ramos's organization. Name chosen by the user."
+  },
+  {
+   "defect": "R62-D02",
+   "severity": "S1",
+   "criterion": "A4",
+   "node": "Ba'athism, Tridemism, Fiumanism, Political Futurism",
+   "change": "The existing branch (q_natSynd with q_fumivFascfu and q_nazbol) moves whole from the 'No' side of q_markets to the 'Yes' side. It now follows q_authMarkSoc Yes through a new node, q_natMarket, which repeats the site's question 'Should national interests come before all other commitments?'. Answering No leads to the existing price question (q_guilds), so market, Langean and guild socialism are reached as before with one added question. Their anti-property placement is unchanged.",
+   "rationale": "The old route required these four to deny that market exchange should remain a lasting institution. None of their programmes abolishes exchange. Their placement on the anti-property side is defensible: the Ba'ath constitution makes socialism necessary and puts large industry under national ownership; Sun Yat-sen equated the principle of livelihood with socialism; and the Carta del Carnaro makes labour the only legitimate title to property in means of production and exchange.",
+   "sources": [
+    "Carta del Carnaro (1920), De Ambris text, art. 2 ('una democrazia diretta che ha per base il lavoro produttivo') and art. 6 (property as a social function; labour as 'il solo titolo legittimo di proprietà su qualsiasi mezzo di produzione e di scambio'); corporations' members earn 'salario, stipendio, profitto d'azienda, o lucro professionale'. PDFs at silvanapoli.it and twiki.di.uniroma1.it, read 2026-11-27",
+    "1947 Ba'ath constitution (respects inheritance and private property; state ownership of utilities, natural resources, large industry and transport; state control of trade), via the Wikipedia article 'Arab socialism': tertiary",
+    "Sun Yat-sen on minsheng as socialism: Peng Jian, Sun Yat-sen studies (2019), checked earlier in R62: secondary",
+    "Manifesto del Partito Politico Futurista Italiano (1918) and Marinetti, Democrazia futurista (1919), chs. 15 and 20: checked earlier in R62"
+   ],
+   "unverified": [
+    "Ba'ath constitution articles, read directly (OpenEdition bot wall; Arabic Wikisource page could not be read)",
+    "Political Futurism's answer to the private-property gateway (pre-existing; evidence weaker than for the other three)"
+   ]
+  },
+  {
+   "defect": "R62-D03",
+   "severity": "S1",
+   "criterion": "A4/B3",
+   "node": "Third International Theory",
+   "change": "Moves from the centralized-state branch to the branch for No to 'Should revolutionary socialism be built through centralized state authority?'. After the existing unions question (q_unions No), a new node, q_natSocLib, repeats 'Should national interests come before all other commitments?': Yes leads to Third International Theory, No to Libertarian socialism. q_classStruggleTool ('Should class struggle serve national purification and renewal?') is removed, because after the move only one answer would remain; q_natSocAuth Yes now leads straight to q_nationalCouncils, so the National Bolshevik results lose one question and nothing else. q_nazbol loses 'Direct Democracy' because Third International Theory no longer passes through it; Ba'athism and Tridemism keep 'Vanguard' and 'Parliament'.",
+   "rationale": "Third International Theory stays on the 'No' side of q_markets: the Green Book's final stage has no profit or money. Its adherents could not honestly assent to centralized state authority: the Green Book rejects party rule and representation and gives authority to the popular congresses. Its distinctive claim against libertarian socialism is national: the 'national factor' drives history and the national state is the natural political form.",
+   "sources": [
+    "The Green Book, Part One (marxists.org ch01, read 2026-11-27): 'The party is a contemporary form of dictatorship.'; 'There can be no representation in lieu of the people and representation is fraud.'; 'Popular Conferences are the only means to achieve popular democracy.'",
+    "The Green Book, Part Two (marxists.org ch02, read 2026-11-27): 'The final step is for the new socialist society to reach a stage in which profit and money disappear.'",
+    "The Green Book, Part Three (marxists.org ch03, read 2026-11-27): 'The social factor, the national factor, is the dynamic force of human history.'; 'The national state is the only political form which is consistent with the natural social structure.'",
+    "Library of Congress Country Study, Libya, 'The Green Book' (countrystudies.us): secondary, corroborates Part Two"
+   ]
+  },
+  {
+   "defect": "R62-D04",
+   "severity": "S1",
+   "criterion": "A4",
+   "node": "Stakeholder capitalism",
+   "change": "The site's own question q_zeBugz ('Should companies serve workers, customers, and communities as well as shareholders?') moves with its result from the strongman chain (after q_soe No) to the elected market-liberal chain (after q_mobility No, before q_hegemony). q_soe No now leads straight to q_klepto. The explanation drops the clause about public shareholders and state ownership, which belonged to the old position: 'This concerns companies’ central obligations. Other forms of capitalism may also recognize stakeholder interests.'",
+   "rationale": "Adherents of stakeholder capitalism should not have to endorse rule by one powerful leader to reach their result. R42 had logged this as a counterexample.",
+   "tieRule": "Third Way and stakeholder capitalism overlap. The broader programme is asked first, as on the live site: anyone who answers Yes to state-funded training and higher education reaches Third Way. A stakeholder capitalist who also wants such subsidies will therefore reach Third Way.",
+   "unverified": [
+    "How leading stakeholder-capitalism authors (e.g. the 2020 Davos Manifesto) stand on state-funded training: not checked"
+   ]
+  },
+  {
+   "defect": "R62-D05",
+   "severity": "S1",
+   "criterion": "A1/A4/B3",
+   "node": "q_demCent, Spartacism, Council Communism (Organizational Dualism), Italian Left-Communism (Battaglia)",
+   "change": "q_demCent shortened from 'Should a centralized vanguard party provide political leadership in the proletarian revolution?' to 'Should a centralized vanguard party direct the proletarian revolution?'. Spartacism moves to the No side, next to council communism: the existing question q_parliamentaryAgitation now follows q_partyElites Yes, with Yes leading to Spartacism and No to Council Communism (Organizational Dualism). Battaglia now ends at q_organic No.",
+   "rationale": "Under the old wording a Luxemburgist could answer Yes, which is why Spartacism sat in the vanguard branch. Luxemburg accepted a centralizing tendency in Social Democracy but rejected Lenin's 'ultra-centralism' (1904). The Spartacus League's programme refuses to take power over or through the working masses. The parliament question is the real historical line between the two council-side currents: at the KPD founding congress Luxemburg, Liebknecht and Levi argued for contesting the National Assembly elections and lost 62 to 23, and the KAPD later rejected parliamentarism.",
+   "sources": [
+    "Luxemburg, 'Was will der Spartakusbund?', Die Rote Fahne, 14 Dec 1918 (marxists.org German, read 2026-11-27): 'Der Spartakusbund ist keine Partei, die über die Arbeitermasse oder durch die Arbeitermasse zur Herrschaft gelangen will.'",
+    "Luxemburg, Organizational Questions of the Russian Social Democracy (1904), marxists.org: checked earlier in R62",
+    "Friedrich-Ebert-Stiftung digital chronicle, KPD founding congress (vote 62:23): checked earlier in R62",
+    "KAPD manifesto 'to the proletariat of the world' (libcom), on parliamentarism: checked earlier in R62"
+   ],
+   "unverified": [
+    "Whether Vperedism, Gastevism, Communist Futurism and Workers' Oppositionism are best served by Yes to the reworded q_demCent (no route changes for them)"
+   ]
+  },
+  {
+   "defect": "layout",
+   "change": "Both tree diagrams re-laid out from the live layout with every edge adjacent (the one approved extended edge kept). Pro: 3 cells moved, crossings unchanged. Anti: 46 cells moved or new (2 new nodes, 1 removed), crossings 16 -> 12."
+  },
+  {
+   "defect": "maintenance",
+   "change": "Version U1.123 -> U1.124; 185 questions (184 + 2 - 1) in data counts, meta descriptions and About; R42 test now expects Stakeholder capitalism under 'Elected representatives' (counts 34/29/26); falangism test uses the new name; tests/r62-natural-routes.test.mjs added."
+  }
+ ],
+ "supersededDrafts": [
+  "db805b9 (first R62 draft)",
+  "6aab98c (revised R62 draft)"
+ ],
+ "openDecisions": [
+  "Left Marxism-Leninism under amended B5"
+ ],
+ "loggedForLater": [
+  "Ba'athism 'Vanguard' rests on the 1963 Muntalaqat and the 1973 Syrian constitution; the 1947 constitution prescribed parliamentary government (pre-existing tension, S3)",
+  "Alias 'Ledesmaism' on the JONS card is unverified as a term in use (S3)",
+  "Stale answerIconOverrides keys for q_nazbol, q_organic and q_partyElites (S4)"
+ ]
+}

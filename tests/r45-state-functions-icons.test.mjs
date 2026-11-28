@@ -12,7 +12,7 @@ const expected=[
   ['Monarchs or ruling elites','/assets/quark/buttons/sovereign.svg'],
 ];
 test('version and three answer labels are stable',()=>{
-  assert.equal(data.version,'U1.123');
+  assert.equal(data.version,'U1.124');
   assert.deepEqual(data.graph.q_stateFunctions.choices.map(choice=>choice.label),expected.map(([label])=>label));
 });
 test('all state-authority answers have unique, existing, original-style pictograms',()=>{

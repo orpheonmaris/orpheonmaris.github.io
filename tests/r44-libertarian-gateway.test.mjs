@@ -13,8 +13,8 @@ function dfs(id,path=[],active=new Set()){
 }
 dfs(data.start);
 const answer=(name,id)=>paths.get(name)?.find(([q])=>q===id)?.[1];
-test('R44 graph has 201 endpoints and 184 reachable questions',()=>{
- assert.equal(data.version,'U1.123');assert.equal(paths.size,201);assert.equal(reached.size,184);
+test('R44 graph has 201 endpoints and 185 reachable questions',()=>{
+ assert.equal(data.version,'U1.124');assert.equal(paths.size,201);assert.equal(reached.size,185);
  assert.deepEqual([...paths.keys()].sort(),Object.keys(data.ideologies).sort());
  assert.deepEqual([...reached].sort(),Object.keys(data.graph).sort());
  assert.equal(data.graph.q_statePriority,undefined);
@@ -47,6 +47,6 @@ test('all graph edges appear in visual layouts and no nodes overlap',()=>{
    const dist=Math.max(Math.abs(next.column-c.column),Math.abs(next.row-c.row));if(dist!==1)extended.push([side,c.key,target,dist]);
   }
  }
- assert.equal(all.size,384);
+ assert.equal(all.size,385);
  assert.deepEqual(extended,[['pro','question:q_racism','question:q_total',2]]);
 });
