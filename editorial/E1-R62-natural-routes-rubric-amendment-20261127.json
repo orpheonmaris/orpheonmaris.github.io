@@ -1,7 +1,8 @@
 {
  "id": "E1-R62-natural-routes-rubric-amendment-20261127",
  "edition": "U1.124",
- "status": "private draft, user approval required before any publication",
+ "status": "approved by the user on 2026-11-27 ('Publish R62 to the live site') after review on the private test site; published as U1.124",
+ "publishedDraftCommit": "85f15d4",
  "date": "2026-11-27",
  "baseline": {
   "publishedEdition": "U1.123",
