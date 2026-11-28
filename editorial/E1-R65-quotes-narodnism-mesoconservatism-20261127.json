@@ -1,0 +1,212 @@
+{
+ "id": "E1-R65-quotes-narodnism-mesoconservatism-20261127",
+ "edition": "U1.127",
+ "status": "DRAFT — awaiting the user's explicit approval of this exact draft; nothing has been published",
+ "draftCommit": "88e9109 (this record is added in the commit after it; the site files are identical)",
+ "date": "2026-11-27",
+ "baseline": {
+  "publishedEdition": "U1.126",
+  "headCommit": "fca46f6"
+ },
+ "rubricNote": "The round prompt was re-pasted with the original B5 wording. B5 is applied as amended in R62 (approved 2026-11-24), as in R63 and R64.",
+ "audit": {
+  "routeTrace": "Live U1.126 (checked after publication): 182/182 questions and 198/198 results reached, one route each. Draft: 182/182 questions and 197/197 results reached, one route each, no single-answer questions. All 197 routes were also walked through the real quiz page by clicking each answer label in turn; every one ended on the expected result.",
+  "questions": "All 182 live questions re-read for A2–A5. Defects fixed here: q_transition 'Terror' as the only route to Narodnism; the one-answer-per-result question q_conIntervention (removed with Mesoconservatism). Defects logged, not fixed: q_deuxCentQuaranteSixFromages is a false binary (A3); q_conservativeInsurance has loaded wording and a weak Cameralism distinction (A4/B3).",
+  "quotes": "Cards without a source citation: 108 live, 98 in this draft (Mesoconservatism removed; nine cards gained a source). Eight quotations were checked against the cited work or a scholarly reference and replaced or sourced; Nilssonianism was deliberately left unchanged (see unverified).",
+  "accessibility": "axe-core 4 (WCAG 2.0/2.1 A and AA) on home, quiz, result, results, tree and about at 1366 and 360 px: no violations. No horizontal overflow at 360, 768 and 1366 px. Every tree cell (197 results, 181 questions) was clicked: no failed requests and no console errors.",
+  "tests": "12 test files, 52 tests, all pass (11 files updated for the version, counts and the Mesoconservatism removal; tests/r65-quotes-narodnism-meso.test.mjs added).",
+  "notCheckedThisRound": "Reachability of the roughly 90 older source links was not re-checked. The nine new links were opened or fetched during this round (the Disraeli page in the browser pane, the others by page fetch), but the shell cannot reach external sites, so no scripted link check was run."
+ },
+ "changes": [
+  {
+   "defect": "R65-D01",
+   "severity": "S1",
+   "criterion": "B5, C1",
+   "node": "Mesoconservatism",
+   "change": "Result and its question q_conIntervention ('Should the state intervene militarily in foreign conflicts?') removed. q_safetyNet 'No' now leads straight to q_con. Layout: q_con moves into the freed cell; q_identityLevel, q_liberalPriority, Paleoconservatism, Conservative Liberalism and Liberal conservatism each move one or two cells so every edge stays adjacent. Crossings unchanged (pro 14 stored / 13 computed, anti 11).",
+   "rationale": "No reference work or scholarly source found uses 'Mesoconservatism' as the name of a political tendency. The closest established terms, moderate conservatism and liberal conservatism, correspond to cards the site already has (Liberal conservatism, Classical conservatism). The card's quotation, attributed to Dennis Prager, carried no source. Neoconservatism, which the site places at q_hegemony ('Military readiness'), stays reachable.",
+   "sources": [
+    "Web search for 'Mesoconservatism', 2026-11-27: no reference-work or scholarly use of the term found; results were general conservatism and moderate conservatism entries (Stanford Encyclopedia of Philosophy, 'Conservatism'; Wikipedia, 'Moderate conservatism')"
+   ],
+   "unverified": [
+    "Absence of the term in a search is not proof it was never used; library databases and Google Books were not searched",
+    "The origin of the card in the source list the site draws on was not traced",
+    "Orphaned assets (the Mesoconservatism flag SVG and thumbnails 098) are left in the repository, as in R63; the preview bundle drops the two unreferenced images"
+   ]
+  },
+  {
+   "defect": "R65-D02",
+   "severity": "S1",
+   "criterion": "A3, B3, C1",
+   "node": "Narodnism",
+   "change": "The answer 'Terror' is removed from q_transition (now Election, Coup, Revolution). Narodnism is reached through the agrarian-socialist branch: q_transition=Revolution > q_authSoc=No > q_agrSoc=Yes > new question q_peasantCommune ('Should socialism be built on the peasant village commune?', Yes = Narodnism, No = Agrarian socialism). Quotation replaced by the 1878 programme of Land and Liberty: '…we must demand the transfer of all the land into the hands of the rural working class and its equal distribution.' The explanation line defines the village commune (obshchina, mir). Layout: Narodnism moves to the free cell above the new question; the stale 'q_transition:terror' icon override is removed.",
+   "rationale": "Narodnism, the Russian populist socialism that looked to the peasantry and the village commune, was not defined by terror. Land and Liberty kept to peasant propaganda, and systematic terror was adopted by the later offshoot Narodnaya Volya (1879). A single question about the commune separates Narodnism from other agrarian socialism and keeps the route inside the agrarian branch.",
+   "sources": [
+    "Program of Land and Liberty (final revision, May 1878), English text at The Anarchist Library (https://theanarchistlibrary.org/library/land-and-liberty-program-of-land-and-liberty.html)",
+    "Encyclopaedia Britannica and Cambridge reference entries on Land and Liberty and Narodnaya Volya, read for the history of the split",
+    "V. I. Lenin (1912), Marxists Internet Archive, which calls Herzen the founder of 'Narodism'"
+   ],
+   "unverified": [
+    "The English translation's edition (the page names a 1997 Moscow Archaeographic Center translation) was not checked against a printed edition or the Russian text",
+    "Alexander Herzen's own writing on the commune was not obtained (the Gutenberg host could not be fetched)",
+    "That an Agrarian socialism Yes/No split on the commune matches how specialists divide the two; Zapatista and other communal-land socialists would also answer Yes",
+    "The history of the split between Land and Liberty and Narodnaya Volya, including the 1879 date, comes from reference entries (Britannica, Cambridge, Spartacus Educational), not from primary sources"
+   ]
+  },
+  {
+   "defect": "R65-D03",
+   "severity": "S1",
+   "criterion": "C1, C2",
+   "node": "Hereditary Monarchy",
+   "change": "The line attributed to Voltaire ('I would rather obey a fine lion…') replaced by Walter Bagehot: 'The best reason why Monarchy is a strong government is, that it is an intelligible government.' Source added.",
+   "rationale": "The Voltaire attribution carried no work, letter or date. Bagehot's chapter on the monarchy is a classic analysis of why a hereditary monarchy works as a form of government.",
+   "sources": [
+    "Walter Bagehot, The English Constitution, chapter 'The Monarchy', section I, text at Standard Ebooks (https://standardebooks.org/ebooks/walter-bagehot/the-english-constitution/text/chapter-2)"
+   ],
+   "unverified": [
+    "Which edition (1867 or the 1872 second edition) the Standard Ebooks text follows",
+    "Whether a Voltaire source for the 'lion' line exists; none was located, which does not prove there is none"
+   ]
+  },
+  {
+   "defect": "R65-D04",
+   "severity": "S2",
+   "criterion": "C1, C2",
+   "node": "Individualist Anarchism",
+   "change": "The aphorism 'A man who does not think for himself does not think at all.' replaced by Oscar Wilde: 'All authority is quite degrading. It degrades those who exercise it, and degrades those over whom it is exercised.' Source added.",
+   "rationale": "The old line had no source attached and its provenance was not established; the replacement is a verified sentence from The Soul of Man under Socialism that speaks to the tendency's anti-authority core.",
+   "sources": [
+    "Oscar Wilde, 'The Soul of Man under Socialism' (1891), Marxists Internet Archive (https://marxists.org/reference/archive/wilde-oscar/soul-man/)"
+   ],
+   "unverified": [
+    "Whether the removed aphorism is Wilde's, and where; it was not found in the text read",
+    "Whether Wilde is the best-fitting figure for Individualist Anarchism (a scholarly judgement; he is often cited as sympathetic to anarchism but is not a movement founder)"
+   ]
+  },
+  {
+   "defect": "R65-D05",
+   "severity": "S2",
+   "criterion": "C1, C2",
+   "node": "National distributism",
+   "change": "The common paraphrase 'Don't ever take a fence down until you know why it was put up.' replaced by Chesterton's own wording of the passage. Source added.",
+   "rationale": "The card showed a condensed paraphrase as Chesterton's words. The verbatim passage is in The Thing (1929).",
+   "sources": [
+    "G. K. Chesterton, The Thing (1929), 'The Drift from Domesticity', passage as given by the American Chesterton Society (https://www.chesterton.org/taking-a-fence-down/)"
+   ],
+   "unverified": [
+    "Page numbers and edition of The Thing were not checked",
+    "The Society's page reports that Bartlett's credits the paraphrase to a 1945 notebook of John F. Kennedy; this was not checked",
+    "The passage concerns inherited institutions and fits the 'national' conservative side of distributism better than its economics. A more on-topic Chesterton line ('Too much capitalism does not mean too many capitalists, but too few capitalists') was considered and not used: the Society cites 'How to Write a Detective Story' (The Spice of Life), while a Distributist Review article could not locate it in either of two other books often given as its source. Its source needs checking before use"
+   ]
+  },
+  {
+   "defect": "R65-D06",
+   "severity": "S2",
+   "criterion": "C1, C2",
+   "node": "Paternalistic conservatism",
+   "change": "The line attributed to Disraeli ('The greatest good you can do for another…') replaced by his 'two nations' passage from Sybil (spoken by a character in the novel), quoted to '…inhabitants of different planets'. Source added.",
+   "rationale": "No source in Disraeli's writings or speeches was verified for the old line. The Sybil passage is the best-known statement of the social divide that 'One Nation' paternalistic conservatism responds to.",
+   "sources": [
+    "Benjamin Disraeli, Sybil, or The Two Nations (1845), Book II, ch. 5, text at History Home (https://www.historyhome.co.uk/readings/sybil.htm), opened in the browser pane this round; the page itself gives 'Book II, ch. 5'"
+   ],
+   "unverified": [
+    "The History Home page is an excerpt; the wording was not compared with a critical edition",
+    "The passage is a character's speech and a statement of the problem, not of the paternalist remedy",
+    "Where the removed line comes from"
+   ]
+  },
+  {
+   "defect": "R65-D07",
+   "severity": "S2",
+   "criterion": "C1, C2",
+   "node": "Cameralism",
+   "change": "The remark attributed to Frederick the Great ('My people and I have come to an agreement…') replaced by an editorial description that quotes Albion Small's two phrases. Card marked as a description.",
+   "rationale": "No source was attached to the remark, and it does not describe cameralist doctrine. Small's history is the standard English-language study.",
+   "sources": [
+    "Albion W. Small, The Cameralists: The Pioneers of German Social Polity (Chicago: University of Chicago Press, 1909), Preface pp. 4–5 and chapter I p. 19, McMaster PDF (https://historyofeconomicthought.mcmaster.ca/small/Cameralist.pdf)"
+   ],
+   "unverified": [
+    "Page numbers are those of the McMaster PDF, not checked against the print edition",
+    "The words 'German-speaking cameralist writers and officials' are the editor's and rest on the book's title and general reference knowledge, not on a passage read this round",
+    "A twentieth-century scholarly treatment (for example on the Austrian and German cameralist tradition) was not consulted"
+   ]
+  },
+  {
+   "defect": "R65-D08",
+   "severity": "S2",
+   "criterion": "C1, C2",
+   "node": "Dirigism",
+   "change": "The line attributed to Charles de Gaulle ('The cabinet has no propositions to make, but orders to give.') replaced by an editorial description built on Rebecca Chen's encyclopedia entry. Card marked as a description.",
+   "rationale": "No source for the de Gaulle line was verified, and it states an attitude to the cabinet, not what dirigisme is. The entry gives the scholarly definition and the French form.",
+   "sources": [
+    "Rebecca Chen, 'Dirigisme', Encyclopedia of Governance (SAGE, 2007), reproduced by Encyclopaedia Britannica (https://www.britannica.com/topic/dirigisme)"
+   ],
+   "unverified": [
+    "A tertiary source; monographs on French planning (for example by Stephen Cohen or Peter Hall) were not consulted",
+    "The editor and publication details of the SAGE volume were not checked",
+    "Whether the removed line is de Gaulle's"
+   ]
+  },
+  {
+   "defect": "R65-D09",
+   "severity": "S2",
+   "criterion": "C1, C2",
+   "node": "Stratocracy",
+   "change": "The composite line attributed to Oliver Cromwell replaced by an editorial description quoting two dictionary definitions. Card marked as a description.",
+   "rationale": "The Cromwell sentence is a composite that does not describe military rule and was not traced to a Cromwell text. No genuine Cromwell statement of military rule was found to replace it.",
+   "sources": [
+    "Collins English Dictionary and Dictionary.com, s.v. 'stratocracy' (https://www.dictionary.com/browse/stratocracy)"
+   ],
+   "unverified": [
+    "Dictionaries are tertiary sources and give no history of the term or of any movement that held the view",
+    "The wording of the Collins entry was read through the Dictionary.com page, not from Collins directly",
+    "Why the original card chose Cromwell (the Protectorate's rule through major-generals is a historical case, not a doctrine)"
+   ]
+  },
+  {
+   "defect": "R65-D10",
+   "severity": "S3",
+   "criterion": "C2",
+   "node": "Platformism",
+   "change": "Source added to the existing quotation ('There is no such thing as harmless power.'); wording unchanged.",
+   "rationale": "The line is Makhno's, in 'The ABC of the Revolutionary Anarchist'. The card now cites it.",
+   "sources": [
+    "Nestor Makhno, 'The ABC of the Revolutionary Anarchist', Probuzhdeniye nos. 18 and 19–20 (1932), tr. Paul Sharkey, The Struggle Against the State and Other Essays (AK Press), text at The Anarchist Library (https://theanarchistlibrary.org/library/nestor-makhno-the-abc-of-the-revolutionary-anarchist)"
+   ],
+   "unverified": [
+    "Year and place of the AK Press edition not given; the page numbers were not checked",
+    "Whether the sentence suits Platformism (Makhno co-wrote the 1926 Organisational Platform) better than a line from the Platform itself"
+   ]
+  },
+  {
+   "defect": "maintenance",
+   "change": "Version U1.126 -> U1.127; counts 198 -> 197 results and routes, 182 questions (one removed, one added), 111 shared, 40 left-only, 12 quark-only, 34 curated; 378 layout cells; text counts in index.html updated; 11 tests updated and tests/r65-quotes-narodnism-meso.test.mjs added."
+  }
+ ],
+ "openAfterDraft": {
+  "S1_suspects": [
+   "Nilssonianism: quotation not located in Nilsson's Anarcho-Fascism: Nature Reborn; the 'Aggressively' route answer not yet checked against the book (card left unchanged at the user's direction; a page reference or quotation from the user would settle it)"
+  ],
+  "S2": [
+   "98 cards still have no source citation (C2)",
+   "Social Autocracy / Social Authoritarianism: name not established (to examine)",
+   "q_deuxCentQuaranteSixFromages is a false binary (Dirigism vs Paternalistic conservatism)",
+   "q_conservativeInsurance: loaded wording and a weak distinction for Cameralism (A4, B3)"
+  ],
+  "S3": [
+   "Political Futurism author given as 'Emilio Angelo Carlo Marinetti' while Fascist Futurism has 'Filippo Tommaso Marinetti'",
+   "'Guy-Ernest Debord' author name carries an emoji",
+   "'determinate' typo in q_utopianSchool",
+   "Ledesmaism alias unverified",
+   "Ba'athism 1947 vs 1963 tension",
+   "No Back button on Results and About views",
+   "q_proHeartland is worded in the first person ('Should we…')",
+   "Noocracy source link uses http instead of https"
+  ],
+  "S4": [
+   "Joke internal ids (q_deuxCentQuaranteSixFromages, q_zeBugz, q_raceLarp, q_naziLarp, q_stalinCope)",
+   "Stale answerIconOverrides keys (one removed here; others not audited)",
+   "Orphaned assets from removed cards (Mesoconservatism flag and thumbnails; earlier: Avaritionism, Combatocracy, Left Marxism-Leninism)"
+  ]
+ }
+}
