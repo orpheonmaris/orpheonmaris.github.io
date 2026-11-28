@@ -15,10 +15,10 @@ walk(data.start);
 const route=(name)=>paths.get(name).map(([q,a])=>`${q}=${a}`).join(' > ');
 
 test('R62 edition and counts',()=>{
- assert.equal(data.version,'U1.125');
- assert.equal(data.counts.questions,182);
- assert.equal(Object.keys(g).length,182);
- assert.equal(paths.size,198);
+ assert.equal(data.version,'U1.126');
+ assert.equal(data.counts.questions,181);
+ assert.equal(Object.keys(g).length,181);
+ assert.equal(paths.size,197);
 });
 
 test('JONS result carries its correct name and no wrong alias',()=>{
@@ -64,14 +64,14 @@ test('Stakeholder capitalism leaves the strongman branch for the elected market-
  assert.match(route('Stakeholder capitalism'),/q_stateFunctions=Elected representatives > .*q_mobility=No > q_zeBugz=Yes$/);
  assert.match(route('Third way'),/q_mobility=Yes$/);
  assert.match(route('Neoliberalism'),/q_zeBugz=No > q_hegemony=Economic leverage$/);
- assert.match(route('Autocratic capitalism'),/q_soe=No > q_klepto=No$/);
+ assert.match(route('Autocratic capitalism'),/q_authWelf=No > q_klepto=No$/); // R64: q_soe moved to the elected branch
 });
 
 test('both diagrams hold one cell per node with adjacent edges',()=>{
  const key=c=>c.type==='question'?`question:${c.id}`:`result:${c.ideology}`;
  const cells=new Map();
  for(const side of ['pro','anti'])for(const c of layout[side].cells)cells.set(c.key,[side,c.column,c.row]);
- assert.equal(cells.size,379);
+ assert.equal(cells.size,377);
  assert.ok(!cells.has('question:q_classStruggleTool'));
  for(const [q,n] of Object.entries(g))for(const c of n.choices){
   const a=cells.get(`question:${q}`),b=cells.get(key(c));

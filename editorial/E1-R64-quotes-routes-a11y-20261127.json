@@ -1,0 +1,187 @@
+{
+ "id": "E1-R64-quotes-routes-a11y-20261127",
+ "edition": "U1.126",
+ "status": "private draft, user approval required before any publication",
+ "date": "2026-11-27",
+ "baseline": {
+  "publishedEdition": "U1.125",
+  "headCommit": "be0d979"
+ },
+ "rubricNote": "The round prompt was re-pasted with the original B5 wording. B5 is applied as amended in R62 (approved 2026-11-24), as in R63.",
+ "audit": {
+  "routeTrace": "Live U1.125: 182/182 questions and 198/198 results reached, one route each. Draft: 181/181 questions, 197/197 results, one route each, no single-answer questions.",
+  "questions": "All 182 live questions re-read for A2–A5. New defects found: q_counterEcon (fixed here), q_transition 'Terror' as the only route to Narodnism, and Mesoconservatism's existence (both logged for R65).",
+  "quotes": "The five suspected quotations from R63 were checked, plus a scan of the 115 cards without a source for known misattributions.",
+  "accessibility": "axe-core 4 (WCAG 2.0/2.1 A and AA rules) run on home, quiz, result, results, tree and about views at 1366 and 360 px. Live U1.125: two violations (fixed here). Draft: none. Keyboard check: logical tab order, 3 px focus outline, quiz operable by keyboard.",
+  "tests": "11 test files pass (8 updated, 1 new).",
+  "notCheckedThisRound": "External link reachability (90 source URLs after this draft) was not re-checked."
+ },
+ "changes": [
+  {
+   "defect": "R64-D01",
+   "severity": "S1",
+   "criterion": "B5/C2",
+   "node": "Nilssonianism",
+   "change": "Result removed with its question q_separation ('How should rival covenant communities separate?'); 'Yes' at q_covenant now leads straight to Hoppeanism.",
+   "rationale": "No ideology of this name was found outside internet compass games, and the quotation attributed to Jonas Nilsson ('Every man should, as far as possible, be his own Jarl.') could not be found anywhere. A living Swedish writer of that name exists; attaching an invented doctrine of 'aggressive' separation to his name is also unfair.",
+   "sources": [
+    "Searches of 2026-11-27 for the name, the quotation and the person: no independent source"
+   ]
+  },
+  {
+   "defect": "R64-D02",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Divine monarchy",
+   "change": "'Hell is a democracy. Heaven is a kingdom.' (attributed to John of Kronstadt) replaced by Bossuet: '…the royal throne is not the throne of a man, but the throne of God himself.' Source added; alias 'Divine right of kings' added.",
+   "rationale": "The slogan is the motto of the Moscow monarchist newspaper Zemshchina (issue 6, August 1990) and was first attributed to John of Kronstadt in 1998. Bossuet's Politique is the classic Catholic statement of divine-right monarchy, which matches the route (God as source of legitimacy; the temporal ruler does not direct the church).",
+   "sources": [
+    "Jacques-Bénigne Bossuet, Politique tirée des propres paroles de l’Écriture sainte (1709), trans. in J. H. Robinson (ed.), Readings in European History, vol. 2 (Boston, 1906), pp. 273–277, via University of Washington course text",
+    "Petr Pashkov, '«Демократия в аду, а на Небе — Царство»: говорил ли так св. Иоанн?', Aletheia blog on VK (undated)",
+    "English Wikiquote, 'John of Kronstadt', lists a variant without source"
+   ],
+   "unverified": [
+    "Pashkov's archival claims (Zemshchina issue 6, August 1990; first attribution 1998) were not checked against the newspapers themselves",
+    "Book, article and proposition numbers of the Bossuet passage in the French original"
+   ]
+  },
+  {
+   "defect": "R64-D03",
+   "severity": "S1",
+   "criterion": "C2/C1",
+   "node": "Social Autocracy / Social Authoritarianism",
+   "change": "'For our friends, everything. For our enemies, not even justice.' (attributed to Juan Perón) replaced by a sourced editorial description of welfare conditional on political loyalty, referring to the literature on the 'authoritarian welfare state'.",
+   "rationale": "Argentine sources report the saying only as attributed to Perón, with no primary source. Using it also presented Peronism as the defining case of 'social autocracy', which is an editorial judgment the classification should not make.",
+   "sources": [
+    "Natalia Forrat, 'The Authoritarian Welfare State: A Marginalized Concept', CHSS Working Paper 12-005, Northwestern University, September 2012",
+    "La Nación, '“Al enemigo, ni justicia”: del dicho al hecho' (the saying 'is attributed to Perón')"
+   ],
+   "openQuestion": "The name 'Social Autocracy / Social Authoritarianism' was not found as an established term; logged for R65."
+  },
+  {
+   "defect": "R64-D04",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Patronalism",
+   "change": "'It's better to be hanged for loyalty than rewarded for betrayal' (attributed to Vladimir Putin) replaced by an editorial description quoting Henry Hale's definition of patronal politics.",
+   "rationale": "The quotation appears only on quotation websites, without a source. 'Patronalism' is Hale's term; his definition is the authoritative statement of the concept.",
+   "sources": [
+    "Henry E. Hale, Patronal Politics: Eurasian Regime Dynamics in Comparative Perspective (Cambridge University Press, 2015), Introduction, pp. 9–10 (publisher's excerpt)"
+   ]
+  },
+  {
+   "defect": "R64-D05",
+   "severity": "S2",
+   "criterion": "C2",
+   "node": "Council Communism (Organizational Dualism)",
+   "change": "The Gorter extract, which was cut off and ended with the fragment 'And the party.', replaced by the exact line from the same section: 'Factory organisation or union together with party! The unity of both!' Source added.",
+   "rationale": "The original passage is genuine (Gorter 1921, section 3) but was garbled and unsourced.",
+   "sources": [
+    "Herman Gorter, The Organisation of the Proletariat’s Class Struggle (KAPD, 1921), section 3, trans. D. A. Smart (1977), Marxists Internet Archive"
+   ]
+  },
+  {
+   "defect": "R64-D06",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Council Communism (Organizational Unitarism)",
+   "change": "A passage attributed to Pannekoek ('As the driving force of the conscious minority…') replaced by Pannekoek (1936): '…a party is an organization that aims to lead and control the working class.' Source added.",
+   "rationale": "The passage could not be traced to any Pannekoek text. The 1936 line states the reason his current rejected a distinct party alongside the councils, which is the route's distinction.",
+   "sources": [
+    "Anton Pannekoek, 'The Party and Class' (1936), Marxists Internet Archive"
+   ],
+   "unverified": [
+    "Original publication venue of the 1936 text (the archive notes close variants titled 'Party and Working Class' and 'The Party and the Working Class')"
+   ]
+  },
+  {
+   "defect": "R64-D07",
+   "severity": "S2",
+   "criterion": "A4",
+   "node": "State capitalism / q_soe",
+   "change": "q_soe ('Should state-owned companies play a central role in the economy?', unchanged wording) moved from the strongman branch to the elected-government chain of economic-mechanism questions, after public credit (Social Credit) and before q_trad. In the strongman branch, q_authWelf 'No' now leads straight to q_klepto.",
+   "rationale": "State capitalism could only be reached by answering that one powerful leader should govern, although its card describes Singapore's Temasek model and the tradition is not defined by personal rule. R42 had already recorded this as an unresolved counterexample. Strongman supporters of state ownership still reach Autocratic capitalism.",
+   "sources": [
+    "Existing card source: Lim Boon Heng, Temasek chairman, speech of 5 December 2013",
+    "editorial/E1-R42 adjacent_counterexamples (State capitalism)"
+   ]
+  },
+  {
+   "defect": "R64-D08",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Caesaropapism",
+   "change": "'I care not a fig for his holiness’ excommunications…' (attributed to Henry VIII) replaced by the Act of Supremacy 1534: '…the only supreme head in earth of the Church of England…'. Source added.",
+   "rationale": "No source for the attributed sentence was found. The Act is the legal statement of a temporal ruler directing the church, which is the route's distinction.",
+   "sources": [
+    "Act of Supremacy, 26 Hen. VIII c. 1 (1534), Parliamentary Archives HL/PO/PU/1/1534/26H8n1; text via University of Oregon course page; wording checked against two further transcriptions"
+   ]
+  },
+  {
+   "defect": "R64-D09",
+   "severity": "S1",
+   "criterion": "C2",
+   "node": "Personal autocracy",
+   "change": "'If you must break the law, do it to seize power. In all other cases, observe it.' (presented as Caesar's words) replaced by the lines of Euripides that Caesar is reported to have always quoted, in Rolfe's public-domain translation. Author now 'Julius Caesar, quoting Euripides'.",
+   "rationale": "The previous line is a loose modern rendering of Euripides presented as Caesar's own saying.",
+   "sources": [
+    "Suetonius, Divus Julius 30, trans. J. C. Rolfe (Loeb, 1914), via Lexundria; Cicero, De Officiis 3.82 (cited by Suetonius)"
+   ],
+   "unverified": [
+    "That the previous wording is Robert Graves's translation (1957)"
+   ]
+  },
+  {
+   "defect": "R64-D10",
+   "severity": "S2",
+   "criterion": "A3/A4",
+   "node": "q_counterEcon",
+   "change": "'How should the state be undermined? Withdrawal of cooperation / Insurrection' becomes 'Should the state be undermined mainly by withdrawing cooperation from it? Yes / No'. Routing is unchanged; two stale answer-icon keys removed.",
+   "rationale": "Anarcho-capitalists, Hoppeans, geoanarchists, left-Rothbardians and anarcho-distributists could only continue by choosing 'Insurrection', a strategy most of them do not hold.",
+   "sources": []
+  },
+  {
+   "defect": "R64-D11",
+   "severity": "S2",
+   "criterion": "D4",
+   "node": "index.html #path-dots; results catalog tiles",
+   "change": "role=\"img\" added to #path-dots so its aria-label is valid; the aria-label on result tiles removed so each tile's accessible name is its visible text (name and family).",
+   "rationale": "axe-core: aria-prohibited-attr (serious) on the quiz and result views; label-content-name-mismatch (serious, WCAG 2.5.3 Label in Name) on all 198 result tiles.",
+   "sources": [
+    "axe-core 4 run of 2026-11-27, before and after"
+   ]
+  },
+  {
+   "defect": "layout",
+   "change": "Two cells removed (377 total). Pro side: Hoppeanism takes q_separation's cell; q_soe placed between q_creditDividend and q_trad with State capitalism beside it; Social georgism, q_klepto, q_conglomerate, Megacorporatocracy and Corporatocracy shifted by one or two cells. 8 cells moved; every edge adjacent; computed crossings 13 -> 12 (stored 13). Anti side unchanged."
+  },
+  {
+   "defect": "maintenance",
+   "change": "Version U1.125 -> U1.126; 197 results and routes, 181 questions in data counts, metadata and About; shared count 110; 8 tests updated; tests/r64-quotes-routes.test.mjs added."
+  }
+ ],
+ "openAfterDraft": {
+  "S1_suspects": [
+   "Narodnism: reached only through 'Terror' at q_transition, which misdescribes most of the Narodnik tradition (C1/A4)",
+   "Mesoconservatism: not found as an established term (B5); Dennis Prager quotation unsourced",
+   "Further cards whose quotations look misattributed: Hereditary Monarchy (Voltaire), Cameralism (Frederick the Great), Dirigism (de Gaulle), National distributism (paraphrase of 'Chesterton's fence'), Individualist Anarchism (Oscar Wilde)"
+  ],
+  "S2": [
+   "107 cards still have no source citation (C2)",
+   "Social Autocracy / Social Authoritarianism: name not established (to examine)"
+  ],
+  "S3": [
+   "Political Futurism author given as 'Emilio Angelo Carlo Marinetti' while Fascist Futurism has 'Filippo Tommaso Marinetti'",
+   "'Guy-Ernest Debord 🚬' author name",
+   "'determinate' typo in q_utopianSchool",
+   "Ledesmaism alias unverified",
+   "Ba'athism 1947 vs 1963 tension",
+   "No Back button on Results and About views",
+   "q_proHeartland is worded in the first person ('Should we…')"
+  ],
+  "S4": [
+   "Joke internal ids (q_deuxCentQuaranteSixFromages, q_zeBugz, q_raceLarp, q_naziLarp, q_stalinCope)",
+   "Stale answerIconOverrides keys; 'aggressively' and 'peacefully' icon labels now unused"
+  ]
+ }
+}

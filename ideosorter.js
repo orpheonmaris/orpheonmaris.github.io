@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const assetVersion = "U1.125";
+  const assetVersion = "U1.126";
   const byId = (id) => document.getElementById(id);
   const viewNames = ["home", "quiz", "result", "results", "tree", "about"];
   const ambientProperties = ["--ambient-a", "--ambient-b", "--ambient-c", "--ambient-d", "--ambient-e", "--ambient-f"];
@@ -78,7 +78,6 @@
     "q_nsWorldwideParty:across multiple interacting communist organizations.": "/assets/icons/solid/diagram-project.svg",
     "q_nsCommunalInsurrection:shared ritual and ecstasy": "/assets/left/buttons/aesthetic-ritual.svg",
     "q_nsCommunalInsurrection:common insurrectionary struggle": "/assets/icons/solid/hand-fist.svg",
-    "q_counterEcon:counter-economic trade": "/assets/left/buttons/trade.svg",
     "q_transition:terror": "/assets/quark/buttons/terror.svg",
     "q_fumivFascfu:aesthetic myth and ritual": "/assets/left/buttons/aesthetic-ritual.svg",
     "q_fumivFascfu:a radical break from the past": "/assets/left/buttons/rupture.svg",
@@ -104,7 +103,6 @@
     "q_artisticBreak:revolutionary avant-garde art": "/assets/quark/buttons/create.svg",
     "q_withdrawalStrategy:counter-economic trade": "/assets/left/buttons/trade.svg",
     "q_withdrawalStrategy:nonviolent noncooperation": "/assets/icons/custom/noncooperation.svg",
-  "q_counterEcon:withdrawal of cooperation": "/assets/icons/custom/noncooperation.svg",
     "q_liberalPriority:individual liberty": "/assets/left/buttons/individual-liberty.svg",
     "q_liberalPriority:traditional social norms": "/assets/icons/solid/people-roof.svg",
     "q_civilizationalPriority:socialist transformation": "/assets/icons/solid/hand-fist.svg",
@@ -611,7 +609,6 @@
       tile.type = "button";
       tile.className = "result-tile";
       tile.dataset.name = name;
-      tile.setAttribute("aria-label", name);
       tile.dataset.search = [name, ideology.family, ideology.author, ...ideology.aliases, ideology.quote, ideology.description || "", ideology.quoteSource?.label || "", ideology.quoteSource?.citation || "", ideology.quoteSource?.note || ""].join(" ").toLowerCase();
       tile.dataset.branch = ideology.branch;
       tile.dataset.family = ideology.family;

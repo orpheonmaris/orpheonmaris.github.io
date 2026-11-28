@@ -14,19 +14,19 @@ function walk(id,path=[],active=new Set()){
 walk(data.start);
 const answer=(name,id)=>paths.get(name)?.find(([q])=>q===id)?.[1];
 const members=(id)=>[...paths.keys()].filter(n=>answer(n,id)!==undefined);
-test('the current graph has 198 unique results and 182 questions',()=>{
- assert.equal(data.version,'U1.125');assert.equal(paths.size,198);assert.equal(reached.size,182);
+test('the current graph has 197 unique results and 181 questions',()=>{
+ assert.equal(data.version,'U1.126');assert.equal(paths.size,197);assert.equal(reached.size,181);
  assert.deepEqual([...reached].sort(),Object.keys(data.graph).sort());
  assert.deepEqual([...paths.keys()].sort(),Object.keys(data.ideologies).sort());
 });
-test('the yes/no state gateway now reaches all 97 pro-property state and stateless outcomes (R63: Avaritionism and Combatocracy removed)',()=>{
- assert.equal(members('q_constitution').length,97);
+test('the yes/no state gateway now reaches all 96 pro-property state and stateless outcomes (R63: Avaritionism and Combatocracy removed; R64: Nilssonianism removed)',()=>{
+ assert.equal(members('q_constitution').length,96);
  assert.equal(members('q_constitution').filter(n=>answer(n,'q_constitution')==='Yes').length,88);
- assert.equal(members('q_constitution').filter(n=>answer(n,'q_constitution')==='No').length,9);
+ assert.equal(members('q_constitution').filter(n=>answer(n,'q_constitution')==='No').length,8);
 });
 test('the elected, leader and sovereign branches preserve distinct outcomes',()=>{
  const counts=Object.fromEntries(['Elected representatives','One powerful leader','Monarchs or ruling elites'].map(label=>[label,members('q_stateFunctions').filter(n=>answer(n,'q_stateFunctions')===label).length]));
- assert.deepEqual(counts,{'Elected representatives':34,'One powerful leader':29,'Monarchs or ruling elites':25}); // R62: Stakeholder capitalism moved; R63: Combatocracy removed
+ assert.deepEqual(counts,{'Elected representatives':35,'One powerful leader':28,'Monarchs or ruling elites':25}); // R62: Stakeholder capitalism moved; R63: Combatocracy removed; R64: State capitalism moved
 });
 test('R42 minarchy evidence remains available as an historical audit',()=>{
  assert.equal(historic.classification_status,'OPEN — not independently certified');
@@ -37,7 +37,8 @@ test('R42 minarchy evidence remains available as an historical audit',()=>{
 });
 test('R42 identified state authority counterexamples and R44 does not erase them',()=>{
  for(const name of ['Stakeholder capitalism','State capitalism']) assert.ok(historic.adjacent_counterexamples.some(x=>x.name===name));
- assert.equal(answer('State capitalism','q_stateFunctions'),'One powerful leader');
+ // R64: the recorded State capitalism counterexample is resolved; q_soe now follows public credit in the elected chain
+ assert.equal(answer('State capitalism','q_stateFunctions'),'Elected representatives');
  // R62: the recorded Stakeholder counterexample is resolved; the same question now ends the elected market-liberal chain
  assert.equal(answer('Stakeholder capitalism','q_stateFunctions'),'Elected representatives');
 });
