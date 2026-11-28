@@ -1,7 +1,8 @@
 {
  "id": "E1-R64-quotes-routes-a11y-20261127",
  "edition": "U1.126",
- "status": "private draft, user approval required before any publication",
+ "status": "approved by the user on 2026-11-27 ('Publish this draft to the live site') after review on the private test site; published as U1.126",
+ "publishedDraftCommit": "f8d5953",
  "date": "2026-11-27",
  "baseline": {
   "publishedEdition": "U1.125",
