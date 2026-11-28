@@ -12,9 +12,9 @@ const paths=new Map();
 (function walk(id,path=[]){for(const c of g[id].choices){const p=[...path,`${id}=${c.label}`];if(c.type==='question')walk(c.id,p);else paths.set(c.ideology,p.join(' > '))}})(data.start);
 
 test('R64 edition and counts',()=>{
- assert.equal(data.version,'U1.126');
- assert.deepEqual([data.counts.ideologies,data.counts.routes,data.counts.questions,data.counts.shared],[198,198,182,111]);
- assert.equal(paths.size,198);
+ assert.equal(data.version,'U1.127');
+ assert.deepEqual([data.counts.ideologies,data.counts.routes,data.counts.questions,data.counts.shared],[197,197,182,111]);
+ assert.equal(paths.size,197);
 });
 
 test('Nilssonianism stays (removal withdrawn after the user identified its source book)',()=>{
@@ -60,7 +60,7 @@ test('replaced quotations are sourced and the old attributions are gone',()=>{
 
 test('layout: one cell per node, adjacent edges, crossings recorded',()=>{
  const cells=['pro','anti'].flatMap(s=>layout[s].cells.map(c=>c.key));
- assert.equal(new Set(cells).size,379);
+ assert.equal(new Set(cells).size,378);
  assert.ok(cells.includes('result:Nilssonianism')&&cells.includes('question:q_separation'));
  assert.equal(layout.pro.crossings,14);
 });

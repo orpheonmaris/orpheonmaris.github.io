@@ -12,10 +12,10 @@ const paths=new Map();
 (function walk(id,path=[]){for(const c of g[id].choices){const p=[...path,`${id}=${c.label}`];if(c.type==='question')walk(c.id,p);else paths.set(c.ideology,p.join(' > '))}})(data.start);
 
 test('R63 edition and counts (updated for R64)',()=>{
- assert.equal(data.version,'U1.126');
- assert.deepEqual([data.counts.ideologies,data.counts.routes,data.counts.questions],[198,198,182]);
- assert.equal(Object.keys(I).length,198);assert.equal(paths.size,198);assert.equal(Object.keys(g).length,182);
- const cells=['pro','anti'].flatMap(s=>layout[s].cells.map(c=>c.key));assert.equal(new Set(cells).size,379);
+ assert.equal(data.version,'U1.127');
+ assert.deepEqual([data.counts.ideologies,data.counts.routes,data.counts.questions],[197,197,182]);
+ assert.equal(Object.keys(I).length,197);assert.equal(paths.size,197);assert.equal(Object.keys(g).length,182);
+ const cells=['pro','anti'].flatMap(s=>layout[s].cells.map(c=>c.key));assert.equal(new Set(cells).size,378);
 });
 
 test('B5: joke results and their single-answer questions are gone',()=>{
@@ -46,5 +46,5 @@ test('replacement banners exist and are referenced with a new cache key',()=>{
 test('D5: byline in footer and author metadata',()=>{
  assert.match(html,/<meta name="author" content="Orphéon Maris">/);
  assert.match(html,/Ideology Sorter · by Orphéon Maris · GPL-3\.0 · 2026/);
- assert.match(html,/198 ideologies\. 182 questions\./);
+ assert.match(html,/197 ideologies\. 182 questions\./);
 });

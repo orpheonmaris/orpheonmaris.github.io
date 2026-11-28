@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const assetVersion = "U1.126";
+  const assetVersion = "U1.127";
   const byId = (id) => document.getElementById(id);
   const viewNames = ["home", "quiz", "result", "results", "tree", "about"];
   const ambientProperties = ["--ambient-a", "--ambient-b", "--ambient-c", "--ambient-d", "--ambient-e", "--ambient-f"];
@@ -78,7 +78,6 @@
     "q_nsWorldwideParty:across multiple interacting communist organizations.": "/assets/icons/solid/diagram-project.svg",
     "q_nsCommunalInsurrection:shared ritual and ecstasy": "/assets/left/buttons/aesthetic-ritual.svg",
     "q_nsCommunalInsurrection:common insurrectionary struggle": "/assets/icons/solid/hand-fist.svg",
-    "q_transition:terror": "/assets/quark/buttons/terror.svg",
     "q_fumivFascfu:aesthetic myth and ritual": "/assets/left/buttons/aesthetic-ritual.svg",
     "q_fumivFascfu:a radical break from the past": "/assets/left/buttons/rupture.svg",
     "q_fascistInstitution:a restored mythical past": "/assets/left/buttons/mythical-past.svg",
