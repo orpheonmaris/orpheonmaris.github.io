@@ -1,8 +1,8 @@
 {
  "id": "E1-R65-quotes-narodnism-mesoconservatism-20261127",
  "edition": "U1.127",
- "status": "DRAFT — awaiting the user's explicit approval of this exact draft; nothing has been published",
- "draftCommit": "88e9109 (this record is added in the commit after it; the site files are identical)",
+ "status": "approved by the user on 2026-11-27 ('publish this draft to the live site') after review on the private test site; published as U1.127",
+ "publishedDraftCommit": "41d2da6",
  "date": "2026-11-27",
  "baseline": {
   "publishedEdition": "U1.126",
