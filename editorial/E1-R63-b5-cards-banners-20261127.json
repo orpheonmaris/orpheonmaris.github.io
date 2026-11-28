@@ -1,7 +1,7 @@
 {
  "id": "E1-R63-b5-cards-banners-20261127",
  "edition": "U1.125",
- "status": "private draft, user approval required before any publication",
+ "status": "approved by the user on 2026-11-27 ('okay now publish this draft to the live site') after review on the private test site; published as U1.125",
  "date": "2026-11-27",
  "baseline": {
   "publishedEdition": "U1.124",
@@ -154,5 +154,6 @@
    "after": "206d07a",
    "change": "Both replacement banners redrawn after the user's review asked for clearer symbolism and a cleaner Integralism design. Integralism keeps its gold field so it no longer resembles the dark-red banners of Superfascism (crossed swords) and Scholar-bureaucracy."
   }
- ]
+ ],
+ "publishedDraftCommit": "8e002f5"
 }
